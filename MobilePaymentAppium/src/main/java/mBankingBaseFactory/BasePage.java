@@ -2,11 +2,15 @@ package mBankingBaseFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
@@ -18,19 +22,62 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingUtility.MConstants;
+import mBankingUtility.*;
 
 public class BasePage {
 	static DesiredCapabilities caps = new DesiredCapabilities();
 	static AppiumDriver driver;
-	public ExtentTest test;
+	public static ExtentReports extent;
+	public static ExtentTest test;
 	
-	public void BeforeMethod() throws MalformedURLException
+	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	
+	@BeforeSuite
+	public void BeforeSuite()
+	{
+	    log.info("Before Suite execution");	
+	}
+	
+	@BeforeMethod
+	public void beforeMethod()
+	{
+		log.info("Before Method execution");		
+	}
+	
+	@AfterMethod
+	public void afterMethod()
+	{
+		log.info("After Method execution");
+	}
+	
+	@AfterSuite
+	public void afterSuite()
+	{
+		log.info("After Suite execution");
+	}
+	
+	@Test
+	public static void test(String t)
+	{
+		log.info("Test in Base class :" +t);
+	}
+	//@BeforeTest
+	public static void BeforeMethod() throws MalformedURLException
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
@@ -147,7 +194,6 @@ public class BasePage {
 		return false;
 	}
 
-
     public boolean swipeToElement(String elem, String direction) {
         WebDriverWait wait = new WebDriverWait(driver, 1);
         try{
@@ -177,7 +223,6 @@ public class BasePage {
         return false;
     }
 
-
     public void verticalScrollDown()
     {
         Dimension size = driver.manage().window().getSize();
@@ -202,7 +247,7 @@ public class BasePage {
         try{
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
             return true;
-        }catch(TimeoutException | NoSuchElementException e){
+        }catch(NoSuchElementException e){
             test.log(LogStatus.INFO,"Scroll to element");
         }
 
@@ -213,7 +258,7 @@ public class BasePage {
                 try{
                     wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                     return true;
-                }catch(TimeoutException | NoSuchElementException e){
+                }catch(NoSuchElementException e){
                     test.log(LogStatus.INFO,"Scroll");
                 }
             }
@@ -224,7 +269,7 @@ public class BasePage {
                 try{
                     wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                     return true;
-                }catch(TimeoutException | NoSuchElementException e){
+                }catch(NoSuchElementException e){
                     test.log(LogStatus.INFO,"Scroll");
                 }
             }
@@ -237,7 +282,7 @@ public class BasePage {
         try{
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
             return true;
-        }catch(TimeoutException | NoSuchElementException e){
+        }catch(NoSuchElementException e){
             test.log(LogStatus.INFO,"Scroll to element");
         }
         for(int i=0;i<10;i++){
@@ -246,7 +291,7 @@ public class BasePage {
                 try{
                     wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                     return true;
-                }catch(TimeoutException | NoSuchElementException e){
+                }catch(NoSuchElementException e){
                     test.log(LogStatus.INFO,"Scroll");
                 }
         }
@@ -256,7 +301,7 @@ public class BasePage {
             try{
                 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                 return true;
-            }catch(TimeoutException | NoSuchElementException e){
+            }catch(NoSuchElementException e){
                 test.log(LogStatus.INFO,"Scroll");
             }
         }
@@ -268,7 +313,7 @@ public class BasePage {
         try{
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
             return true;
-        }catch(TimeoutException | NoSuchElementException e){
+        }catch(NoSuchElementException e){
             test.log(LogStatus.INFO,"Scroll to element");
         }
         for(int i=0;i<10;i++){
@@ -277,7 +322,7 @@ public class BasePage {
             try{
                 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                 return true;
-            }catch(TimeoutException | NoSuchElementException e){
+            }catch(NoSuchElementException e){
                 test.log(LogStatus.INFO,"Scroll");
             }
         }
@@ -290,7 +335,7 @@ public class BasePage {
 //            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elem)));
             return true;
-        }catch(TimeoutException | NoSuchElementException e){
+        }catch(NoSuchElementException e){
             test.log(LogStatus.INFO,"Scroll to element");
         }
         for(int j=0;j<10;j++){
@@ -300,7 +345,7 @@ public class BasePage {
 //                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elem)));
                 return true;
-            }catch(TimeoutException | NoSuchElementException e){
+            }catch(NoSuchElementException e){
                 test.log(LogStatus.INFO,"Scroll");
             }
         }
@@ -320,40 +365,7 @@ public class BasePage {
             test.log(LogStatus.INFO, "App permissions popup did not occur");
         }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

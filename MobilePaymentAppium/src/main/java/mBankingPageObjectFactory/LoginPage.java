@@ -1,16 +1,36 @@
 package mBankingPageObjectFactory;
 
 
+import static org.testng.Assert.assertTrue;
+
+import java.lang.invoke.MethodHandles;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import mBankingBaseFactory.AppiumController;
+import mBankingBaseFactory.BasePage;
 
-public class LoginPage {
+public class LoginPage extends AppiumController {
+	
+@Test
+public void tdxg()
+{
+	assertTrue(true);
+}
+	
+	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	AppiumDriver driver;
 	
 	@FindBy(how = How.ID , using = "com.fss.united:id/header")
@@ -52,6 +72,13 @@ public class LoginPage {
  public void driver(AppiumDriver driver)
  {
 	 this.driver = driver;
+ }
+ 
+ public static void print(String p)
+ {
+	 
+	 log.info("Printing : "+p+ " in LoginPage");
+
  }
  
  public void click(AppiumDriver driver)

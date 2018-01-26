@@ -5,31 +5,119 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import mBankingUtility.ExtentManager;
 
+import static org.testng.Assert.assertTrue;
+
+import java.io.File;
 import java.io.FileInputStream;
+import java.lang.invoke.MethodHandles;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class AppiumController {
 
 	public static AppiumDriver driver;
 	public static URL serverAddress;
 	private static WebDriverWait driverWait;
-
+	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	
 	Properties CONFIG = null;
+	
+//=====================================================================================
 
-	/** Run before each test **/
+	public static ExtentReports extent;
+	public static ExtentTest extentLogger;
+     
+    @BeforeSuite
+    public static void extentReportSetUp() throws MalformedURLException
+    {
+    	log.info("@BeforeSuite");
+		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
+	    extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+	    instantiateDriver();	    
+	}
 
+    
+    @BeforeMethod
+    public static void extentbeforeMethod(Method method)
+    {
+    	log.info("@BeforeMethod");
+    	log.info(MethodHandles.lookup().lookupClass().getSimpleName());
+		extentLogger = extent.startTest((MethodHandles.lookup().lookupClass().getSimpleName() +" :: "+ method.getName()), method.getName() );
+		extentLogger.assignAuthor("Brantansp");
+		extentLogger.assignCategory("Appium Automation Testing");
+		extentLogger.log(LogStatus.PASS, "Test started Successfully");
+    }
+    
+    @AfterMethod
+    public static void extentGetResult(ITestResult result)
+    {
+    	log.info("@AfterMethod");
+		if(result.getStatus() == ITestResult.FAILURE){
+			extentLogger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
+			extentLogger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+		}else if(result.getStatus() == ITestResult.SKIP){
+			extentLogger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
+		}
+			extent.endTest(extentLogger);
+	}
+     
+    @AfterSuite
+    public static void tearDown()
+    {
+    	log.info("@AfterSuite");
+        extent.flush();
+        destroyingDriver();
+    }	
+//=====================================================================================
+	static DesiredCapabilities caps = new DesiredCapabilities();
+	
+	public static void instantiateDriver() throws MalformedURLException
+	{
+		//Set the Desired Capabilities
+		caps.setCapability("deviceName", "Lenovo K8 Plus");
+		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		caps.setCapability("platformName", "Android");
+		caps.setCapability("platformVersion", "7.1.1");
+		caps.setCapability("appPackage", "com.fss.united");
+		caps.setCapability("appActivity", "SplashScreen");
+		caps.setCapability("noReset", "true");		
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+	}
+	
+	public static void destroyingDriver()
+	{
+			driver.quit();
+	}
+//======================================================================	
+	/** Run before each test **/	
 	public void setUp() throws Exception {
 		// Initialize CONFIG
 		CONFIG = new Properties();
@@ -59,7 +147,7 @@ public class AppiumController {
 
 	/** Run after each test **/
 
-	public void tearDown() throws Exception {
+	public void tearDown2() throws Exception {
 		if (driver != null)
 			driver.quit();
 	}

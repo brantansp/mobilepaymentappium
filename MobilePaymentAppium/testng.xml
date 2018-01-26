@@ -3,7 +3,12 @@
 <suite name = "Positive Transaction flow" >
     <test name = "Test">
       <classes>
-          <class name = "mBankingUtility.TestClass"/>
+          <class name = "mBankingTestPages.LoginPageTest"/>
+      </classes>        
+    </test>
+     <test name = "Test2">
+      <classes>
+          <class name = "mBankingTestPages.HomePageTest"/>
       </classes>        
     </test>
 </suite>

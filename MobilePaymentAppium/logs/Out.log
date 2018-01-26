@@ -1,0 +1,115 @@
+2018-01-26 22:57:48 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 22:57:48 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 22:57:48 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 22:57:48 INFO  LoginPageTest:29 - test log
+2018-01-26 22:57:48 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 22:57:48 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 22:57:48 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 22:57:48 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 22:57:48 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 22:57:48 INFO  HomePageTest:16 - test log
+2018-01-26 22:57:48 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 22:59:51 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 22:59:51 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 22:59:51 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 22:59:51 INFO  LoginPageTest:29 - test log
+2018-01-26 22:59:51 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 22:59:51 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 22:59:51 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 22:59:51 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 22:59:51 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 22:59:51 INFO  HomePageTest:16 - test log
+2018-01-26 22:59:51 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 23:01:06 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 23:01:06 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:01:06 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:01:06 INFO  LoginPageTest:29 - test log
+2018-01-26 23:01:06 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:01:06 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:01:06 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:01:06 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:01:06 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:01:06 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:01:06 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:01:06 INFO  HomePageTest:17 - test log
+2018-01-26 23:01:06 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:01:06 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 23:20:49 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 23:20:50 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:20:50 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:20:50 INFO  LoginPageTest:29 - test log
+2018-01-26 23:20:50 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:20:50 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:20:50 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:20:50 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:20:50 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:20:50 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 23:23:53 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 23:23:53 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:23:53 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:23:53 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:23:53 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:23:53 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:23:53 INFO  LoginPageTest:29 - test log
+2018-01-26 23:23:53 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:23:53 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:23:53 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:23:53 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:23:53 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:23:53 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 23:25:25 INFO  ExtentManager:33 - @BeforeSuite
+2018-01-26 23:25:25 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:25:25 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:25:25 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:25:25 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:25:25 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:25:25 INFO  LoginPageTest:29 - test log
+2018-01-26 23:25:25 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:25:25 INFO  ExtentManager:42 - @BeforeMethod
+2018-01-26 23:25:25 INFO  ExtentManager:43 - ExtentManager
+2018-01-26 23:25:25 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:25:25 INFO  ExtentManager:53 - @AfterMethod
+2018-01-26 23:25:25 INFO  ExtentManager:66 - @AfterSuite
+2018-01-26 23:29:51 INFO  AppiumController:86 - @BeforeSuite
+2018-01-26 23:29:52 INFO  AppiumController:95 - @BeforeMethod
+2018-01-26 23:29:52 INFO  AppiumController:96 - AppiumController
+2018-01-26 23:29:52 INFO  LoginPageTest:29 - test log
+2018-01-26 23:29:52 INFO  AppiumController:106 - @AfterMethod
+2018-01-26 23:29:52 INFO  AppiumController:95 - @BeforeMethod
+2018-01-26 23:29:52 INFO  AppiumController:96 - AppiumController
+2018-01-26 23:29:52 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:29:52 INFO  AppiumController:106 - @AfterMethod
+2018-01-26 23:29:52 INFO  AppiumController:119 - @AfterSuite
+2018-01-26 23:35:49 INFO  AppiumController:86 - @BeforeSuite
+2018-01-26 23:35:49 INFO  AppiumController:95 - @BeforeMethod
+2018-01-26 23:35:49 INFO  AppiumController:96 - AppiumController
+2018-01-26 23:35:49 INFO  AppiumController:106 - @AfterMethod
+2018-01-26 23:35:49 INFO  AppiumController:119 - @AfterSuite
+2018-01-26 23:43:06 INFO  AppiumController:60 - @BeforeSuite
+2018-01-26 23:51:36 INFO  AppiumController:60 - @BeforeSuite
+2018-01-26 23:52:04 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:52:04 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:52:04 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:52:04 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:52:04 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:52:04 INFO  LoginPageTest:29 - test log
+2018-01-26 23:52:04 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:52:04 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:52:04 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:52:04 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:52:04 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:52:04 INFO  AppiumController:94 - @AfterSuite
+2018-01-26 23:52:27 INFO  AppiumController:60 - @BeforeSuite
+2018-01-26 23:52:35 INFO  AppiumController:60 - @BeforeSuite
+2018-01-26 23:53:06 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:53:06 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:53:06 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:53:06 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:53:06 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:53:06 INFO  LoginPageTest:29 - test log
+2018-01-26 23:53:07 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:53:07 INFO  AppiumController:70 - @BeforeMethod
+2018-01-26 23:53:07 INFO  AppiumController:71 - AppiumController
+2018-01-26 23:53:07 INFO  LoginPageTest:36 - 2nd log
+2018-01-26 23:53:07 INFO  AppiumController:81 - @AfterMethod
+2018-01-26 23:53:07 INFO  AppiumController:94 - @AfterSuite
