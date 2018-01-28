@@ -1,95 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35" started-at="2018-01-26T18:23:06Z" finished-at="2018-01-26T18:23:07Z">
+  <suite name="Default suite" duration-ms="19385" started-at="2018-01-28T10:30:29Z" finished-at="2018-01-28T10:30:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35" started-at="2018-01-26T18:23:06Z" finished-at="2018-01-26T18:23:07Z">
+    <test name="Default test" duration-ms="19385" started-at="2018-01-28T10:30:29Z" finished-at="2018-01-28T10:30:49Z">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentReportSetUp" is-config="true" duration-ms="31176" started-at="2018-01-26T23:52:35Z" finished-at="2018-01-26T23:53:06Z">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14]" name="extentReportSetUp" is-config="true" duration-ms="36319" started-at="2018-01-28T15:59:53Z" finished-at="2018-01-28T16:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentbeforeMethod" is-config="true" duration-ms="5" started-at="2018-01-26T23:53:06Z" finished-at="2018-01-26T23:53:06Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14]" name="extentbeforeMethod" is-config="true" duration-ms="29" started-at="2018-01-28T16:00:30Z" finished-at="2018-01-28T16:00:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void mBankingPageObjectFactory.LoginPage.tdxg()]]>
+                <![CDATA[public void mBankingTestPages.LoginPageTest.firstTest() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="tdxg()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="tdxg" duration-ms="6" started-at="2018-01-26T23:53:06Z" finished-at="2018-01-26T23:53:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdxg -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentGetResult" is-config="true" duration-ms="2" started-at="2018-01-26T23:53:06Z" finished-at="2018-01-26T23:53:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tdxg status=SUCCESS method=LoginPage.tdxg()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-01-26T23:53:06Z" finished-at="2018-01-26T23:53:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.firstTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="firstTest" duration-ms="1" started-at="2018-01-26T23:53:06Z" finished-at="2018-01-26T23:53:06Z">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14]" name="firstTest" duration-ms="19267" started-at="2018-01-28T16:00:30Z" finished-at="2018-01-28T16:00:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentGetResult" is-config="true" duration-ms="1" started-at="2018-01-26T23:53:07Z" finished-at="2018-01-26T23:53:07Z">
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14]" name="extentGetResult" is-config="true" duration-ms="7" started-at="2018-01-28T16:00:49Z" finished-at="2018-01-28T16:00:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=firstTest status=SUCCESS method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a] output={null}]]]>
+                <![CDATA[[TestResult name=firstTest status=SUCCESS method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-01-26T23:53:07Z" finished-at="2018-01-26T23:53:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.secondTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="secondTest()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="secondTest" duration-ms="1" started-at="2018-01-26T23:53:07Z" finished-at="2018-01-26T23:53:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- secondTest -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="extentGetResult" is-config="true" duration-ms="0" started-at="2018-01-26T23:53:07Z" finished-at="2018-01-26T23:53:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=secondTest status=SUCCESS method=LoginPageTest.secondTest()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@bd8db5a]" name="tearDown" is-config="true" duration-ms="3395" started-at="2018-01-26T23:53:07Z" finished-at="2018-01-26T23:53:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@7a187f14]" name="tearDown" is-config="true" duration-ms="1391" started-at="2018-01-28T16:00:49Z" finished-at="2018-01-28T16:00:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

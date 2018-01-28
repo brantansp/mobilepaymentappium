@@ -1,6 +1,10 @@
 package mBankingTestPages;
 
 import static org.testng.Assert.assertTrue;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -8,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
@@ -16,25 +21,33 @@ import mBankingUtility.ExtentManager;
 
 public class LoginPageTest extends LoginPage{
 
+
+
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	public static void main(String[] args) {
-		log.info("Main Log test one");
+	public static void main(String[] args) throws IOException, InterruptedException {
+/*
+String line = "null";
+String cmd = "adb devices";
 
+Runtime run = Runtime.getRuntime();
+Process pr = run.exec(cmd);
+
+pr.waitFor();
+
+BufferedReader buf = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+while ((line=buf.readLine())!=null) {
+System.out.println(line);
+}
+*/
 	}
 	
 	@Test
-	public void firstTest()
+	public void firstTest() throws InterruptedException
 	{
-		log.info("test log");
-		assertTrue(true);
+       loginApp("1111");
 	}
 	
-	@Test
-	public void secondTest()
-	{
-		log.info("2nd log");
-		assertTrue(true);
-	}
+
 	
 }

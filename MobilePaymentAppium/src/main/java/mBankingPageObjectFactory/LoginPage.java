@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,74 +20,70 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
 
 public class LoginPage extends AppiumController {
 	
-@Test
-public void tdxg()
-{
-	assertTrue(true);
-}
+	private LoginPage loginPage;
 	
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
-	AppiumDriver driver;
 	
-	@FindBy(how = How.ID , using = "com.fss.united:id/header")
+	@AndroidFindBy(id = "com.fss.united:id/header")
 	private MobileElement logoHeader;
 	
-	@FindBy(how = How.CLASS_NAME , using = "android.widget.ImageView")
+	@AndroidFindBy(className= "android.widget.ImageView")
 	private MobileElement logoView;
 	
-	@FindBy(how = How.XPATH , using = "//*[@class='android.widget.EditText']")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
 	private MobileElement loginBox;
 	
-	@FindBy(how = How.XPATH , using = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")
 	private MobileElement okButton;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='About Us']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
 	private MobileElement aboutUs;
 
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Forgot Password']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Forgot Password']")
 	private MobileElement forgotPassword;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Products']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Products']")
 	private MobileElement products;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Refer']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Refer']")
 	private MobileElement Refer;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='ePassbook']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='ePassbook']")
 	private MobileElement ePassbook;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Feedback']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Feedback']")
 	private MobileElement feedback;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Locator']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
 	private WebElement locator;
 	
-	@FindBy(how = How.XPATH , using="//android.widget.Button[@text='Wallet']")
-	private MobileElement wallet;
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
+	private By wallet;
 
- public void driver(AppiumDriver driver)
- {
-	 this.driver = driver;
- }
- 
- public static void print(String p)
- {
-	 
-	 log.info("Printing : "+p+ " in LoginPage");
+	public void loginApp(String pin)
+	{
+/*	log.info("check");
+	   // waitForScreenToLoad(driver, loginBox, 30);
+		click(loginBox);
+        sendText(loginBox, pin);
+        click(okButton);
+        loginPage.loginBox.click();
+        loginBox.sendKeys("1111");
+        okButton.click();
+      */
+        
+        driver.findElementByXPath("//*[@class='android.widget.EditText']").click();
+        driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(pin);
+	  	driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")).click();
+	}
 
- }
- 
- public void click(AppiumDriver driver)
- {
-	 this.driver = driver;
-	 locator.click();
- }
- 
 /*    
     {
     	  driver.findElement(By.xpath("//*[@text='Products']")).click();
@@ -112,4 +109,13 @@ public void tdxg()
     	  driver.findElement(By.xpath("//*[@text='Home']")).click();
 
     }  */
+ 
+/* let el1 = driver.element("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.EditText");
+ el1.click();
+ el1.setValue("1111");
+ let el2 = driver.element("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]");
+ el2.click();*/
+ 
+ 
+ 
 }

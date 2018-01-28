@@ -6,24 +6,32 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import mBankingUtility.ExtentManager;
+import mBankingUtility.MConstants;
 
 import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -49,11 +57,12 @@ public class AppiumController {
 	
 	Properties CONFIG = null;
 	
+	
 //=====================================================================================
 
 	public static ExtentReports extent;
 	public static ExtentTest extentLogger;
-     
+	
     @BeforeSuite
     public static void extentReportSetUp() throws MalformedURLException
     {
@@ -67,12 +76,15 @@ public class AppiumController {
     @BeforeMethod
     public static void extentbeforeMethod(Method method)
     {
-    	log.info("@BeforeMethod");
-    	log.info(MethodHandles.lookup().lookupClass().getSimpleName());
+    	
+    	log.info("@BeforeMethod : " + 
+            "ThreadName: " + Thread.currentThread().getName() + Thread.currentThread()
+                .getStackTrace()[1].getClassName());
 		extentLogger = extent.startTest((MethodHandles.lookup().lookupClass().getSimpleName() +" :: "+ method.getName()), method.getName() );
 		extentLogger.assignAuthor("Brantansp");
 		extentLogger.assignCategory("Appium Automation Testing");
-		extentLogger.log(LogStatus.PASS, "Test started Successfully");
+		extentLogger.log(LogStatus.PASS, " : Test started Successfully");
+		
     }
     
     @AfterMethod
@@ -80,8 +92,10 @@ public class AppiumController {
     {
     	log.info("@AfterMethod");
 		if(result.getStatus() == ITestResult.FAILURE){
+			String screenShotPath = AppiumController.takeScreenShot();
 			extentLogger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
 			extentLogger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+			extentLogger.log(LogStatus.FAIL, "Snapshot below: " + extentLogger.addScreenCapture(screenShotPath));
 		}else if(result.getStatus() == ITestResult.SKIP){
 			extentLogger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 		}
@@ -93,7 +107,7 @@ public class AppiumController {
     {
     	log.info("@AfterSuite");
         extent.flush();
-        destroyingDriver();
+       // destroyingDriver();
     }	
 //=====================================================================================
 	static DesiredCapabilities caps = new DesiredCapabilities();
@@ -102,9 +116,12 @@ public class AppiumController {
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
-		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		//caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		caps.setCapability("udid", "emulator-5554");
+		caps.setCapability("androidDeviceReadyTimeout", 10);
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "7.1.1");
+		caps.setCapability("orientation", "PORTRAIT");
 		caps.setCapability("appPackage", "com.fss.united");
 		caps.setCapability("appActivity", "SplashScreen");
 		caps.setCapability("noReset", "true");		
@@ -117,6 +134,13 @@ public class AppiumController {
 			driver.quit();
 	}
 //======================================================================	
+	
+	public void waitForScreenToLoad(AppiumDriver lDriver, WebElement element, int seconds){
+
+        WebDriverWait wait = new WebDriverWait(lDriver,seconds);
+        wait.until(ExpectedConditions.visibilityOf(element));
+}
+	
 	/** Run before each test **/	
 	public void setUp() throws Exception {
 		// Initialize CONFIG
@@ -268,6 +292,24 @@ public class AppiumController {
 		return By.xpath("//*[@text='" + text + "']");
 	}
 
+	public static String takeScreenShot(){
+		//decide the file name 
+		Date d = new Date();
+		String screenshotFile=d.toString().replace(":", "_").replace(" ","_")+".png";
+		String path=MConstants.REPORT_PATH+""+screenshotFile;
+		//take screenshot
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(scrFile, new File(path));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//Add screenshot to report
+		log.info("Snapshot below: ("+screenshotFile+")"+
+				 extentLogger.addScreenCapture(path));
+		return path;
+	}
+	
 	public static By for_find(String value) {
 		return By.xpath("//*[@content-desc=\"" + value
 				+ "\" or @resource-id=\"" + value + "\" or @text=\"" + value
@@ -352,4 +394,246 @@ public class AppiumController {
 		return driver.findElement(for_find(value));
 	}
 
+
+	//click
+	public void click(String xpathKey) {
+		try {
+		log.info("Click on element"+xpathKey);	
+		driver.findElement(By.xpath((xpathKey))).click();
+		}catch(Exception e) {
+			//report an error 
+			//e.printStackTrace();
+		}
+	}
+	
+	/*
+	 * Click by MobileElement
+	 */
+	public void click(MobileElement element)
+	{
+		element.click();
+	}
+	
+	/*
+	 * Send keys via MobileElement
+	 */
+	public void sendText(MobileElement element,String text)
+	{
+		element.sendKeys(text);
+	}
+	
+	
+    public void swipeRight()
+    {
+            Dimension size = driver.manage().window().getSize();
+            int startx = (int) (size.width * 0.90);
+            int endx = (int) (size.width * 0.10);
+            int starty = size.height / 2;
+            driver.swipe(startx, starty, endx, starty, 2000);
+    }
+
+    public void swipeLeft()
+    {
+        Dimension size = driver.manage().window().getSize();
+        int startx = (int) (size.width * 0.10);
+        int endx = (int) (size.width * 0.90);
+        int starty = size.height / 2;
+        driver.swipe(startx, starty, endx, starty, 2000);
+    }
+
+	public boolean swipeToElement(String elem) {
+		WebDriverWait wait = new WebDriverWait(driver, 1);
+		try{
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+			return true;
+		}catch(Exception e){
+			log.info("Swipe");
+		}
+
+		for(int i=0;i<10;i++) {
+            swipeRight();
+			try{
+				wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+				return true;
+			}catch(Exception e){
+				log.info("Swipe");
+			}
+
+		}
+		return false;
+	}
+
+    public boolean swipeToElement(String elem, String direction) {
+        WebDriverWait wait = new WebDriverWait(driver, 1);
+        try{
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            return true;
+        }catch(Exception e){
+            log.info("Swipe");
+        }
+
+        for(int i=0;i<10;i++) {
+            if(direction.equalsIgnoreCase("right")){
+                swipeRight();
+            }else if(direction.equalsIgnoreCase("left")){
+                swipeLeft();
+            } else{
+                log.info("swipe direction not specified");
+                break;
+            }
+            try{
+                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                return true;
+            }catch(Exception e){
+                log.info("Swipe");
+            }
+
+        }
+        return false;
+    }
+
+    public void verticalScrollDown()
+    {
+        Dimension size = driver.manage().window().getSize();
+        int y_start=(int)(size.height*0.70);
+        int y_end=(int)(size.height*0.30);
+        int x=size.width/2;
+        driver.swipe(x,y_start,x,y_end,1000);
+    }
+
+    public void verticalScrollUp()
+    {
+        System.out.println("@ Vertical scroll up @ ");
+        Dimension size = driver.manage().window().getSize();
+        int y_start=(int)(size.height*0.70);
+        int y_end=(int)(size.height*0.30);
+        int x=size.width/2;
+        driver.swipe(x,y_start,x,y_end,1000);
+    }
+
+    public boolean scrollToElement(String elem, String direction) {
+        WebDriverWait wait = new WebDriverWait(driver, 1);
+        try{
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            return true;
+        }catch(NoSuchElementException e){
+            log.info("Scroll to element");
+        }
+
+        if(direction.equalsIgnoreCase("down")){
+            for(int i=0;i<10;i++){
+                verticalScrollDown();
+                log.info("Scroll DOWN");
+                try{
+                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    return true;
+                }catch(NoSuchElementException e){
+                    log.info("Scroll");
+                }
+            }
+        }else if(direction.equalsIgnoreCase("up")){
+            for(int i=0;i<10;i++){
+                verticalScrollUp();
+                log.info("Scroll UP");
+                try{
+                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    return true;
+                }catch(NoSuchElementException e){
+                    log.info("Scroll");
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean scrollToElement(String elem) {
+        WebDriverWait wait = new WebDriverWait(driver, 1);
+        try{
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            return true;
+        }catch(NoSuchElementException e){
+            log.info("Scroll to element");
+        }
+        for(int i=0;i<10;i++){
+                verticalScrollDown();
+                log.info("Scroll DOWN");
+                try{
+                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    return true;
+                }catch(NoSuchElementException e){
+                    log.info("Scroll");
+                }
+        }
+        for(int j=0;j<10;j++){
+            verticalScrollUp();
+            log.info("Scroll UP");
+            try{
+                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                return true;
+            }catch(NoSuchElementException e){
+                log.info("Scroll");
+            }
+        }
+        return false;
+    }
+
+    public boolean scrollDownToElement(String elem) {
+        WebDriverWait wait = new WebDriverWait(driver, 1);
+        try{
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            return true;
+        }catch(NoSuchElementException e){
+            log.info("Scroll to element");
+        }
+        for(int i=0;i<10;i++){
+            verticalScrollDown();
+            log.info("Scroll DOWN");
+            try{
+                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                return true;
+            }catch(NoSuchElementException e){
+                log.info("Scroll");
+            }
+        }
+        return false;
+    }
+
+    public boolean scrollUpToElement(String elem) {
+        WebDriverWait wait = new WebDriverWait(driver, 1);
+        try{
+//            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elem)));
+            return true;
+        }catch(NoSuchElementException e){
+            log.info("Scroll to element");
+        }
+        for(int j=0;j<10;j++){
+            verticalScrollUp();
+            log.info("Scroll UP");
+            try{
+//                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elem)));
+                return true;
+            }catch(NoSuchElementException e){
+                log.info("Scroll");
+            }
+        }
+        return false;
+    }
+
+    public void allowAppPermission(){
+
+        try{
+
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='android.widget.Button'][2]")));
+            driver.findElement(By.xpath("//*[@class='android.widget.Button'][2]")).click();
+            log.info("App permissions popup displayed");
+
+        }catch(Exception e){
+            log.info("App permissions popup did not occur");
+        }
+    }
+
+    
 }

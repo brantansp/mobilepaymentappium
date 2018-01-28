@@ -27,7 +27,7 @@ public interface MConstants {
     String APP_PACKAGE = "com.fss.united.";
     String APP_ACTIVITY = "SplashScreen";
     String HUB_URL = "http://127.0.0.1:4723/wd/hub";
-    String REPORT_PATH = System.getProperty("user.dir") + "/target/";
+    String REPORT_PATH = System.getProperty("user.dir") + "/target/Screenshots/";
     String XLS_PATH = System.getProperty("user.dir") + "/data/TestData.xlsx";
 
 
