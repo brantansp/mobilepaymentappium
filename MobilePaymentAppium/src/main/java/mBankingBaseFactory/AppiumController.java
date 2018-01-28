@@ -35,6 +35,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.pagefactory.ElementLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -116,8 +117,8 @@ public class AppiumController {
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
-		//caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
-		caps.setCapability("udid", "emulator-5554");
+		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		//caps.setCapability("udid", "emulator-5554");
 		caps.setCapability("androidDeviceReadyTimeout", 10);
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "7.1.1");
@@ -134,6 +135,12 @@ public class AppiumController {
 			driver.quit();
 	}
 //======================================================================	
+	
+	public MobileElement findElement(String loginBox)
+	{
+		MobileElement element = (MobileElement) driver.findElementByXPath(loginBox);
+		return element;
+	}
 	
 	public void waitForScreenToLoad(AppiumDriver lDriver, WebElement element, int seconds){
 

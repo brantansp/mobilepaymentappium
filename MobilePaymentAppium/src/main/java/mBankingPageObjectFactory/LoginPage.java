@@ -38,10 +38,10 @@ public class LoginPage extends AppiumController {
 	private MobileElement logoView;
 	
 	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
-	private MobileElement loginBox;
+	private String loginBox;
 	
 	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")
-	private MobileElement okButton;
+	private String okButton;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
 	private MobileElement aboutUs;
@@ -79,7 +79,10 @@ public class LoginPage extends AppiumController {
         okButton.click();
       */
         
-        driver.findElementByXPath("//*[@class='android.widget.EditText']").click();
+        //driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).click();
+		findElement(loginBox).click();
+		findElement(loginBox).sendKeys(pin);
+		findElement(okButton).click();
         driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(pin);
 	  	driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")).click();
 	}
