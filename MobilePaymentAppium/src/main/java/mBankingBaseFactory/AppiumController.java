@@ -51,7 +51,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class AppiumController {
 
-	public static AppiumDriver driver;
+	protected static AppiumDriver driver;
 	public static URL serverAddress;
 	private static WebDriverWait driverWait;
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
@@ -126,19 +126,21 @@ public class AppiumController {
 		caps.setCapability("appPackage", "com.fss.united");
 		caps.setCapability("appActivity", "SplashScreen");
 		caps.setCapability("noReset", "true");		
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
-		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		setDriver(new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps));
+		getDriver().manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	}
 	
 	public static void destroyingDriver()
 	{
-			driver.quit();
+			getDriver().quit();
 	}
+	
+
 //======================================================================	
 	
 	public MobileElement findElement(String loginBox)
 	{
-		MobileElement element = (MobileElement) driver.findElementByXPath(loginBox);
+		MobileElement element = (MobileElement) getDriver().findElementByXPath(loginBox);
 		return element;
 	}
 	
@@ -170,17 +172,17 @@ public class AppiumController {
 				.toString();
 		capabilities.setCapability("app", appPath);
 		serverAddress = new URL("http://127.0.0.1:4723/wd/hub");
-		driver = new AndroidDriver(serverAddress, capabilities);
+		setDriver(new AndroidDriver(serverAddress, capabilities));
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		init(driver, serverAddress);
+		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		init(getDriver(), serverAddress);
 	}
 
 	/** Run after each test **/
 
 	public void tearDown2() throws Exception {
-		if (driver != null)
-			driver.quit();
+		if (getDriver() != null)
+			getDriver().quit();
 	}
 
 	/**
@@ -188,7 +190,7 @@ public class AppiumController {
 	 * *
 	 */
 	public static void init(AppiumDriver webDriver, URL driverServerAddress) {
-		driver = webDriver;
+		setDriver(webDriver);
 		serverAddress = driverServerAddress;
 		int timeoutInSeconds = 60;
 		// must wait at least 60 seconds for running on Sauce.
@@ -219,28 +221,28 @@ public class AppiumController {
 	 * Set implicit wait in seconds *
 	 */
 	public static void setWait(int seconds) {
-		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
 
 	/**
 	 * Return an element by locator *
 	 */
 	public static MobileElement element(By locator) {
-		return w(driver.findElement(locator));
+		return w(getDriver().findElement(locator));
 	}
 
 	/**
 	 * Return a list of elements by locator *
 	 */
 	public static List<MobileElement> elements(By locator) {
-		return w(driver.findElements(locator));
+		return w(getDriver().findElements(locator));
 	}
 
 	/**
 	 * Press the back button *
 	 */
 	public static void back() {
-		driver.navigate().back();
+		getDriver().navigate().back();
 	}
 
 	/**
@@ -305,7 +307,7 @@ public class AppiumController {
 		String screenshotFile=d.toString().replace(":", "_").replace(" ","_")+".png";
 		String path=MConstants.REPORT_PATH+""+screenshotFile;
 		//take screenshot
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrFile, new File(path));
 		} catch (IOException e) {
@@ -386,11 +388,11 @@ public class AppiumController {
 		boolean isPresent = true;
 		wait(by);
 		// search for elements and check if list is empty
-		if (driver.findElements(by).isEmpty()) {
+		if (getDriver().findElements(by).isEmpty()) {
 			isPresent = false;
 		}
 		// rise back implicitly wait time
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		return isPresent;
 	}
 
@@ -398,7 +400,7 @@ public class AppiumController {
 	 * 
 	 */
 	public static WebElement touchElement(String value) {
-		return driver.findElement(for_find(value));
+		return getDriver().findElement(for_find(value));
 	}
 
 
@@ -406,7 +408,7 @@ public class AppiumController {
 	public void click(String xpathKey) {
 		try {
 		log.info("Click on element"+xpathKey);	
-		driver.findElement(By.xpath((xpathKey))).click();
+		getDriver().findElement(By.xpath((xpathKey))).click();
 		}catch(Exception e) {
 			//report an error 
 			//e.printStackTrace();
@@ -432,26 +434,26 @@ public class AppiumController {
 	
     public void swipeRight()
     {
-            Dimension size = driver.manage().window().getSize();
+            Dimension size = getDriver().manage().window().getSize();
             int startx = (int) (size.width * 0.90);
             int endx = (int) (size.width * 0.10);
             int starty = size.height / 2;
-            driver.swipe(startx, starty, endx, starty, 2000);
+            getDriver().swipe(startx, starty, endx, starty, 2000);
     }
 
     public void swipeLeft()
     {
-        Dimension size = driver.manage().window().getSize();
+        Dimension size = getDriver().manage().window().getSize();
         int startx = (int) (size.width * 0.10);
         int endx = (int) (size.width * 0.90);
         int starty = size.height / 2;
-        driver.swipe(startx, starty, endx, starty, 2000);
+        getDriver().swipe(startx, starty, endx, starty, 2000);
     }
 
 	public boolean swipeToElement(String elem) {
-		WebDriverWait wait = new WebDriverWait(driver, 1);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 1);
 		try{
-			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+			wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
 			return true;
 		}catch(Exception e){
 			log.info("Swipe");
@@ -460,7 +462,7 @@ public class AppiumController {
 		for(int i=0;i<10;i++) {
             swipeRight();
 			try{
-				wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+				wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
 				return true;
 			}catch(Exception e){
 				log.info("Swipe");
@@ -471,9 +473,9 @@ public class AppiumController {
 	}
 
     public boolean swipeToElement(String elem, String direction) {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 1);
         try{
-            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
             return true;
         }catch(Exception e){
             log.info("Swipe");
@@ -489,7 +491,7 @@ public class AppiumController {
                 break;
             }
             try{
-                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                 return true;
             }catch(Exception e){
                 log.info("Swipe");
@@ -501,27 +503,27 @@ public class AppiumController {
 
     public void verticalScrollDown()
     {
-        Dimension size = driver.manage().window().getSize();
+        Dimension size = getDriver().manage().window().getSize();
         int y_start=(int)(size.height*0.70);
         int y_end=(int)(size.height*0.30);
         int x=size.width/2;
-        driver.swipe(x,y_start,x,y_end,1000);
+        getDriver().swipe(x,y_start,x,y_end,1000);
     }
 
     public void verticalScrollUp()
     {
         System.out.println("@ Vertical scroll up @ ");
-        Dimension size = driver.manage().window().getSize();
+        Dimension size = getDriver().manage().window().getSize();
         int y_start=(int)(size.height*0.70);
         int y_end=(int)(size.height*0.30);
         int x=size.width/2;
-        driver.swipe(x,y_start,x,y_end,1000);
+        getDriver().swipe(x,y_start,x,y_end,1000);
     }
 
     public boolean scrollToElement(String elem, String direction) {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 1);
         try{
-            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
             return true;
         }catch(NoSuchElementException e){
             log.info("Scroll to element");
@@ -532,7 +534,7 @@ public class AppiumController {
                 verticalScrollDown();
                 log.info("Scroll DOWN");
                 try{
-                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                     return true;
                 }catch(NoSuchElementException e){
                     log.info("Scroll");
@@ -543,7 +545,7 @@ public class AppiumController {
                 verticalScrollUp();
                 log.info("Scroll UP");
                 try{
-                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                     return true;
                 }catch(NoSuchElementException e){
                     log.info("Scroll");
@@ -554,9 +556,9 @@ public class AppiumController {
     }
 
     public boolean scrollToElement(String elem) {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 1);
         try{
-            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
             return true;
         }catch(NoSuchElementException e){
             log.info("Scroll to element");
@@ -565,7 +567,7 @@ public class AppiumController {
                 verticalScrollDown();
                 log.info("Scroll DOWN");
                 try{
-                    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                    wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                     return true;
                 }catch(NoSuchElementException e){
                     log.info("Scroll");
@@ -575,7 +577,7 @@ public class AppiumController {
             verticalScrollUp();
             log.info("Scroll UP");
             try{
-                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                 return true;
             }catch(NoSuchElementException e){
                 log.info("Scroll");
@@ -585,9 +587,9 @@ public class AppiumController {
     }
 
     public boolean scrollDownToElement(String elem) {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 1);
         try{
-            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+            wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
             return true;
         }catch(NoSuchElementException e){
             log.info("Scroll to element");
@@ -596,7 +598,7 @@ public class AppiumController {
             verticalScrollDown();
             log.info("Scroll DOWN");
             try{
-                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
+                wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath(elem))));
                 return true;
             }catch(NoSuchElementException e){
                 log.info("Scroll");
@@ -606,7 +608,7 @@ public class AppiumController {
     }
 
     public boolean scrollUpToElement(String elem) {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 1);
         try{
 //            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elem))));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elem)));
@@ -632,15 +634,25 @@ public class AppiumController {
 
         try{
 
-            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebDriverWait wait = new WebDriverWait(getDriver(), 10);
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='android.widget.Button'][2]")));
-            driver.findElement(By.xpath("//*[@class='android.widget.Button'][2]")).click();
+            getDriver().findElement(By.xpath("//*[@class='android.widget.Button'][2]")).click();
             log.info("App permissions popup displayed");
 
         }catch(Exception e){
             log.info("App permissions popup did not occur");
         }
     }
+
+
+	public static AppiumDriver getDriver() {
+		return driver;
+	}
+
+
+	public static void setDriver(AppiumDriver driver) {
+		AppiumController.driver = driver;
+	}
 
     
 }

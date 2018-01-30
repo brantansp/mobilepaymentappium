@@ -12,7 +12,7 @@ import mBankingUtility.*;
 /**
  * The Class DriverInstance.
  */
-public class DriverController {
+public class Driver {
 
 	/** The Appium driver. */
 	private AppiumDriver driver;
@@ -248,7 +248,7 @@ public class DriverController {
 	 *
 	 * @param platform the device type
 	 */
-	public DriverController(String platform) {
+	public Driver(String platform) {
 
 		try {
 			init();

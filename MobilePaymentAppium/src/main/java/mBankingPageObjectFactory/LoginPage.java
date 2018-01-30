@@ -28,6 +28,7 @@ import mBankingBaseFactory.BasePage;
 public class LoginPage extends AppiumController {
 	
 	private LoginPage loginPage;
+	private AppiumDriver <MobileElement> driver ;
 	
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
@@ -38,10 +39,10 @@ public class LoginPage extends AppiumController {
 	private MobileElement logoView;
 	
 	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
-	private String loginBox;
+	private MobileElement loginBox;
 	
 	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")
-	private String okButton;
+	private WebElement okButton;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
 	private MobileElement aboutUs;
@@ -67,9 +68,17 @@ public class LoginPage extends AppiumController {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
 	private By wallet;
 
+	public LoginPage (AppiumDriver <MobileElement> driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+	}
+	
 	public void loginApp(String pin)
 	{
-/*	log.info("check");
+        log.info("check");
+      okButton.click();
+        /*
 	   // waitForScreenToLoad(driver, loginBox, 30);
 		click(loginBox);
         sendText(loginBox, pin);
@@ -80,11 +89,11 @@ public class LoginPage extends AppiumController {
       */
         
         //driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).click();
-		findElement(loginBox).click();
+/*		findElement(loginBox).click();
 		findElement(loginBox).sendKeys(pin);
-		findElement(okButton).click();
-        driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(pin);
-	  	driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")).click();
+		findElement(okButton).click();*/
+     //   driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(pin);
+	 // 	driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")).click();
 	}
 
 /*    

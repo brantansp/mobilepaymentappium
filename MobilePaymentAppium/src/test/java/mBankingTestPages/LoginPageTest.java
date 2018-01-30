@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
 import mBankingPageObjectFactory.LoginPage;
 import mBankingUtility.ExtentManager;
 
-public class LoginPageTest extends LoginPage{
-
+public class LoginPageTest extends AppiumController{
 
 
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
@@ -42,10 +42,12 @@ System.out.println(line);
 */
 	}
 	
+	
 	@Test
 	public void firstTest() throws InterruptedException
 	{
-       loginApp("1111");
+		LoginPage obj = new LoginPage(driver);
+       obj.loginApp("1111");
 	}
 	
 
