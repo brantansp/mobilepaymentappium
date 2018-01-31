@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -20,11 +21,11 @@ import mBankingBaseFactory.BasePage;
 import mBankingPageObjectFactory.LoginPage;
 import mBankingUtility.ExtentManager;
 
-public class LoginPageTest  extends AppiumController{
+public class LoginPageTest extends AppiumController{
 
 	protected LoginPage loginPage;
-	static AppiumDriver<MobileElement> driver;
-
+    AppiumDriver<MobileElement> driver ;
+    
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -48,8 +49,10 @@ System.out.println(line);
 	@Test
 	public void firstTest() throws InterruptedException
 	{
-		loginPage = new LoginPage();
-		loginPage.loginApp();
+		log.info("Inside Test");
+		loginPage = new LoginPage(driver);
+		loginPage.loginApp("1111");
+		Assert.assertEquals(true, true);
 	}
 	
 

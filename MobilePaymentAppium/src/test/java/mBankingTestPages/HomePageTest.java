@@ -11,11 +11,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import mBankingPageObjectFactory.LoginPage;
 
-public class HomePageTest extends LoginPage {
-	public HomePageTest(AppiumDriver<MobileElement> driver) {
-		//super(driver);
-		// TODO Auto-generated constructor stub
-	}
+public class HomePageTest {
+	
 
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	

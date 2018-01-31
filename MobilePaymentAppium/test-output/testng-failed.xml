@@ -6,10 +6,6 @@
       <class name="mBankingTestPages.LoginPageTest">
         <methods>
           <include name="firstTest"/>
-          <include name="extentReportSetUp"/>
-          <include name="tearDown"/>
-          <include name="extentbeforeMethod"/>
-          <include name="extentGetResult"/>
         </methods>
       </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>

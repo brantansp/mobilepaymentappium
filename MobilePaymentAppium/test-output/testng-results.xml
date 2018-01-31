@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="124" started-at="2018-01-31T01:24:51Z" finished-at="2018-01-31T01:24:51Z">
+  <suite name="Default suite" duration-ms="7480" started-at="2018-01-31T18:07:39Z" finished-at="2018-01-31T18:07:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="124" started-at="2018-01-31T01:24:51Z" finished-at="2018-01-31T01:24:51Z">
+    <test name="Default test" duration-ms="7480" started-at="2018-01-31T18:07:39Z" finished-at="2018-01-31T18:07:47Z">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentReportSetUp" is-config="true" duration-ms="20735" started-at="2018-01-31T06:54:30Z" finished-at="2018-01-31T06:54:51Z">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentReportSetUp" is-config="true" duration-ms="28768" started-at="2018-01-31T23:37:10Z" finished-at="2018-01-31T23:37:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="11" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="13" started-at="2018-01-31T23:37:39Z" finished-at="2018-01-31T23:37:39Z">
           <params>
             <param index="0">
               <value>
@@ -22,98 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="FAIL" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="firstTest" duration-ms="39" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.getTypeForProxy(AppiumFieldDecorator.java:233)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:248)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:246)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator$3.proxyForLocator(AppiumFieldDecorator.java:121)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:172)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at mBankingPageObjectFactory.LoginPage.<init>(LoginPage.java:37)
-	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="firstTest" duration-ms="7411" started-at="2018-01-31T23:37:39Z" finished-at="2018-01-31T23:37:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="FAIL" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="14" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="4" started-at="2018-01-31T23:37:47Z" finished-at="2018-01-31T23:37:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=firstTest status=FAILURE method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=firstTest status=SUCCESS method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at mBankingBaseFactory.AppiumController.takeScreenShot(AppiumController.java:321)
-	at mBankingBaseFactory.AppiumController.extentGetResult(AppiumController.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:731)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="tearDown" is-config="true" duration-ms="408" started-at="2018-01-31T23:37:47Z" finished-at="2018-01-31T23:37:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

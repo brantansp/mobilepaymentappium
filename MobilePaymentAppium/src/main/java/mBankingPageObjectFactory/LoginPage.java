@@ -26,26 +26,7 @@ import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
 import mBankingBaseFactory.Driver;
 
-public class LoginPage extends Driver {
-	
-	PageObjects loginObj;
-	
-	public LoginPage () 
-	{
-		super();
-		loginObj = new PageObjects();
-		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , loginObj);
-	}
-	
-	public void loginApp ()
-	{
-		loginObj.okButton.click();
-	}
-	
-	
-}
-	class PageObjects
-	{
+public class LoginPage extends AppiumController {
 	
 	protected static AppiumDriver <MobileElement> driver ;
 	
@@ -81,12 +62,29 @@ public class LoginPage extends Driver {
 	protected MobileElement feedback;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
-	protected WebElement locator;
+	protected MobileElement locator;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
-	protected By wallet;
+	protected MobileElement wallet;
 
+
+	
+	public LoginPage (AppiumDriver <MobileElement> driver) 
+	{
+		super();
+		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , this);
 	}
+	
+	public void loginApp (String pin)
+	{
+		loginBox.click();
+		loginBox.sendKeys(pin);
+		okButton.click();
+	}
+	
+	
+}
+
 
         /*
 	   // waitForScreenToLoad(driver, loginBox, 30);

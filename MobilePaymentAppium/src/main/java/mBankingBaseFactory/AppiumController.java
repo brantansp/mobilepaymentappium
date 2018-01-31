@@ -662,7 +662,7 @@ public class AppiumController {
 
 
 	public static void setDriver(AppiumDriver <MobileElement> driver) {
-		driver = driver;
+		AppiumController.driver = driver;
 	}
 
     
