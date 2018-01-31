@@ -12,10 +12,15 @@ import mBankingUtility.*;
 /**
  * The Class DriverInstance.
  */
-public class Driver {
+public class Driver extends AppiumController{
 
 	/** The Appium driver. */
-	private AppiumDriver driver;
+	protected AppiumDriver driver;
+	
+	public Driver ()
+	{
+		this.driver = super.getDriver();
+	}
 
 	/** The host ip. */
 	private String hostIp = "";
@@ -49,19 +54,19 @@ public class Driver {
 	 * 
 	 * @return the driver
 	 */
-	public AppiumDriver getDriver() {
+/*	public AppiumDriver getDriver() {
 		return driver;
 	}
 
-	/**
+	*//**
 	 * Sets the driver.
 	 * 
 	 * @param driver
 	 *            the new web driver
-	 */
+	 *//*
 	public void setDriver(AppiumDriver driver) {
 		this.driver = driver;
-	}
+	}*/
 
 	/**
 	 * Maximize the browser.

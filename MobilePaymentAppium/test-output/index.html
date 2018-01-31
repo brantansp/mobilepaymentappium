@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Brantan sp\AppData\Local\Temp\testng-eclipse-92657635\testng-customsuite.xml</span>
+                    <span>C:\Users\Brantan sp\AppData\Local\Temp\testng-eclipse-1661520586\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,18 +128,17 @@
                   <a name="firstTest">
                   </a> <!-- firstTest -->
                   <span class="method-name">firstTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]&quot; 
-- html content: &quot;by id or name &quot;okButton&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;brantansp&apos;, ip: &apos;192.168.43.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingPageObjectFactory.LoginPage.loginApp(LoginPage.java:80)
-	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:50)
+                  <div class="stack-trace">java.lang.NullPointerException
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.getTypeForProxy(AppiumFieldDecorator.java:233)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:248)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:246)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator$3.proxyForLocator(AppiumFieldDecorator.java:121)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:172)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at mBankingPageObjectFactory.LoginPage.&lt;init&gt;(LoginPage.java:37)
+	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -174,7 +173,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Brantan sp\AppData\Local\Temp\testng-eclipse-92657635\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Brantan sp\AppData\Local\Temp\testng-eclipse-1661520586\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -227,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'firstTest')
 data.setCell(0, 2, 'mBankingTestPages.LoginPageTest')
-data.setCell(0, 3, 1478);
+data.setCell(0, 3, 39);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 39 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,22 +264,20 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.LoginPageTest.firstTest() throws java.lang.InterruptedException)</span>
-                <span class="method-start">22936 ms</span>
+                <span class="method-start">20771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">firstTest</span>
-                <span class="method-start">22943 ms</span>
+                <span class="method-start">20782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">extentGetResult([TestResult name=firstTest status=FAILURE method=LoginPageTest.firstTest()[pri:0, instance:mBankingT...)</span>
-                <span class="method-start">24434 ms</span>
+                <span class="method-start">20830 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">28048 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -13,7 +13,7 @@ import mBankingPageObjectFactory.LoginPage;
 
 public class HomePageTest extends LoginPage {
 	public HomePageTest(AppiumDriver<MobileElement> driver) {
-		super(driver);
+		//super(driver);
 		// TODO Auto-generated constructor stub
 	}
 

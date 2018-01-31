@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5074" started-at="2018-01-29T17:29:59Z" finished-at="2018-01-29T17:30:04Z">
+  <suite name="Default suite" duration-ms="124" started-at="2018-01-31T01:24:51Z" finished-at="2018-01-31T01:24:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5074" started-at="2018-01-29T17:29:59Z" finished-at="2018-01-29T17:30:04Z">
+    <test name="Default test" duration-ms="124" started-at="2018-01-31T01:24:51Z" finished-at="2018-01-31T01:24:51Z">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentReportSetUp" is-config="true" duration-ms="22922" started-at="2018-01-29T22:59:36Z" finished-at="2018-01-29T22:59:59Z">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentReportSetUp" is-config="true" duration-ms="20735" started-at="2018-01-31T06:54:30Z" finished-at="2018-01-31T06:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="7" started-at="2018-01-29T22:59:59Z" finished-at="2018-01-29T22:59:59Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="11" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
           <params>
             <param index="0">
               <value>
@@ -22,30 +22,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="FAIL" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="firstTest" duration-ms="1478" started-at="2018-01-29T22:59:59Z" finished-at="2018-01-29T23:00:01Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]" 
-- html content: "by id or name "okButton""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown]]>
-            </message>
+        <test-method status="FAIL" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="firstTest" duration-ms="39" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]" 
-- html content: "by id or name "okButton""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at mBankingPageObjectFactory.LoginPage.loginApp(LoginPage.java:80)
-	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:50)
+              <![CDATA[java.lang.NullPointerException
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.getTypeForProxy(AppiumFieldDecorator.java:233)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:248)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:246)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator$3.proxyForLocator(AppiumFieldDecorator.java:121)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:172)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at mBankingPageObjectFactory.LoginPage.<init>(LoginPage.java:37)
+	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,11 +63,11 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="3562" started-at="2018-01-29T23:00:01Z" finished-at="2018-01-29T23:00:04Z">
+        <test-method status="FAIL" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="14" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
           <params>
             <param index="0">
               <value>
@@ -85,10 +75,45 @@ Driver info: driver.version: unknown
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at mBankingBaseFactory.AppiumController.takeScreenShot(AppiumController.java:321)
+	at mBankingBaseFactory.AppiumController.extentGetResult(AppiumController.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:731)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="tearDown" is-config="true" duration-ms="374" started-at="2018-01-29T23:00:04Z" finished-at="2018-01-29T23:00:05Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-01-31T06:54:51Z" finished-at="2018-01-31T06:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

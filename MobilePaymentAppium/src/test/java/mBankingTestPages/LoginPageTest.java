@@ -20,8 +20,10 @@ import mBankingBaseFactory.BasePage;
 import mBankingPageObjectFactory.LoginPage;
 import mBankingUtility.ExtentManager;
 
-public class LoginPageTest extends AppiumController{
+public class LoginPageTest  extends AppiumController{
 
+	protected LoginPage loginPage;
+	static AppiumDriver<MobileElement> driver;
 
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
@@ -46,8 +48,8 @@ System.out.println(line);
 	@Test
 	public void firstTest() throws InterruptedException
 	{
-		LoginPage obj = new LoginPage(driver);
-       obj.loginApp("1111");
+		loginPage = new LoginPage();
+		loginPage.loginApp();
 	}
 	
 

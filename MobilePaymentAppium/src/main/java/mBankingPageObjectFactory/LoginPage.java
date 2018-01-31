@@ -24,60 +24,70 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
+import mBankingBaseFactory.Driver;
 
-public class LoginPage extends AppiumController {
+public class LoginPage extends Driver {
 	
-	private LoginPage loginPage;
-	private AppiumDriver <MobileElement> driver ;
+	PageObjects loginObj;
 	
-	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
-	
-	@AndroidFindBy(id = "com.fss.united:id/header")
-	private MobileElement logoHeader;
-	
-	@AndroidFindBy(className= "android.widget.ImageView")
-	private MobileElement logoView;
-	
-	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
-	private MobileElement loginBox;
-	
-	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")
-	private WebElement okButton;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
-	private MobileElement aboutUs;
-
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Forgot Password']")
-	private MobileElement forgotPassword;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Products']")
-	private MobileElement products;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Refer']")
-	private MobileElement Refer;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='ePassbook']")
-	private MobileElement ePassbook;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Feedback']")
-	private MobileElement feedback;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
-	private WebElement locator;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
-	private By wallet;
-
-	public LoginPage (AppiumDriver <MobileElement> driver)
+	public LoginPage () 
 	{
-		this.driver = driver;
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+		super();
+		loginObj = new PageObjects();
+		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , loginObj);
 	}
 	
-	public void loginApp(String pin)
+	public void loginApp ()
 	{
-        log.info("check");
-      okButton.click();
+		loginObj.okButton.click();
+	}
+	
+	
+}
+	class PageObjects
+	{
+	
+	protected static AppiumDriver <MobileElement> driver ;
+	
+	protected static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	
+	@AndroidFindBy(id = "com.fss.united:id/header")
+	protected MobileElement logoHeader;
+	
+	@AndroidFindBy(className= "android.widget.ImageView")
+	protected MobileElement logoView;
+	
+	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
+	protected MobileElement loginBox;
+	
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]") WebElement okButton;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
+	protected MobileElement aboutUs;
+
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Forgot Password']")
+	protected MobileElement forgotPassword;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Products']")
+	protected MobileElement products;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Refer']")
+	protected MobileElement Refer;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='ePassbook']")
+	protected MobileElement ePassbook;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Feedback']")
+	protected MobileElement feedback;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
+	protected WebElement locator;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
+	protected By wallet;
+
+	}
+
         /*
 	   // waitForScreenToLoad(driver, loginBox, 30);
 		click(loginBox);
@@ -94,7 +104,6 @@ public class LoginPage extends AppiumController {
 		findElement(okButton).click();*/
      //   driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(pin);
 	 // 	driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]")).click();
-	}
 
 /*    
     {
@@ -128,6 +137,4 @@ public class LoginPage extends AppiumController {
  let el2 = driver.element("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]");
  el2.click();*/
  
- 
- 
-}
+

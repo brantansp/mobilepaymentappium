@@ -458,3 +458,8 @@
 2018-01-29 23:00:01 INFO  AppiumController:94 - @AfterMethod
 2018-01-29 23:00:04 INFO  AppiumController:315 - Snapshot below: (Mon_Jan_29_23_00_01_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Mon_Jan_29_23_00_01_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Mon_Jan_29_23_00_01_IST_2018.png' /></a>
 2018-01-29 23:00:04 INFO  AppiumController:109 - @AfterSuite
+2018-01-30 23:04:39 INFO  LoginPage:78 - check
+2018-01-31 06:52:48 INFO  AppiumController:72 - @BeforeSuite
+2018-01-31 06:54:30 INFO  AppiumController:72 - @BeforeSuite
+2018-01-31 06:54:51 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-01-31 06:54:51 INFO  AppiumController:96 - @AfterMethod

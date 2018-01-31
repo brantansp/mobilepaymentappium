@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingUtility.ExtentManager;
 import mBankingUtility.MConstants;
 
@@ -35,6 +36,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -51,7 +53,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class AppiumController {
 
-	protected static AppiumDriver driver;
+	protected static AppiumDriver <MobileElement> driver;
 	public static URL serverAddress;
 	private static WebDriverWait driverWait;
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
@@ -127,7 +129,13 @@ public class AppiumController {
 		caps.setCapability("appActivity", "SplashScreen");
 		caps.setCapability("noReset", "true");		
 		setDriver(new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps));
-		getDriver().manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//getDriver().manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	}
 	
 	public static void destroyingDriver()
@@ -137,6 +145,8 @@ public class AppiumController {
 	
 
 //======================================================================	
+	
+	
 	
 	public MobileElement findElement(String loginBox)
 	{
@@ -235,7 +245,8 @@ public class AppiumController {
 	 * Return a list of elements by locator *
 	 */
 	public static List<MobileElement> elements(By locator) {
-		return w(getDriver().findElements(locator));
+		List<MobileElement> w = (List<MobileElement>) w((WebElement) getDriver().findElements(locator));
+		return w;
 	}
 
 	/**
@@ -645,13 +656,13 @@ public class AppiumController {
     }
 
 
-	public static AppiumDriver getDriver() {
+	public static AppiumDriver <MobileElement> getDriver() {
 		return driver;
 	}
 
 
-	public static void setDriver(AppiumDriver driver) {
-		AppiumController.driver = driver;
+	public static void setDriver(AppiumDriver <MobileElement> driver) {
+		driver = driver;
 	}
 
     
