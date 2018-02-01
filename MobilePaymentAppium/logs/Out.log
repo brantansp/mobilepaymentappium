@@ -28,3 +28,68 @@
 2018-01-31 23:52:06 INFO  LoginPageTest:52 - Inside Test
 2018-01-31 23:52:14 INFO  AppiumController:96 - @AfterMethod
 2018-01-31 23:52:14 INFO  AppiumController:111 - @AfterSuite
+2018-01-31 23:53:11 INFO  AppiumController:72 - @BeforeSuite
+2018-01-31 23:53:34 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-01-31 23:53:34 INFO  LoginPageTest:52 - Inside Test
+2018-01-31 23:53:41 INFO  AppiumController:96 - @AfterMethod
+2018-01-31 23:53:41 INFO  AppiumController:111 - @AfterSuite
+2018-02-01 23:30:51 INFO  AppiumController:72 - @BeforeSuite
+2018-02-01 23:31:16 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-01 23:31:16 INFO  LoginPageTest:44 - Inside Test
+2018-02-01 23:31:20 INFO  AppiumController:96 - @AfterMethod
+2018-02-01 23:31:25 INFO  AppiumController:328 - Snapshot below: (Thu_Feb_01_23_31_20_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Thu_Feb_01_23_31_20_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Thu_Feb_01_23_31_20_IST_2018.png' /></a>
+2018-02-01 23:31:25 INFO  AppiumController:111 - @AfterSuite
+2018-02-01 23:32:50 INFO  AppiumController:72 - @BeforeSuite
+2018-02-01 23:33:08 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-01 23:33:08 INFO  LoginPageTest:44 - Inside Test
+2018-02-01 23:33:12 INFO  AppiumController:96 - @AfterMethod
+2018-02-01 23:33:17 INFO  AppiumController:328 - Snapshot below: (Thu_Feb_01_23_33_12_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Thu_Feb_01_23_33_12_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Thu_Feb_01_23_33_12_IST_2018.png' /></a>
+2018-02-01 23:33:17 INFO  AppiumController:111 - @AfterSuite
+2018-02-01 23:35:03 INFO  AppiumController:72 - @BeforeSuite
+2018-02-01 23:35:18 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-01 23:35:18 INFO  LoginPageTest:44 - Inside Test
+2018-02-01 23:35:23 INFO  AppiumController:96 - @AfterMethod
+2018-02-01 23:35:24 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:11:13 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:11:31 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:11:32 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:11:37 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_11_32_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_11_32_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_11_32_IST_2018.png' /></a>
+2018-02-02 00:11:37 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:17:41 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:17:58 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:17:59 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:18:04 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_17_59_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_17_59_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_17_59_IST_2018.png' /></a>
+2018-02-02 00:18:04 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:18:37 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:18:56 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:18:57 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:19:01 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_18_57_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_18_57_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_18_57_IST_2018.png' /></a>
+2018-02-02 00:19:01 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:20:05 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:20:22 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:20:23 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:20:27 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_20_23_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_20_23_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_20_23_IST_2018.png' /></a>
+2018-02-02 00:20:27 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:22:36 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:22:51 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:22:51 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:22:56 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_22_51_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_22_51_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_22_51_IST_2018.png' /></a>
+2018-02-02 00:22:56 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:24:14 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:24:29 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:24:29 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:24:34 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_24_29_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_24_29_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_24_29_IST_2018.png' /></a>
+2018-02-02 00:24:34 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:25:34 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:25:54 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:26:25 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:26:25 INFO  AppiumController:111 - @AfterSuite
+2018-02-02 00:33:39 INFO  AppiumController:72 - @BeforeSuite
+2018-02-02 00:33:57 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:33:57 INFO  LoginPageTest:43 - Inside Test
+2018-02-02 00:34:08 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:34:13 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_34_08_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_34_08_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_34_08_IST_2018.png' /></a>
+2018-02-02 00:34:13 INFO  AppiumController:83 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-02-02 00:34:14 INFO  AppiumController:96 - @AfterMethod
+2018-02-02 00:34:18 INFO  AppiumController:328 - Snapshot below: (Fri_Feb_02_00_34_14_IST_2018.png)<a href='C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_34_14_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium/target/Screenshots/Fri_Feb_02_00_34_14_IST_2018.png' /></a>
+2018-02-02 00:34:18 INFO  AppiumController:111 - @AfterSuite

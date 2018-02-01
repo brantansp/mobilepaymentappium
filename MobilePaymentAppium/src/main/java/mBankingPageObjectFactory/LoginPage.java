@@ -41,33 +41,40 @@ public class LoginPage extends AppiumController {
 	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
 	protected MobileElement loginBox;
 	
-	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]") WebElement okButton;
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.Button[2]") 
+	protected MobileElement okBtn;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
-	protected MobileElement aboutUs;
+	protected MobileElement aboutUsLink;
 
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Forgot Password']")
-	protected MobileElement forgotPassword;
+	protected MobileElement forgotPasswordLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Products']")
-	protected MobileElement products;
+	protected MobileElement productsLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Refer']")
-	protected MobileElement Refer;
+	protected MobileElement referLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='ePassbook']")
-	protected MobileElement ePassbook;
+	protected MobileElement ePassbookLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Feedback']")
-	protected MobileElement feedback;
+	protected MobileElement feedbackLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
-	protected MobileElement locator;
+	protected MobileElement locatorLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
-	protected MobileElement wallet;
+	protected MobileElement walletLink;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Logout']")
+	protected MobileElement logoutBtn;
 
-
+	@AndroidFindBy(id="android:id/button1")
+	protected MobileElement exitYesBtn;
+	
+	//android:id/button1
 	
 	public LoginPage (AppiumDriver <MobileElement> driver) 
 	{
@@ -79,8 +86,18 @@ public class LoginPage extends AppiumController {
 	{
 		loginBox.click();
 		loginBox.sendKeys(pin);
-		okButton.click();
+		okBtn.click();
+		logoutBtn.click();
+		exitYesBtn.click();
 	}
+	
+	public ReferPage clickReferPage()
+	{
+		referLink.click();
+		ReferPage referObj= new ReferPage(driver);
+		return referObj;
+	}
+	
 	
 	
 }

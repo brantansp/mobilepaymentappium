@@ -1,25 +1,17 @@
 package mBankingTestPages;
 
-import static org.testng.Assert.assertTrue;
-
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.ExtentTest;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import mBankingBaseFactory.AppiumController;
-import mBankingBaseFactory.BasePage;
-import mBankingPageObjectFactory.LoginPage;
-import mBankingUtility.ExtentManager;
+import mBankingBaseFactory.*;
+import mBankingPageObjectFactory.*;
+import mBankingUtility.*;
 
 public class LoginPageTest extends AppiumController{
 
@@ -45,7 +37,6 @@ System.out.println(line);
 */
 	}
 	
-	
 	@Test
 	public void firstTest() throws InterruptedException
 	{
@@ -53,8 +44,18 @@ System.out.println(line);
 		loginPage = new LoginPage(driver);
 		loginPage.loginApp("1111");
 		Assert.assertEquals(true, true);
+		Thread.sleep(4000);
 	}
 	
+	@Test
+	public void referFriendValid()
+	{
+		loginPage = new LoginPage(driver);
+		ReferPage obj =loginPage.clickReferPage();
+		obj.referFriend("brantan", "brantan@fss.co.in", "9894060407");
+		String acknowledgment =  obj.referFriendTxnStatus();
+        Assert.assertEquals(acknowledgment, "Your request for refer a friend accepted");
+	}
 
 	
 }

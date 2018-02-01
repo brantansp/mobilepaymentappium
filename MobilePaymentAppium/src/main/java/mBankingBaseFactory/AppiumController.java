@@ -119,8 +119,8 @@ public class AppiumController {
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
-		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
-		//caps.setCapability("udid", "emulator-5554");
+		//caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		caps.setCapability("udid", "emulator-5554");
 		caps.setCapability("androidDeviceReadyTimeout", 10);
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "7.1.1");
