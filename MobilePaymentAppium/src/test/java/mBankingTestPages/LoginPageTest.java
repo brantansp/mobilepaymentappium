@@ -37,7 +37,7 @@ System.out.println(line);
 */
 	}
 	
-	@Test
+	@Test(priority = 0)
 	public void firstTest() throws InterruptedException
 	{
 		log.info("Inside Test");
@@ -45,9 +45,18 @@ System.out.println(line);
 		loginPage.loginApp("1111");
 		Assert.assertEquals(true, true);
 		Thread.sleep(4000);
+		//loginPage.logoutApp();
+	}
+	//@Test(priority = 1)
+	public void exit() throws InterruptedException
+	{
+		loginPage = new LoginPage(driver);
+		loginPage.logoutApp();
+		Thread.sleep(4000);
+		
 	}
 	
-	@Test
+	//@Test(priority = 2)
 	public void referFriendValid()
 	{
 		loginPage = new LoginPage(driver);

@@ -5,11 +5,10 @@
     <classes>
       <class name="mBankingTestPages.LoginPageTest">
         <methods>
-          <include name="firstTest"/>
           <include name="extentReportSetUp"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="referFriendValid"/>
+          <include name="exit"/>
           <include name="extentGetResult"/>
         </methods>
       </class> <!-- mBankingTestPages.LoginPageTest -->

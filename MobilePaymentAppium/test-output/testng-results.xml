@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21093" started-at="2018-02-01T19:03:57Z" finished-at="2018-02-01T19:04:18Z">
+  <suite name="Default suite" duration-ms="14379" started-at="2018-02-03T06:24:10Z" finished-at="2018-02-03T06:24:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21093" started-at="2018-02-01T19:03:57Z" finished-at="2018-02-01T19:04:18Z">
+    <test name="Default test" duration-ms="14379" started-at="2018-02-03T06:24:10Z" finished-at="2018-02-03T06:24:24Z">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentReportSetUp" is-config="true" duration-ms="17598" started-at="2018-02-02T00:33:39Z" finished-at="2018-02-02T00:33:57Z">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4]" name="extentReportSetUp" is-config="true" duration-ms="17676" started-at="2018-02-03T11:53:52Z" finished-at="2018-02-03T11:54:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="12" started-at="2018-02-02T00:33:57Z" finished-at="2018-02-02T00:33:57Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4]" name="extentbeforeMethod" is-config="true" duration-ms="16" started-at="2018-02-03T11:54:10Z" finished-at="2018-02-03T11:54:10Z">
           <params>
             <param index="0">
               <value>
@@ -22,150 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="FAIL" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="firstTest" duration-ms="11272" started-at="2018-02-02T00:33:57Z" finished-at="2018-02-02T00:34:08Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[@text='Logout']" 
-- html content: "by id or name "logoutBtn""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[@text='Logout']" 
-- html content: "by id or name "logoutBtn""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at mBankingPageObjectFactory.LoginPage.loginApp(LoginPage.java:90)
-	at mBankingTestPages.LoginPageTest.firstTest(LoginPageTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4]" name="firstTest" duration-ms="14253" started-at="2018-02-03T11:54:10Z" finished-at="2018-02-03T11:54:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="4517" started-at="2018-02-02T00:34:08Z" finished-at="2018-02-02T00:34:13Z">
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4]" name="extentGetResult" is-config="true" duration-ms="5" started-at="2018-02-03T11:54:24Z" finished-at="2018-02-03T11:54:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=firstTest status=FAILURE method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b] output={null}]]]>
+                <![CDATA[[TestResult name=firstTest status=SUCCESS method=LoginPageTest.firstTest()[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-02-02T00:34:13Z" finished-at="2018-02-02T00:34:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.referFriendValid()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="FAIL" signature="referFriendValid()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="referFriendValid" duration-ms="1577" started-at="2018-02-02T00:34:13Z" finished-at="2018-02-02T00:34:14Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[@text='Refer']" 
-- html content: "by id or name "referLink""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[@text='Refer']" 
-- html content: "by id or name "referLink""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at mBankingPageObjectFactory.LoginPage.clickReferPage(LoginPage.java:96)
-	at mBankingTestPages.LoginPageTest.referFriendValid(LoginPageTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- referFriendValid -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="extentGetResult" is-config="true" duration-ms="3537" started-at="2018-02-02T00:34:14Z" finished-at="2018-02-02T00:34:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=referFriendValid status=FAILURE method=LoginPageTest.referFriendValid()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@436e852b]" name="tearDown" is-config="true" duration-ms="924" started-at="2018-02-02T00:34:18Z" finished-at="2018-02-02T00:34:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@c46bcd4]" name="tearDown" is-config="true" duration-ms="1101" started-at="2018-02-03T11:54:25Z" finished-at="2018-02-03T11:54:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -68,7 +68,7 @@ public class LoginPage extends AppiumController {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
 	protected MobileElement walletLink;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Logout']")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.Button[3]")
 	protected MobileElement logoutBtn;
 
 	@AndroidFindBy(id="android:id/button1")
@@ -82,13 +82,22 @@ public class LoginPage extends AppiumController {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , this);
 	}
 	
-	public void loginApp (String pin)
+	public void loginApp (String pin) throws InterruptedException
 	{
 		loginBox.click();
+		log.info("Clicked on login box");
 		loginBox.sendKeys(pin);
+		log.info("Login Pin send  : "+pin);
 		okBtn.click();
+		log.info("Clicked on ok button");
+	}
+	
+	public void logoutApp()
+	{
 		logoutBtn.click();
+		log.info("Clicked on Exit button");
 		exitYesBtn.click();
+		log.info("Clicked on Yes button");
 	}
 	
 	public ReferPage clickReferPage()
@@ -143,6 +152,12 @@ public class LoginPage extends AppiumController {
     	  driver.pressKeyCode(AndroidKeyCode.BACK);
     	  driver.findElement(By.xpath("//*[@text='Help']")).click();
     	  driver.findElement(By.xpath("//*[@text='Home']")).click();
+
+MobileElement el3 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.Button[3]");
+el3.click();
+MobileElement el4 = (MobileElement) driver.findElementById("android:id/button1");
+el4.click();
+
 
     }  */
  
