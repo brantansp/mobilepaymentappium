@@ -8,7 +8,7 @@
           <include name="extentReportSetUp"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="exit"/>
+          <include name="referFriendValid"/>
           <include name="extentGetResult"/>
         </methods>
       </class> <!-- mBankingTestPages.LoginPageTest -->

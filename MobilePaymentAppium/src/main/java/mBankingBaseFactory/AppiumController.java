@@ -119,23 +119,24 @@ public class AppiumController {
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
-		//caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
-		caps.setCapability("udid", "emulator-5554");
+		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		//caps.setCapability("udid", "emulator-5554");
 		caps.setCapability("androidDeviceReadyTimeout", 10);
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "7.1.1");
 		caps.setCapability("orientation", "PORTRAIT");
-		caps.setCapability("appPackage", "com.fss.united");
+		caps.setCapability("appPackage", "com.fss.vijaya");
 		caps.setCapability("appActivity", "SplashScreen");
+		//caps.setCapability("app", System.getProperty("user.dir")+"//app//ApiDemos.apk");
 		caps.setCapability("noReset", "true");		
-		setDriver(new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps));
-		try {
+		setDriver(new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps));
+	try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//getDriver().manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		//getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}
 	
 	public static void destroyingDriver()
@@ -154,7 +155,7 @@ public class AppiumController {
 		return element;
 	}
 	
-	public void waitForScreenToLoad(AppiumDriver lDriver, WebElement element, int seconds){
+	public void waitForScreenToLoad(AppiumDriver<MobileElement> lDriver, WebElement element, int seconds){
 
         WebDriverWait wait = new WebDriverWait(lDriver,seconds);
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -182,8 +183,7 @@ public class AppiumController {
 				.toString();
 		capabilities.setCapability("app", appPath);
 		serverAddress = new URL("http://127.0.0.1:4723/wd/hub");
-		setDriver(new AndroidDriver(serverAddress, capabilities));
-
+		setDriver(new AndroidDriver<MobileElement>(serverAddress, capabilities));
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		init(getDriver(), serverAddress);
 	}
@@ -199,7 +199,7 @@ public class AppiumController {
 	 * Initialize the webdriver. Must be called before using any helper methods.
 	 * *
 	 */
-	public static void init(AppiumDriver webDriver, URL driverServerAddress) {
+	public static void init(AppiumDriver<MobileElement> webDriver, URL driverServerAddress) {
 		setDriver(webDriver);
 		serverAddress = driverServerAddress;
 		int timeoutInSeconds = 60;
@@ -219,7 +219,7 @@ public class AppiumController {
 	 * Wrap WebElement in MobileElement *
 	 */
 	private static List<MobileElement> w(List<WebElement> elements) {
-		List list = new ArrayList(elements.size());
+		List<MobileElement> list = new ArrayList<MobileElement>(elements.size());
 		for (WebElement element : elements) {
 			list.add(w(element));
 		}
@@ -325,8 +325,9 @@ public class AppiumController {
 			e.printStackTrace();
 		}
 		//Add screenshot to report
-		log.info("Snapshot below: ("+screenshotFile+")"+
-				 extentLogger.addScreenCapture(path));
+/*		log.info("Snapshot below: ("+screenshotFile+")"+
+				 extentLogger.addScreenCapture(path));*/
+		log.info("Failed Screenshot captured : "+screenshotFile);
 		return path;
 	}
 	
@@ -657,11 +658,13 @@ public class AppiumController {
 
 
 	public static AppiumDriver <MobileElement> getDriver() {
+		log.info("Get Driver executed : "+driver);
 		return driver;
 	}
 
 
 	public static void setDriver(AppiumDriver <MobileElement> driver) {
+		log.info("Set Driver executed : "+driver);
 		AppiumController.driver = driver;
 	}
 

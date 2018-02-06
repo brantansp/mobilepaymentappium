@@ -1,5 +1,10 @@
 package mBankingPageObjectFactory;
 
+import java.lang.invoke.MethodHandles;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
@@ -10,6 +15,8 @@ import mBankingBaseFactory.*;
 
 public class ReferPage extends AppiumController {
 
+	protected static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='Refer a Friend']")
 	protected MobileElement referFriendHeader;
 	
@@ -47,15 +54,19 @@ public class ReferPage extends AppiumController {
 		return h;
 	}
 	
-	public void referFriend(String friendName , String friendEmailId , String friendMobileNo)
+	public void referFriend(String friendName , String friendEmailId , String friendMobileNo) throws InterruptedException
 	{
 		friendNameBox.click();
+		log.info("Executing timeout");
+		Thread.sleep(10000);
+		log.info("Timeout over");
 		friendNameBox.sendKeys(friendName);
 		friendEMailIdBox.click();
 		friendEMailIdBox.sendKeys(friendEmailId);
 		friendMobileNoBox.click();
 		friendMobileNoBox.sendKeys(friendMobileNo);
 		okBtn.click();
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 	}
 	
 	public String referFriendTxnStatus()
