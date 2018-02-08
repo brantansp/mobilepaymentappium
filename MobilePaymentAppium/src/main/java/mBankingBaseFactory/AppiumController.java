@@ -11,9 +11,11 @@ import mBankingUtility.MConstants;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -147,7 +149,29 @@ public class AppiumController {
 
 //======================================================================	
 	
-	
+	public static void main(String args []) throws IOException, InterruptedException
+	{
+		System.out.println("ID : "+getDeviceUdid());
+	}
+	public static List<String> getDeviceUdid() throws IOException, InterruptedException
+	{
+          String line = null;
+          List<String> udid = new ArrayList<String>();
+          String cmd = "adb devices";
+          Runtime run = Runtime.getRuntime();
+          Process pr = run.exec(cmd);
+          pr.waitFor();
+          BufferedReader buf = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+          while ((line=buf.readLine())!=null) 
+          {
+           line=buf.readLine();
+           udid.add(buf.readLine());
+           //System.out.println(line);
+          // return line;
+          }
+          System.out.println(udid);
+          return udid;
+	}
 	
 	public MobileElement findElement(String loginBox)
 	{

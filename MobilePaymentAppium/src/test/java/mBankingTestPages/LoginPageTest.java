@@ -26,20 +26,7 @@ public class LoginPageTest extends AppiumController{
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
-
-String line = "null";
-String cmd = "adb devices";
-
-Runtime run = Runtime.getRuntime();
-Process pr = run.exec(cmd);
-
-pr.waitFor();
-
-BufferedReader buf = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-while ((line=buf.readLine())!=null) {
-System.out.println(line);
-}
-
+		
 	}
 	
 	//@Test(priority = 0)
