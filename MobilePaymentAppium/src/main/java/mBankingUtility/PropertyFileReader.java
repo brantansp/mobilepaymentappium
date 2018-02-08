@@ -25,9 +25,16 @@ public class PropertyFileReader {
 	 */
 	public PropertyFileReader(final String propertyFile) {
 		propFileName = propertyFile;
+		System.out.println("file : "+propFileName);
 		loadProperty();
 	}
 
+	
+	public static void main(String[] args) {
+        String path = System.getProperty("user.dir")+"\\property\\driver.properties";
+        System.out.println(path);
+		PropertyFileReader handler = new PropertyFileReader(path);
+	}
 
 	/**
 	 * Gets the property.

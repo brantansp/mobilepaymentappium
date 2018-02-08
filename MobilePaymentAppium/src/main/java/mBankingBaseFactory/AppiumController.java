@@ -121,13 +121,13 @@ public class AppiumController {
 	{
 		//Set the Desired Capabilities
 		caps.setCapability("deviceName", "Lenovo K8 Plus");
-		caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
-		//caps.setCapability("udid", "emulator-5554");
+		//caps.setCapability("udid", "HKE7YGUA"); //Give Device ID of your mobile phone
+		caps.setCapability("udid", "emulator-5554");
 		caps.setCapability("androidDeviceReadyTimeout", 10);
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "7.1.1");
 		caps.setCapability("orientation", "PORTRAIT");
-		caps.setCapability("appPackage", "com.fss.vijaya");
+		caps.setCapability("appPackage", "com.fss.united");
 		caps.setCapability("appActivity", "SplashScreen");
 		//caps.setCapability("app", System.getProperty("user.dir")+"//app//ApiDemos.apk");
 		caps.setCapability("noReset", "true");		
@@ -166,7 +166,7 @@ public class AppiumController {
           {
            line=buf.readLine();
            udid.add(buf.readLine());
-           //System.out.println(line);
+           System.out.println(line);
           // return line;
           }
           System.out.println(udid);

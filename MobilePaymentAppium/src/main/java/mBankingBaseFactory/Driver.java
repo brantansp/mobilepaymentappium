@@ -2,53 +2,29 @@ package mBankingBaseFactory;
 
 import java.net.URL;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import mBankingUtility.*;
 
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class DriverInstance.
- */
 public class Driver extends AppiumController{
 
-	/** The Appium driver. */
-	protected AppiumDriver driver;
+	protected AppiumDriver<MobileElement> driver;
 	
-	public Driver ()
-	{
-		this.driver = super.getDriver();
-	}
-
-	/** The host ip. */
 	private String hostIp = "";
 	
-	/** The host port. */
 	private String hostPort = "";
 	
-	/** The device name. */
 	private String deviceName = "";
-	
-	/** The app url. */
-	private String appUrl = "";
-	
-	/** The platform name. */
+
 	private String platformName = "";
-	
-	/** The platform version. */
+
 	private String platformVersion = "";
 	
-	/** The mobile udid. */
 	private String mobileUDID = "";
 	
-	/** The browser type. */
-	private String browserType = "";
-	
-	/** The app type. */
-	private String appType = "";
-
 	/**
 	 * Gets the driver.
 	 * 
@@ -69,13 +45,6 @@ public class Driver extends AppiumController{
 	}*/
 
 	/**
-	 * Maximize the browser.
-	 */
-	public void maximize() {
-		driver.manage().window().maximize();
-	}
-
-	/**
 	 * Quit the browser instance.
 	 */
 	public void quit() {
@@ -83,24 +52,6 @@ public class Driver extends AppiumController{
 			driver.close();
 		}
 		driver.quit();
-	}
-
-	/**
-	 * Gets the browser type.
-	 *
-	 * @return the browser type
-	 */
-	public String getBrowserType() {
-		return browserType;
-	}
-
-	/**
-	 * Sets the browser type.
-	 *
-	 * @param browserType the new browser type
-	 */
-	public void setBrowserType(String browserType) {
-		this.browserType = browserType;
 	}
 
 	/**
@@ -175,25 +126,6 @@ public class Driver extends AppiumController{
 		this.deviceName = deviceName;
 	}
 
-
-	/**
-	 * Gets the app url.
-	 *
-	 * @return the app url
-	 */
-	public String getAppUrl() {
-		return appUrl;
-	}
-
-	/**
-	 * Sets the app url.
-	 *
-	 * @param appUrl the new app url
-	 */
-	public void setAppUrl(String appUrl) {
-		this.appUrl = appUrl;
-	}
-
 	/**
 	 * Gets the platform name.
 	 *
@@ -231,24 +163,6 @@ public class Driver extends AppiumController{
 	}
 
 	/**
-	 * Gets the app type.
-	 *
-	 * @return the app type
-	 */
-	public String getAppType() {
-		return appType;
-	}
-
-	/**
-	 * Sets the app type.
-	 *
-	 * @param appType the new app type
-	 */
-	public void setAppType(String appType) {
-		this.appType = appType;
-	}
-
-	/**
 	 * Instantiates a new web browser.
 	 *
 	 * @param platform the device type
@@ -260,11 +174,11 @@ public class Driver extends AppiumController{
 			String remoteUrl = "http://" + getHost() + ":" + getPort()
 					+ "/wd/hub";
 			if ("Android".equalsIgnoreCase(platform)) {
-				driver = new AndroidDriver(new URL(remoteUrl),
+				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl),
 						this.generateDesiredCapabilities());
 
 			} else if ("IOS".equalsIgnoreCase(platform)) {
-				driver = new IOSDriver(new URL(remoteUrl),
+				driver = new IOSDriver<MobileElement>(new URL(remoteUrl),
 						this.generateDesiredCapabilities());
 			} else {
 				throw new Exception("Given platform is not implemented.");
@@ -277,19 +191,22 @@ public class Driver extends AppiumController{
 	/**
 	 * Initializes the execution parameters.
 	 */
+	
+	public static void main(String[] args) {
+		Driver obj = new Driver ("android");
+		obj.init();
+	}
+	
 	private void init() {
 
-		PropertyFileReader handler = new PropertyFileReader(
-				"/execution.properties");
+		PropertyFileReader handler = new PropertyFileReader("/driver.properties");
+		System.out.println("here :"+handler.getProperty("UDID"));
 		setHost(handler.getProperty("HOST_IP"));
 		setPort(handler.getProperty("HOST_PORT"));
 		setDeviceName(handler.getProperty("DEVICE_NAME"));
-		setAppUrl(handler.getProperty("NATIVE_APP_URL"));
 		setPlatformName(handler.getProperty("PLATFORM_NAME"));
 		setPlatformVersion(handler.getProperty("PLATFORM_VERSION"));
 		setMobileUDID(handler.getProperty("UDID"));
-		setBrowserType(handler.getProperty("BROWSER_TYPE"));
-		setAppType(handler.getProperty("APP_TYPE"));
 	}
 
 	/**
@@ -302,15 +219,6 @@ public class Driver extends AppiumController{
 
 		DesiredCapabilities capabilities = generateCommonDesiredCapabilities();
 
-		if ("MobileWEB".equalsIgnoreCase(getAppType())) {
-			capabilities.setCapability(MobileCapability.AUTO_LAUNCH, true);
-			capabilities.setCapability(MobileCapability.BROWSER_NAME,
-					getBrowserType());
-		} else {
-			capabilities.setCapability(MobileCapability.AUTO_LAUNCH, false);
-			capabilities.setCapability(MobileCapability.APP, getAppUrl());
-			capabilities.setCapability(MobileCapability.NO_RESET, true);
-		}
 		return capabilities;
 
 	}

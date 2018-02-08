@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 05 12:34:53 IST 2018</td>
+<td>Started on:</td><td>Thu Feb 08 23:47:33 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5751 ms)</td>
+<tr><td>Total time:</td><td>62 seconds (62694 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,17 +77,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='mBankingTestPages.LoginPageTest.referFriendValid()'><b>referFriendValid</b><br>Test class: mBankingTestPages.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //android.widget.EditText[@text=&apos;Friend Name&apos;]&quot; 
-- html content: &quot;by id or name &quot;friendNameBox&quot;&quot;
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;referFriendAcknowledgment&quot;&quot;
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;brantansp&apos;, ip: &apos;192.168.43.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_60&apos;
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingPageObjectFactory.ReferPage.referFriend(ReferPage.java:59)
-	at mBankingTestPages.LoginPageTest.referFriendValid(LoginPageTest.java:70)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.getText(&lt;generated&gt;)
+	at mBankingPageObjectFactory.ReferPage.referFriendTxnStatus(ReferPage.java:74)
+	at mBankingTestPages.LoginPageTest.referFriendValid(LoginPageTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,19 +113,19 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2067925017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2067925017'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //android.widget.EditText[@text=&apos;Friend Name&apos;]&quot; 
-- html content: &quot;by id or name &quot;friendNameBox&quot;&quot;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1212191909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1212191909'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;referFriendAcknowledgment&quot;&quot;
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;brantansp&apos;, ip: &apos;192.168.43.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_60&apos;
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingPageObjectFactory.ReferPage.referFriend(ReferPage.java:59)
-	at mBankingTestPages.LoginPageTest.referFriendValid(LoginPageTest.java:70)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.getText(&lt;generated&gt;)
+	at mBankingPageObjectFactory.ReferPage.referFriendTxnStatus(ReferPage.java:74)
+	at mBankingTestPages.LoginPageTest.referFriendValid(LoginPageTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -152,7 +152,25 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
+<td>35</td>
+<td>mBankingTestPages.LoginPageTest@436e852b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mBankingTestPages.LoginPageTest.appExit()'><b>appExit</b><br>Test class: mBankingTestPages.LoginPageTest</td>
+<td></td>
+<td>6</td>
+<td>mBankingTestPages.LoginPageTest@436e852b</td></tr>
+<tr>
+<td title='mBankingTestPages.LoginPageTest.appLogin()'><b>appLogin</b><br>Test class: mBankingTestPages.LoginPageTest</td>
+<td></td>
+<td>15</td>
 <td>mBankingTestPages.LoginPageTest@436e852b</td></tr>
 </table><p>
 </body>

@@ -29,26 +29,28 @@ public class LoginPageTest extends AppiumController{
 		
 	}
 	
-	//@Test(priority = 0)
+	@Test(priority = 0)
 	public void appLogin() throws InterruptedException
 	{
 		log.info("**********Login to Application**********");
 		loginPage = new LoginPage(driver);
 		loginPage.loginApp("1111");
 		Assert.assertEquals(true, true);
-		getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+	Thread.sleep(5000);
+		//	getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 	}
 	
-	//@Test(priority = 1)
+	@Test(priority = 10)
 	public void appExit() throws InterruptedException
 	{
 		log.info("**********Exit Application**********");
 		loginPage = new LoginPage(driver);
 		loginPage.logoutApp();
-		getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+		Thread.sleep(5000);
+		//getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 20)
 	public void referFriendValid() throws InterruptedException
 	{
 		log.info("**********Refer Friend**********");
@@ -57,7 +59,9 @@ public class LoginPageTest extends AppiumController{
 		obj.referFriend("brantan", "brantan@fss.co.in", "9894060407");
 		String acknowledgment =  obj.referFriendTxnStatus();
         Assert.assertEquals(acknowledgment, "Your request for refer a friend accepted");
-        getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+        
+        Thread.sleep(5000);
+//        getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
         log.info("Test Passed");
 	}
 
