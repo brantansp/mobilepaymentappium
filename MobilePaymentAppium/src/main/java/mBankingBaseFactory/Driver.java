@@ -1,10 +1,16 @@
 package mBankingBaseFactory;
 
+import java.lang.invoke.MethodHandles;
 import java.net.URL;
+import java.util.Properties;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import mBankingUtility.*;
 
@@ -12,6 +18,8 @@ import mBankingUtility.*;
 public class Driver extends AppiumController{
 
 	protected AppiumDriver<MobileElement> driver;
+	
+	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
 	private String hostIp = "";
 	
@@ -25,28 +33,16 @@ public class Driver extends AppiumController{
 	
 	private String mobileUDID = "";
 	
-	/**
-	 * Gets the driver.
-	 * 
-	 * @return the driver
-	 */
 /*	public AppiumDriver getDriver() {
 		return driver;
 	}
-
-	*//**
-	 * Sets the driver.
-	 * 
-	 * @param driver
-	 *            the new web driver
-	 *//*
+	*/
+	
+	/*
 	public void setDriver(AppiumDriver driver) {
 		this.driver = driver;
 	}*/
 
-	/**
-	 * Quit the browser instance.
-	 */
 	public void quit() {
 		if (!"NATIVE_APP".equalsIgnoreCase(driver.getContext())) {
 			driver.close();
@@ -54,119 +50,54 @@ public class Driver extends AppiumController{
 		driver.quit();
 	}
 
-	/**
-	 * Gets the mobile udid.
-	 *
-	 * @return the mobile udid
-	 */
 	public String getMobileUDID() {
 		return mobileUDID;
 	}
 
-	/**
-	 * Sets the mobile udid.
-	 *
-	 * @param mobileUDID the new mobile udid
-	 */
 	public void setMobileUDID(String mobileUDID) {
 		this.mobileUDID = mobileUDID;
 	}
 
-	/**
-	 * Gets the host.
-	 *
-	 * @return the host
-	 */
 	public String getHost() {
 		return hostIp;
 	}
 
-	/**
-	 * Sets the host.
-	 *
-	 * @param host the new host
-	 */
 	public void setHost(String host) {
 		this.hostIp = host;
 	}
 
-	/**
-	 * Gets the port.
-	 *
-	 * @return the port
-	 */
 	public String getPort() {
 		return hostPort;
 	}
 
-	/**
-	 * Sets the port.
-	 *
-	 * @param port the new port
-	 */
 	public void setPort(String port) {
 		this.hostPort = port;
 	}
 
-	/**
-	 * Gets the device name.
-	 *
-	 * @return the device name
-	 */
 	public String getDeviceName() {
 		return deviceName;
 	}
 
-	/**
-	 * Sets the device name.
-	 *
-	 * @param deviceName the new device name
-	 */
 	public void setDeviceName(String deviceName) {
 		this.deviceName = deviceName;
 	}
 
-	/**
-	 * Gets the platform name.
-	 *
-	 * @return the platform name
-	 */
 	public String getPlatformName() {
 		return platformName;
 	}
 
-	/**
-	 * Sets the platform name.
-	 *
-	 * @param platformName the new platform name
-	 */
 	public void setPlatformName(String platformName) {
 		this.platformName = platformName;
 	}
 
-	/**
-	 * Gets the platform version.
-	 *
-	 * @return the platform version
-	 */
 	public String getPlatformVersion() {
 		return platformVersion;
 	}
 
-	/**
-	 * Sets the platform version.
-	 *
-	 * @param platformVersion the new platform version
-	 */
 	public void setPlatformVersion(String platformVersion) {
 		this.platformVersion = platformVersion;
 	}
 
-	/**
-	 * Instantiates a new web browser.
-	 *
-	 * @param platform the device type
-	 */
 	public Driver(String platform) {
 
 		try {
@@ -188,33 +119,26 @@ public class Driver extends AppiumController{
 		}
 	}
 
-	/**
-	 * Initializes the execution parameters.
-	 */
-	
 	public static void main(String[] args) {
+		log.info("Start");
 		Driver obj = new Driver ("android");
+		log.info("object created");
 		obj.init();
+		log.info("object initialized");
 	}
 	
 	private void init() {
-
-		PropertyFileReader handler = new PropertyFileReader("/driver.properties");
-		System.out.println("here :"+handler.getProperty("UDID"));
-		setHost(handler.getProperty("HOST_IP"));
+		String path = System.getProperty("user.dir")+"\\property\\driver.properties";
+		PropertyFileReader handler = new PropertyFileReader(path);
+		log.info("here :"+handler.getProperty("orientation"));
+/*		setHost(handler.getProperty("HOST_IP"));
 		setPort(handler.getProperty("HOST_PORT"));
 		setDeviceName(handler.getProperty("DEVICE_NAME"));
 		setPlatformName(handler.getProperty("PLATFORM_NAME"));
 		setPlatformVersion(handler.getProperty("PLATFORM_VERSION"));
-		setMobileUDID(handler.getProperty("UDID"));
+		setMobileUDID(handler.getProperty("UDID"));*/
 	}
 
-	/**
-	 * Generate desired capabilities.
-	 *
-	 * @return the desired capabilities
-	 * @throws Exception the exception
-	 */
 	public DesiredCapabilities generateDesiredCapabilities() throws Exception {
 
 		DesiredCapabilities capabilities = generateCommonDesiredCapabilities();
@@ -223,12 +147,6 @@ public class Driver extends AppiumController{
 
 	}
 
-	/**
-	 * Generate desired capabilities.
-	 *
-	 * @return the desired capabilities
-	 * @throws Exception the exception
-	 */
 	protected DesiredCapabilities generateCommonDesiredCapabilities()
 			throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();

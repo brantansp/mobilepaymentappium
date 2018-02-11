@@ -280,6 +280,7 @@ public class AppiumController {
 		getDriver().navigate().back();
 	}
 
+	
 	/**
 	 * Return a list of elements by tag name *
 	 */
@@ -458,6 +459,7 @@ public class AppiumController {
 	{
 		element.click();
 	}
+	
 	
 	/*
 	 * Send keys via MobileElement

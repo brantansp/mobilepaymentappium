@@ -1,9 +1,14 @@
 package mBankingUtility;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.invoke.MethodHandles;
 import java.util.Properties;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 
 // TODO: Auto-generated Javadoc
@@ -11,52 +16,36 @@ import java.util.Properties;
  * The Class PropertyFileReader.
  */
 public class PropertyFileReader {
-	/** The property file name. */
+	
 	private String propFileName;
 
-	/** The property object. */
+	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	
 	private Properties properties;
 
-	/**
-	 * Instantiates a new property reader.
-	 *
-	 * @param propertyFile
-	 *            the property file
-	 */
 	public PropertyFileReader(final String propertyFile) {
 		propFileName = propertyFile;
-		System.out.println("file : "+propFileName);
+		log.info("file : "+propFileName);
 		loadProperty();
 	}
 
-	
 	public static void main(String[] args) {
         String path = System.getProperty("user.dir")+"\\property\\driver.properties";
-        System.out.println(path);
+        log.info("path : "+path);
 		PropertyFileReader handler = new PropertyFileReader(path);
+		log.info(handler.getProperty("orientation"));
 	}
 
-	/**
-	 * Gets the property.
-	 *
-	 * @param key the key
-	 * @return the property
-	 */
 	public String getProperty(String key) {
 		
 		String value = properties.getProperty(key);
 		return value;
 	}
 	
-	/**
-	 * Loads the property file.
-	 */
 	private final void loadProperty() {
-
 		InputStream is = null;
-
 		try {
-			is = this.getClass().getResourceAsStream(propFileName);
+			is = new FileInputStream(propFileName);
 			properties = new Properties();
 			properties.load(is);
 		} catch (FileNotFoundException e) {
