@@ -48,7 +48,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -74,7 +73,8 @@ public class AppiumController {
     	log.info("@BeforeSuite");
 		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
 	    extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
-	    instantiateDriver();	    
+	    //instantiateDriver();
+	    Driver driver = new Driver("android");
 	}
 
     
