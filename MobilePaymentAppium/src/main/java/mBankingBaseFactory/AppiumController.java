@@ -14,6 +14,7 @@ import static org.testng.Assert.assertTrue;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles;
@@ -58,9 +59,7 @@ public class AppiumController {
 	public static URL serverAddress;
 	private static WebDriverWait driverWait;
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
-	
-	Properties CONFIG = null;
-	
+	protected static Properties locator;
 	
 //=====================================================================================
 
@@ -68,13 +67,16 @@ public class AppiumController {
 	public static ExtentTest extentLogger;
 	
     @BeforeSuite
-    public static void extentReportSetUp() throws MalformedURLException
+    public static void extentReportSetUp() throws MalformedURLException, InterruptedException
     {
     	log.info("@BeforeSuite");
 		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
 	    extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
-	    //instantiateDriver();
-	    Driver driver = new Driver("android");
+	    setDriver(Driver.instantiateDriver("android"));
+	    getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    log.info("2 :"+System.currentTimeMillis());
+	    sleep(5000);
+	    log.info("3 :"+System.currentTimeMillis());
 	}
 
     
@@ -115,7 +117,8 @@ public class AppiumController {
        // destroyingDriver();
     }	
 //=====================================================================================
-	static DesiredCapabilities caps = new DesiredCapabilities();
+/*	static DesiredCapabilities caps = new DesiredCapabilities();
+	
 	
 	public static void instantiateDriver() throws MalformedURLException
 	{
@@ -139,21 +142,37 @@ public class AppiumController {
 			e.printStackTrace();
 		}
 		//getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-	}
+	}*/
 	
-	public static void destroyingDriver()
+/*	public static void destroyingDriver()
 	{
 			getDriver().quit();
-	}
+	}*/
 	
 
 //======================================================================	
 	
+	public void loadObjects() throws FileNotFoundException, IOException {
+		locator = new Properties();
+		locator.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\locators.properties")));
+	}
+  
+	public static void sleep(long time)
+	{
+			try {
+				Thread.sleep(time);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+	}
+	
 	public static void main(String args []) throws IOException, InterruptedException
 	{
-		System.out.println("ID : "+getDeviceUdid());
+		//log.info("ID : "+getDeviceUdid());
+		//getDeviceUdid();
 	}
-	public static List<String> getDeviceUdid() throws IOException, InterruptedException
+	
+/*	public static List<String> getDeviceUdid() throws IOException, InterruptedException
 	{
           String line = null;
           List<String> udid = new ArrayList<String>();
@@ -166,12 +185,12 @@ public class AppiumController {
           {
            line=buf.readLine();
            udid.add(buf.readLine());
-           System.out.println(line);
+           log.info(line);
           // return line;
           }
-          System.out.println(udid);
+          log.info(udid);
           return udid;
-	}
+	}*/
 	
 	public MobileElement findElement(String loginBox)
 	{
@@ -185,7 +204,7 @@ public class AppiumController {
         wait.until(ExpectedConditions.visibilityOf(element));
 }
 	
-	/** Run before each test **/	
+/*	*//** Run before each test **//*	
 	public void setUp() throws Exception {
 		// Initialize CONFIG
 		CONFIG = new Properties();
@@ -210,7 +229,7 @@ public class AppiumController {
 		setDriver(new AndroidDriver<MobileElement>(serverAddress, capabilities));
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		init(getDriver(), serverAddress);
-	}
+	}*/
 
 	/** Run after each test **/
 
@@ -550,7 +569,7 @@ public class AppiumController {
 
     public void verticalScrollUp()
     {
-        System.out.println("@ Vertical scroll up @ ");
+        log.info("@ Vertical scroll up @ ");
         Dimension size = getDriver().manage().window().getSize();
         int y_start=(int)(size.height*0.70);
         int y_end=(int)(size.height*0.30);
@@ -685,6 +704,7 @@ public class AppiumController {
 
 	public static AppiumDriver <MobileElement> getDriver() {
 		log.info("Get Driver executed : "+driver);
+		log.info("1 :"+System.currentTimeMillis());
 		return driver;
 	}
 

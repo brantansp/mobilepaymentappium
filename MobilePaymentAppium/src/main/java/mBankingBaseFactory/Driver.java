@@ -17,29 +17,29 @@ import mBankingUtility.*;
 
 public class Driver {
 
-	protected AppiumDriver<MobileElement> driver;
+	protected static AppiumDriver<MobileElement> driver;
 	
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	private String hostIp = "";
+	private static String hostIp = "";
 	
-	private String hostPort = "";
+	private static String hostPort = "";
 	
-	private String deviceName = "";
+	private static String deviceName = "";
 
-	private String platformName = "";
+	private static String platformName = "";
 
-	private String platformVersion = "";
+	private static String platformVersion = "";
 	
-	private String mobileUDID = "";
+	private static String mobileUDID = "";
 
-	private String appPackageName = "";
+	private static String appPackageName = "";
 	
-	private String appActivity = "";
+	private static String appActivity = "";
 
-	private String noReset;
+	private static String noReset;
 
-	private String orientation;
+	private static String orientation;
 	
 /*	public AppiumDriver getDriver() {
 		return driver;
@@ -58,86 +58,86 @@ public class Driver {
 		driver.quit();
 	}
 
-	public String getMobileUDID() {
+	public static String getMobileUDID() {
 		return mobileUDID;
 	}
 
-	public void setMobileUDID(String mobileUDID) {
-		this.mobileUDID = mobileUDID;
+	public static void setMobileUDID(String mobileUDID) {
+		Driver.mobileUDID = mobileUDID;
 	}
 
-	public String getHost() {
+	public static String getHost() {
 		return hostIp;
 	}
 
-	public void setHost(String host) {
-		this.hostIp = host;
+	public static void setHost(String host) {
+		Driver.hostIp = host;
 	}
 
-	public String getPort() {
+	public static String getPort() {
 		return hostPort;
 	}
 
-	public void setPort(String port) {
-		this.hostPort = port;
+	public static void setPort(String port) {
+		Driver.hostPort = port;
 	}
 
-	public String getDeviceName() {
+	public static String getDeviceName() {
 		return deviceName;
 	}
 
-	public void setDeviceName(String deviceName) {
-		this.deviceName = deviceName;
+	public static void setDeviceName(String deviceName) {
+		Driver.deviceName = deviceName;
 	}
 
-	public void setAppPackageName(String appPackageName) {
-		this.appPackageName  = appPackageName;
+	public static void setAppPackageName(String appPackageName) {
+		Driver.appPackageName  = appPackageName;
 	}
-	public String getPlatformName() {
+	public static String getPlatformName() {
 		return platformName;
 	}
 
-	public void setPlatformName(String platformName) {
-		this.platformName = platformName;
+	public static void setPlatformName(String platformName) {
+		Driver.platformName = platformName;
 	}
 
-	public String getPlatformVersion() {
+	public static String getPlatformVersion() {
 		return platformVersion;
 	}
 
-	public String getAppPackageName () {
+	public static String getAppPackageName () {
 		return appPackageName;
 	}
 	
-	public String getAppActivity () {
+	public static String getAppActivity () {
 		return appActivity;
 	}
 	
-	public String getNoReset () {
+	public static String getNoReset () {
 		return noReset;
 	}
 	
-	public String getOrientation () {
+	public static String getOrientation () {
 		return orientation;
 	}
 	
-	public void setPlatformVersion(String platformVersion) {
-		this.platformVersion = platformVersion;
+	public static void setPlatformVersion(String platformVersion) {
+		Driver.platformVersion = platformVersion;
 	}
 	
-	public void setAppActivity(String appActivity) {
-		this.appActivity = appActivity;
+	public static void setAppActivity(String appActivity) {
+		Driver.appActivity = appActivity;
 	}
 
-	public void setNoReset (String noReset) {
-		this.noReset = noReset;
+	public static void setNoReset (String noReset) {
+		Driver.noReset = noReset;
 	}
 	
-	public void setOrientation (String orientation) {
-		this.orientation = orientation;
+	public static void setOrientation (String orientation) {
+		Driver.orientation = orientation;
 	}
 	
-	public Driver(String platform) {
+	public static AppiumDriver<MobileElement> instantiateDriver(String platform) {
 
 		try {
 			init();
@@ -146,12 +146,13 @@ public class Driver {
 			if ("Android".equalsIgnoreCase(platform)) {
 				log.info("This is an android platform");
 				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl),
-						this.generateDesiredCapabilities());
-
+						Driver.generateDesiredCapabilities());
+                return driver;
 			} else if ("IOS".equalsIgnoreCase(platform)) {
 				log.info("This is an iPhone platform");
 				driver = new IOSDriver<MobileElement>(new URL(remoteUrl),
-						this.generateDesiredCapabilities());
+						Driver.generateDesiredCapabilities());
+				return driver;
 			} else {
 				log.info("This is an exception");
 				throw new Exception("Given platform is not implemented.");
@@ -159,15 +160,16 @@ public class Driver {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return driver;
 	}
 
 	public static void main(String[] args) {
 		log.info("Start");
-		Driver driver = new Driver ("android");
+		//Driver driver = new Driver ("android");
 
 	}
 	
-	private void init() {
+	private static void init() {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		String path = System.getProperty("user.dir")+"\\property\\driver.properties";
 		PropertyFileReader handler = new PropertyFileReader(path);
@@ -184,7 +186,7 @@ public class Driver {
 		setOrientation(handler.getProperty("orientation"));
 	}
 
-	public DesiredCapabilities generateDesiredCapabilities() throws Exception {
+	public static DesiredCapabilities generateDesiredCapabilities() throws Exception {
 
 		DesiredCapabilities capabilities = generateCommonDesiredCapabilities();
 
@@ -192,7 +194,7 @@ public class Driver {
 
 	}
 
-	protected DesiredCapabilities generateCommonDesiredCapabilities()
+	protected static DesiredCapabilities generateCommonDesiredCapabilities()
 			throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
