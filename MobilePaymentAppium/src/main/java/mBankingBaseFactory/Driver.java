@@ -183,7 +183,7 @@ public class Driver {
 		setAppPackageName(handler.getProperty("appPackage"));
 		setAppActivity(handler.getProperty("appActivity"));
 		setNoReset(handler.getProperty("noReset"));
-		setOrientation(handler.getProperty("orientation"));
+		//setOrientation(handler.getProperty("orientation"));
 	}
 
 	public static DesiredCapabilities generateDesiredCapabilities() throws Exception {

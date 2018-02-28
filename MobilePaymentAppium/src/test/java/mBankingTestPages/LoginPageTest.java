@@ -35,19 +35,10 @@ public class LoginPageTest extends AppiumController{
 		log.info("**********Login to Application**********");
 		loginPage = new LoginPage(driver);
 		loginPage.loginApp("1111");
+		
 		Assert.assertEquals(true, true);
 	Thread.sleep(5000);
 		//	getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
-	}
-	
-	@Test(priority = 10)
-	public void appExit() throws InterruptedException
-	{
-		log.info("**********Exit Application**********");
-		loginPage = new LoginPage(driver);
-		loginPage.logoutApp();
-		Thread.sleep(5000);
-		//getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority = 20)
