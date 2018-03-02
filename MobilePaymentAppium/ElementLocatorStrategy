@@ -1,0 +1,16 @@
+Locator strategy
+xpath("//android.widget.Button[@text='5']")
+xpath("//android.widget.Button[contains(@resource-id,'digit5')]")
+xpath("//android.widget.Button[contains(@resource-id,'digit5') and @text='5']")
+xpath("//android.widget.Button[@text='5' and @index='1']")
+xpath("//android.widget.Button[@content-desc='delete']")
+xpath("//android.widget.ImageButton")
+
+id("com.android.calculator2:id/digit5")
+By.className("android.widget.ImageButton")
+By.name("=")
+
+List<WebElement> calcButtons = driver.findElements(By.xpath("//android.widget.Button"));
+
+driver.findElement(By.xpath("//EditText[contains(@text,'Edit ID')]"));
+y.xpath("//android.widget.EditText[@text='Email ID']")
