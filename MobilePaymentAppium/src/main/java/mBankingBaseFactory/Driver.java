@@ -144,12 +144,12 @@ public class Driver {
 			String remoteUrl = "http://" + getHost() + ":" + getPort()
 					+ "/wd/hub";
 			if ("Android".equalsIgnoreCase(platform)) {
-				log.info("This is an android platform");
+				log.info("The platform is : Android platform");
 				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl),
 						Driver.generateDesiredCapabilities());
                 return driver;
 			} else if ("IOS".equalsIgnoreCase(platform)) {
-				log.info("This is an iPhone platform");
+				log.info("The platform is : i-OS platform");
 				driver = new IOSDriver<MobileElement>(new URL(remoteUrl),
 						Driver.generateDesiredCapabilities());
 				return driver;
@@ -173,7 +173,7 @@ public class Driver {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		String path = System.getProperty("user.dir")+"\\property\\driver.properties";
 		PropertyFileReader handler = new PropertyFileReader(path);
-		log.info("here :"+handler.getProperty("appPackage"));
+		log.info("App started : "+handler.getProperty("appPackage"));
     	setHost(handler.getProperty("host_ip"));
 		setPort(handler.getProperty("host_port"));
 		setDeviceName(handler.getProperty("deviceName"));

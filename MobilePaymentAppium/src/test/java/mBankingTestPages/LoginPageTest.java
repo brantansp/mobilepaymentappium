@@ -21,6 +21,7 @@ import mBankingUtility.*;
 public class LoginPageTest extends AppiumController{
 
 	protected LoginPage loginPage;
+	protected HomePage homePage;
     AppiumDriver<MobileElement> driver;// = getDriver(); ;
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
@@ -35,10 +36,16 @@ public class LoginPageTest extends AppiumController{
 		log.info("**********Login to Application**********");
 		loginPage = new LoginPage(driver);
 		loginPage.loginApp("1111");
-		
 		Assert.assertEquals(true, true);
-	Thread.sleep(5000);
-		//	getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+		waitForActivity(".Fragment_Activity", 3000);
+	}
+	
+	@Test(priority = 10)
+	public void appExit() throws InterruptedException
+	{
+		log.info("**********Exit Application**********");
+		homePage = new HomePage(driver);
+		homePage.logoutApp();
 	}
 	
 	@Test(priority = 20)

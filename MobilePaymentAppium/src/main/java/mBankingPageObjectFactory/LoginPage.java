@@ -79,24 +79,29 @@ public class LoginPage extends AppiumController {
 	@AndroidFindBy(id="xpath=//*[@text='No']")
 	protected MobileElement exitNoBtn;
 	
+	//android.widget.TextView
+	
 	public LoginPage (AppiumDriver <MobileElement> driver) 
 	{
 		super();
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , this);
 	}
 	
-	public static void loginApp (String pin) throws InterruptedException
+	public void loginApp (String pin) throws InterruptedException
 	{
+	    waitForElement (loginBox, 3000);
 		loginBox.click();
 		log.info("Clicked on login box");
 		loginBox.sendKeys(pin);
 		log.info("Login Pin send  : "+pin);
 		okBtn.click();
 		log.info("Clicked on ok button");
+		//.Fragment_Activity
 	}
 	
 	public ReferPage clickReferPage()
 	{
+		waitForElement (referLink, 3000);
 		referLink.click();
 		ReferPage referObj= new ReferPage(driver);
 		return referObj;

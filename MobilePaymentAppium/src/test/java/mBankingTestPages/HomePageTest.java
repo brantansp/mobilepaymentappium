@@ -30,7 +30,7 @@ public class HomePageTest extends AppiumController {
 		log.info("**********Exit Application**********");
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		LoginPage.loginApp("1111");
+		loginPage.loginApp("1111");
 		Thread.sleep(5000);
 		homePage.changePin();
 		Thread.sleep(5000);

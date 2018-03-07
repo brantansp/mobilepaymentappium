@@ -41,6 +41,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -74,9 +75,6 @@ public class AppiumController {
 	    extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 	    setDriver(Driver.instantiateDriver("android"));
 	    getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	    log.info("2 :"+System.currentTimeMillis());
-	    sleep(5000);
-	    log.info("3 :"+System.currentTimeMillis());
 	}
 
     
@@ -191,6 +189,35 @@ public class AppiumController {
           log.info(udid);
           return udid;
 	}*/
+	
+	public static void waitForCondition(ExpectedCondition<WebElement> expectedCondition, Integer timeout)
+	{
+		timeout = timeout != null ? timeout :5;
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(expectedCondition);	
+	}
+
+	public static boolean waitForElement(MobileElement locator, Integer... timeout)
+	{
+		try {
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			return false;
+		}
+		return true;
+	}
+	
+	public static void waitForActivity(String desiredActivity, int wait) throws InterruptedException
+	{
+		AndroidDriver<MobileElement> driver= (AndroidDriver<MobileElement>) getDriver();
+	    int counter = 0;
+	    do {
+	        Thread.sleep(1000);
+	        counter++;
+	    } while(driver.currentActivity().contains(desiredActivity) && (counter<=wait));
+
+	    log.info("Activity appeared :" + driver.currentActivity());
+	}
 	
 	public MobileElement findElement(String loginBox)
 	{
@@ -703,14 +730,11 @@ public class AppiumController {
 
 
 	public static AppiumDriver <MobileElement> getDriver() {
-		log.info("Get Driver executed : "+driver);
-		log.info("1 :"+System.currentTimeMillis());
 		return driver;
 	}
 
 
 	public static void setDriver(AppiumDriver <MobileElement> driver) {
-		log.info("Set Driver executed : "+driver);
 		AppiumController.driver = driver;
 	}
 

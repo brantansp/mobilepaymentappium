@@ -56,10 +56,8 @@ public class ReferPage extends AppiumController {
 	
 	public void referFriend(String friendName , String friendEmailId , String friendMobileNo) throws InterruptedException
 	{
+		waitForElement (friendNameBox, 3000);
 		friendNameBox.click();
-		log.info("Executing timeout");
-		Thread.sleep(10000);
-		log.info("Timeout over");
 		friendNameBox.sendKeys(friendName);
 		friendEMailIdBox.click();
 		friendEMailIdBox.sendKeys(friendEmailId);

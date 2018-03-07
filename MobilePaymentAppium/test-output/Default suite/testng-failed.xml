@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mBankingPageObjectFactory.ActivationPage">
+      <class name="mBankingTestPages.LoginPageTest">
         <methods>
-          <include name="testUntitled"/>
+          <include name="extentReportSetUp"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="extentbeforeMethod"/>
+          <include name="referFriendValid"/>
+          <include name="extentGetResult"/>
         </methods>
-      </class> <!-- mBankingPageObjectFactory.ActivationPage -->
+      </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

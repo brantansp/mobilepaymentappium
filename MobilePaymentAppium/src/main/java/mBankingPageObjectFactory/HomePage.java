@@ -86,6 +86,7 @@ public class HomePage extends AppiumController {
 	@Test
 	public void logoutApp()
 	{
+		waitForElement (logoutBtn, 3000);
 		logoutBtn.click();
 		log.info("Clicked on Exit button");
 		exitYesBtn.click();
