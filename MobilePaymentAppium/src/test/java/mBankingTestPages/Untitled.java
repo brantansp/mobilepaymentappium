@@ -22,6 +22,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.lang.invoke.MethodHandles;
 import java.net.MalformedURLException;
 
@@ -37,8 +42,6 @@ DesiredCapabilities dc = new DesiredCapabilities();
 
 @BeforeMethod
 public void setUp() throws MalformedURLException {
-dc.setCapability("reportDirectory", reportDirectory);
-dc.setCapability("reportFormat", reportFormat);
 dc.setCapability("deviceName", "Android");
 dc.setCapability("testName", testName);
 dc.setCapability(MobileCapabilityType.UDID, "HKE7YGUA");
@@ -56,7 +59,7 @@ public void waitFor(ExpectedCondition<WebElement> expectedCondition, Integer tim
 	wait.until(expectedCondition);	
 }
 
-public boolean waitForDisplayed (By locator, Integer... timeout)
+public boolean waitForElement(By locator, Integer... timeout)
 {
 	try {
 		waitFor(ExpectedConditions.visibilityOfElementLocated(locator), (timeout.length > 0 ?  timeout[0] : null));
@@ -67,31 +70,37 @@ public boolean waitForDisplayed (By locator, Integer... timeout)
 }
 
 @Test
-public void testUntitled() {
-	log.info(driver.currentActivity());
-waitForDisplayed(By.xpath("//*[@class='android.widget.Button'][2]"), 3000);
-driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys("1111");
-driver.findElement(By.xpath("//*[@class='android.widget.Button'][2]")).click();
-waitForDisplayed(By.xpath("//*[@text='Banking']") , 3000);
+public void testUntitled() throws InterruptedException {
 log.info(driver.currentActivity());
-driver.findElement(By.xpath("//*[@text='Banking']")).click();
-log.info(driver.currentActivity());
-driver.findElement(By.xpath("//*[@text='Balance Enquiry']")).click();
-log.info(driver.currentActivity());
-driver.findElement(By.xpath("//*[@text='8764XXX411111']")).click();
-log.info(driver.currentActivity());
-driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys("2222");
-log.info(driver.currentActivity());
-driver.findElement(By.xpath("//*[@text='OK']")).click();
-log.info(driver.currentActivity());
-Boolean b = waitForDisplayed(By.xpath("//*[@text='Home']") , 5000);
-if (b)
+waitForElement(By.xpath("//android.widget.Button[@text='Refer']"), 3000);
+driver.findElement(By.xpath("//android.widget.Button[@text='Refer']")).click();
+waitForElement (By.xpath("//android.widget.EditText[@text='Friend Name']"), 3000);
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friend Name']")).click();
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friend Name']")).sendKeys("test");
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friends E-mail ID']")).click();
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friends E-mail ID']")).sendKeys("brantansp@fss.co.in");
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friends Mobile No']")).click();
+driver.findElement(By.xpath("//android.widget.EditText[@text='Friends Mobile No']")).sendKeys("8778602561");
+driver.findElement(By.xpath("//android.widget.Button[@text='OK']")).click();
+//waitForElement(By.className("//android.widget.TextView"), 3000);
+Thread.sleep(5000);
+//AndroidElement test =driver.findElement(By.className("//android.widget.TextView"));
+ArrayList<AndroidElement> test = new ArrayList <AndroidElement> (10);
+test = (ArrayList<AndroidElement>) driver.findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+int n = test.size();
+Iterator list = test.iterator();
+System.out.println("Number of tabs " +n);
+log.info("txn id : "+test.lastIndexOf("Transaction ID"));
+log.info("txn id : "+test.indexOf("Date and Time"));
+log.info("txn id : "+test.indexOf("Acknowledgement"));
+log.info("Transaction is : "+test.get(6).getAttribute("text"));
+log.info("Transaction is : "+test.get(5).getAttribute("text"));
+log.info("Transaction is : "+test.get(4).getAttribute("text"));
+log.info("Transaction is : "+test.get(3).getAttribute("text"));
+for (int i=0; i<n; i++)
 {
-	log.info(driver.currentActivity());
-	driver.findElement(By.xpath("//*[@text='Home']")).click();
-}else{
-driver.findElement(By.xpath("//*[@text='Home']")).click();
-}
+    log.info(i +" : I is : "+test.get(i).getAttribute("text"));
+}  
 }
 
 public void test(){/*
