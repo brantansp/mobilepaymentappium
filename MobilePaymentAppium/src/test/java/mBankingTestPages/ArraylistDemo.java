@@ -13,7 +13,6 @@ public class ArraylistDemo {
       arrlist.add("E");
       arrlist.add("F");
       arrlist.add("M");
-      
       System.out.println("Size of list: " + arrlist.size());
 
       // let us print all the values available in list
