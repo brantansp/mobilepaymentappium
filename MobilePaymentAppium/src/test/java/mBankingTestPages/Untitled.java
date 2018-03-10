@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.lang.invoke.MethodHandles;
 import java.net.MalformedURLException;
@@ -85,22 +86,35 @@ driver.findElement(By.xpath("//android.widget.Button[@text='OK']")).click();
 //waitForElement(By.className("//android.widget.TextView"), 3000);
 Thread.sleep(5000);
 //AndroidElement test =driver.findElement(By.className("//android.widget.TextView"));
-ArrayList<AndroidElement> test = new ArrayList <AndroidElement> (10);
+ArrayList<AndroidElement> test;// = new ArrayList <AndroidElement> (10);
 test = (ArrayList<AndroidElement>) driver.findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
 int n = test.size();
-Iterator list = test.iterator();
-System.out.println("Number of tabs " +n);
-log.info("txn id : "+test.lastIndexOf("Transaction ID"));
-log.info("txn id : "+test.indexOf("Date and Time"));
-log.info("txn id : "+test.indexOf("Acknowledgement"));
-log.info("Transaction is : "+test.get(6).getAttribute("text"));
-log.info("Transaction is : "+test.get(5).getAttribute("text"));
-log.info("Transaction is : "+test.get(4).getAttribute("text"));
-log.info("Transaction is : "+test.get(3).getAttribute("text"));
-for (int i=0; i<n; i++)
+ArrayList <String> values = new ArrayList <String>();
+for (AndroidElement value : test) {
+  //System.out.println("Value = " + value.getAttribute("text"));
+    values.add(value.getAttribute("text"));
+ }  
+
+Map<String, String> map = new HashMap<String, String>();
+map.put(test.get(1).getAttribute("text"), test.get(2).getAttribute("text"));
+map.put(test.get(3).getAttribute("text"), test.get(4).getAttribute("text"));
+map.put(test.get(5).getAttribute("text"), test.get(6).getAttribute("text"));
+/*for (int k =0 ; k<=values.size(); k++)
 {
-    log.info(i +" : I is : "+test.get(i).getAttribute("text"));
-}  
+	map.put(test.get(k+1).getAttribute("text"), test.get(k+2).getAttribute("text"));
+	k=k+1;
+}*/
+
+for (String key : map.keySet())
+{
+	log.info(key +" : "+map.get(key));
+}
+log.info("No. of Values : " +n);
+log.info("Page Title is : "+test.get(0).getAttribute("text"));
+log.info("Acknowledgment is : "+test.get(values.indexOf("Acknowledgement")+1).getAttribute("text"));
+log.info("Date and Time is : "+test.get(values.indexOf("Date and Time")+1).getAttribute("text"));
+log.info("Transaction ID is : "+test.get(values.indexOf("Transaction ID")+1).getAttribute("text"));
+  
 }
 
 public void test(){/*
