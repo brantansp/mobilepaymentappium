@@ -2,24 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52170" started-at="2018-03-10T06:22:08Z" finished-at="2018-03-10T06:23:01Z">
+  <suite name="Default suite" duration-ms="85097" started-at="2018-03-11T18:12:39Z" finished-at="2018-03-11T18:14:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52170" started-at="2018-03-10T06:22:08Z" finished-at="2018-03-10T06:23:01Z">
-      <class name="mBankingTestPages.Untitled">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:mBankingTestPages.Untitled@48503868]" name="setUp" is-config="true" duration-ms="18511" started-at="2018-03-10T11:52:08Z" finished-at="2018-03-10T11:52:27Z">
+    <test name="Default test" duration-ms="85097" started-at="2018-03-11T18:12:39Z" finished-at="2018-03-11T18:14:04Z">
+      <class name="mBankingTestPages.BalanceEnquiryTest">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentReportSetUp" is-config="true" duration-ms="18782" started-at="2018-03-11T23:42:20Z" finished-at="2018-03-11T23:42:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:mBankingTestPages.Untitled@48503868]" name="testUntitled" duration-ms="33637" started-at="2018-03-10T11:52:27Z" finished-at="2018-03-10T11:53:01Z">
+        </test-method> <!-- extentReportSetUp -->
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentbeforeMethod" is-config="true" duration-ms="7" started-at="2018-03-11T23:42:39Z" finished-at="2018-03-11T23:42:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mBankingTestPages.BalanceEnquiryTest.balanceEnq() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.Untitled@48503868]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-03-10T11:53:01Z" finished-at="2018-03-10T11:53:01Z">
+        </test-method> <!-- extentbeforeMethod -->
+        <test-method status="PASS" signature="balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="balanceEnq" duration-ms="85070" started-at="2018-03-11T23:42:39Z" finished-at="2018-03-11T23:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- balanceEnq -->
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentGetResult" is-config="true" duration-ms="3" started-at="2018-03-11T23:44:04Z" finished-at="2018-03-11T23:44:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=balanceEnq status=SUCCESS method=BalanceEnquiryTest.balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentGetResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="447" started-at="2018-03-11T23:44:04Z" finished-at="2018-03-11T23:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mBankingTestPages.Untitled -->
+      </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

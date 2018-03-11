@@ -1,6 +1,9 @@
 package mBankingPageObjectFactory;
 
 import java.lang.invoke.MethodHandles;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -8,7 +11,9 @@ import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingBaseFactory.*;
@@ -48,13 +53,8 @@ public class ReferPage extends AppiumController {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , this);
 	}
 	
-	public boolean referTextIsDisplayed()
-	{
-		boolean h= referFriendHeader.isDisplayed();
-		return h;
-	}
-	
-	public void referFriend(String friendName , String friendEmailId , String friendMobileNo) throws InterruptedException
+	@SuppressWarnings("unchecked")
+	public String referFriend(String friendName , String friendEmailId , String friendMobileNo) throws InterruptedException
 	{
 		waitForElement (friendNameBox, 3000);
 		friendNameBox.click();
@@ -64,11 +64,10 @@ public class ReferPage extends AppiumController {
 		friendMobileNoBox.click();
 		friendMobileNoBox.sendKeys(friendMobileNo);
 		okBtn.click();
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		Thread.sleep(5000);
+		String txn = processAcknowledgment();
+		homeBtn.click();
+		return txn;
 	}
 	
-	public String referFriendTxnStatus()
-	{
-		return referFriendAcknowledgment.getText();
-	}
 }

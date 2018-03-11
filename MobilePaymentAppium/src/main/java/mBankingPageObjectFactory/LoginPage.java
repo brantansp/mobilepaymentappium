@@ -4,6 +4,9 @@ package mBankingPageObjectFactory;
 import static org.testng.Assert.assertTrue;
 
 import java.lang.invoke.MethodHandles;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -17,9 +20,11 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingBaseFactory.AppiumController;
@@ -79,6 +84,9 @@ public class LoginPage extends AppiumController {
 	@AndroidFindBy(id="xpath=//*[@text='No']")
 	protected MobileElement exitNoBtn;
 	
+	@AndroidFindBy (xpath="//android.widget.TextView[@index='0']")
+	public MobileElement acList;
+	
 	//android.widget.TextView
 	
 	public LoginPage (AppiumDriver <MobileElement> driver) 
@@ -89,7 +97,7 @@ public class LoginPage extends AppiumController {
 	
 	public void loginApp (String pin) throws InterruptedException
 	{
-	    waitForElement (loginBox, 3000);
+	    waitForElement (loginBox, 5000);
 		loginBox.click();
 		log.info("Clicked on login box");
 		loginBox.sendKeys(pin);
@@ -106,7 +114,6 @@ public class LoginPage extends AppiumController {
 		ReferPage referObj= new ReferPage(driver);
 		return referObj;
 	}
-	
 	
 	
 }

@@ -23,6 +23,7 @@ public class LoginPageTest extends AppiumController{
 
 	protected LoginPage loginPage;
 	protected HomePage homePage;
+	protected FeedbackPage obj;
     AppiumDriver<MobileElement> driver;// = getDriver(); ;
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
@@ -31,7 +32,7 @@ public class LoginPageTest extends AppiumController{
 		
 	}
 	
-	//@Test(priority = 0)
+	@Test(priority = 0)
 	public void appLogin() throws InterruptedException
 	{
 		log.info("**********Login to Application**********");
@@ -39,14 +40,16 @@ public class LoginPageTest extends AppiumController{
 		loginPage.loginApp("1111");
 		Assert.assertEquals(true, true);
 		waitForActivity(".Fragment_Activity", 3000);
+		log.info("***************End***************\n");
 	}
 	
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	public void appExit() throws InterruptedException
 	{
 		log.info("**********Exit Application**********");
 		homePage = new HomePage(driver);
 		homePage.logoutApp();
+		log.info("***************End***************\n");
 	}
 	
 	@Test(priority = 20)
@@ -55,14 +58,19 @@ public class LoginPageTest extends AppiumController{
 		log.info("**********Refer Friend**********");
 		loginPage = new LoginPage(driver);
 		ReferPage obj =loginPage.clickReferPage();
-		obj.referFriend("brantan", "brantan@fss.co.in", "9894060407");
-		List  <MobileElement> acknowledgment;// =  obj.referFriendTxnStatus();
-      //  Assert.assertEquals(acknowledgment, "Your request for refer a friend accepted");
-        
-        Thread.sleep(5000);
-//        getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
-        log.info("Test Passed");
+		String transactionid = obj.referFriend("brantan", "brantan@fss.co.in", "9894060407");
+        /**
+         * implementation for DB 
+         */
+		log.info("***************End***************\n");
 	}
 
-	
+	@Test(priority = 20)
+	public void feedback() throws InterruptedException
+	{
+		log.info("**********Feedback**********");
+		obj = new FeedbackPage(driver);
+        obj.feedbackTxn("5","4","3","OK");
+        log.info("***************End***************\n");
+	}
 }

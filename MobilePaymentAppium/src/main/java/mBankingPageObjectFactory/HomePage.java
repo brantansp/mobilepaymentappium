@@ -28,39 +28,70 @@ import mBankingBaseFactory.Driver;
 
 public class HomePage extends AppiumController {
 	
-	protected static AppiumDriver <MobileElement> driver ;
+	public static AppiumDriver <MobileElement> driver ;
 	
-	protected static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
-
+	public static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	
-		
-	//@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.Button[3]")
-	@AndroidFindBy(xpath="//*[@text='Logout']")
-	protected MobileElement logoutBtn;
-
 	@AndroidFindBy(id="android:id/button1")
 	//@AndroidFindBy(id="xpath=//*[@text='Yes']")
-	protected MobileElement exitYesBtn;
+	public MobileElement exitYesBtn;
 	
 	@AndroidFindBy(id="xpath=//*[@text='No']")
-	protected MobileElement exitNoBtn;
+	public MobileElement exitNoBtn;
 	
-	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][0]")
-	protected MobileElement changemPIN;
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Change mPIN']")
+	public MobileElement changemPINBtn;
+	
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Help']")
+	public MobileElement helpBtn;
+	
+	//@AndroidFindBy(xpath="//*[@text='Logout']")
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Logout']")
+	public MobileElement logoutBtn;
 	
 	@AndroidFindBy(className= "android.widget.EditText[1]")
-	protected MobileElement oldmPIN;
+	public MobileElement oldmPIN;
 	
 	@AndroidFindBy(className= "android.widget.EditText[2]")
-	protected MobileElement newmPIN;
+	public MobileElement newmPIN;
 	
 	@AndroidFindBy(className= "android.widget.EditText[2]")
-	protected MobileElement reEntermPIN;
+	public MobileElement reEntermPIN;
 	
-	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][2]")
-	protected static MobileElement okBtn;
-	//*[@text='OK']")
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='OK']")
+	public static MobileElement okBtn;
+
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Home']")
+	public static MobileElement homeBtn;
+
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Exit']")
+	public static MobileElement exitBtn;
+	
+	//com.fss.united:id/Gridtext
+	//@AndroidFindBy(id = "com.fss.united:id/Gridtext")
+	@AndroidFindBy (xpath="//android.widget.TextView[@index='0']")
+	public MobileElement welcomeText;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@index='1']")
+	public MobileElement helpTextView;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='Banking']")
+	public MobileElement bankingBtn;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='24X7Fund Transfer']")
+	public MobileElement impsBtn;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='Payment']")
+	public MobileElement paymentBtn;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='Other Services']")
+	public MobileElement otherServicesbtn;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='My Setup']")
+	public MobileElement mySetupBtn;
+	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='Inbox']")
+	public MobileElement inboxBtn;
 	
 	public HomePage (AppiumDriver <MobileElement> driver) 
 	{
@@ -68,22 +99,38 @@ public class HomePage extends AppiumController {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()) , this);
 	}
 	
-	public void help()
+	public void clickBanking()
 	{
-		
+		waitForElement(bankingBtn,3000);
+		click(bankingBtn);
 	}
 	
-	public void changePin()
+	public String custName ()
 	{
-		changemPIN.click();
+		waitForElement(helpBtn, 3000);
+	    String name =welcomeText.getAttribute("text");
+	    name = name.substring(name.lastIndexOf("Welcome")+8, name.length());
+	    log.info("Name of customer in welcome page : " +name);
+		return name;
+	}
+	
+	public void help()
+	{
+	  waitForElement(helpBtn, 3000);
+	  helpBtn.click();
+      log.info(helpTextView.getAttribute("text"));
+	}
+	
+	public void changePin(String oldmpin, String newmpin, String reentermpin)
+	{
+		changemPINBtn.click();
 		oldmPIN.click();
-		oldmPIN.sendKeys("2222");
-		newmPIN.sendKeys("1234");
-		reEntermPIN.sendKeys("1234");
+		oldmPIN.sendKeys(oldmpin);
+		newmPIN.sendKeys(newmpin);
+		reEntermPIN.sendKeys(reentermpin);
 		okBtn.click();
 	}
 	
-	@Test
 	public void logoutApp()
 	{
 		waitForElement (logoutBtn, 3000);

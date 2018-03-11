@@ -96,24 +96,21 @@ for (AndroidElement value : test) {
  }  
 
 Map<String, String> map = new HashMap<String, String>();
-map.put(test.get(1).getAttribute("text"), test.get(2).getAttribute("text"));
-map.put(test.get(3).getAttribute("text"), test.get(4).getAttribute("text"));
-map.put(test.get(5).getAttribute("text"), test.get(6).getAttribute("text"));
-/*for (int k =0 ; k<=values.size(); k++)
+
+for ( int b = 0 ; b < n-1 ; )
 {
-	map.put(test.get(k+1).getAttribute("text"), test.get(k+2).getAttribute("text"));
-	k=k+1;
-}*/
+	map.put(test.get(b+1).getAttribute("text"), test.get(b+2).getAttribute("text"));
+	b = b+2;
+}
+
+log.info("Page Title is : "+test.get(0).getAttribute("text"));
 
 for (String key : map.keySet())
 {
 	log.info(key +" : "+map.get(key));
 }
-log.info("No. of Values : " +n);
-log.info("Page Title is : "+test.get(0).getAttribute("text"));
-log.info("Acknowledgment is : "+test.get(values.indexOf("Acknowledgement")+1).getAttribute("text"));
-log.info("Date and Time is : "+test.get(values.indexOf("Date and Time")+1).getAttribute("text"));
-log.info("Transaction ID is : "+test.get(values.indexOf("Transaction ID")+1).getAttribute("text"));
+
+log.info(map.get("Transaction ID"));
   
 }
 

@@ -2,15 +2,15 @@ package mBankingBaseFactory;
 
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingUtility.ExtentManager;
 import mBankingUtility.MConstants;
-
 import static org.testng.Assert.assertTrue;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,10 +24,11 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -150,6 +151,48 @@ public class AppiumController {
 
 //======================================================================	
 	
+    @SuppressWarnings("unchecked")
+    public String[] listOfAc()
+	{
+		ArrayList<AndroidElement> test;
+    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) driver).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+		int n = test.size(); //8
+
+		String [] accNo = new String [test.size()-2]; //test included header and footer textview, so -2.
+		for ( int b = 1 ; b < n-1 ; b++)
+		{
+			//map.put(Integer.toString(b) , test.get(b).getAttribute("text"));
+			accNo [b-1]= test.get(b).getAttribute("text");
+		}
+		log.info("Page Title is : "+test.get(0).getAttribute("text"));
+		log.info("Note is : "+test.get(test.size()-1).getAttribute("text"));
+		for (int a=0; a < accNo.length; a++)
+		{
+			log.info(a+ " : "+accNo[a]);
+		}
+		return accNo;
+	}
+    
+    @SuppressWarnings("unchecked")
+	public String processAcknowledgment()
+    {
+		ArrayList<AndroidElement> test;
+    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) driver).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+		int n = test.size();
+		Map<String, String> map = new HashMap<String, String>();
+		for ( int b = 0 ; b < n-1 ; )
+		{
+			map.put(test.get(b+1).getAttribute("text"), test.get(b+2).getAttribute("text"));
+			b = b+2;
+		}
+		log.info("Page Title is : "+test.get(0).getAttribute("text"));
+		for (String key : map.keySet())
+		{
+			log.info(key +" : "+map.get(key));
+		}
+		return map.get("Transaction ID");
+    }
+    
 	public void loadObjects() throws FileNotFoundException, IOException {
 		locator = new Properties();
 		locator.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\locators.properties")));
@@ -494,7 +537,7 @@ public class AppiumController {
 		getDriver().findElement(By.xpath((xpathKey))).click();
 		}catch(Exception e) {
 			//report an error 
-			//e.printStackTrace();
+			log.error(e);
 		}
 	}
 	
