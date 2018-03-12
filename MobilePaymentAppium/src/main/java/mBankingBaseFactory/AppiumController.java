@@ -82,7 +82,6 @@ public class AppiumController {
     @BeforeMethod
     public static void extentbeforeMethod(Method method)
     {
-    	
     	log.info("@BeforeMethod : " + 
             "ThreadName: " + Thread.currentThread().getName() + Thread.currentThread()
                 .getStackTrace()[1].getClassName());
@@ -193,6 +192,26 @@ public class AppiumController {
 		return map.get("Transaction ID");
     }
     
+    @SuppressWarnings("unchecked")
+	public String processMsAcknowledgment()
+    {
+		ArrayList<AndroidElement> test;
+    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) driver).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+		int n = test.size();
+		String [] ackn = new String [test.size()-2];
+			for ( int b = 1 ; b < n-1 ; b++)
+			{
+				//map.put(Integer.toString(b) , test.get(b).getAttribute("text"));
+				ackn [b-1]= test.get(b).getAttribute("text");
+			}
+			log.info("Page Title is : "+test.get(0).getAttribute("text"));
+			for (int a=0; a < ackn.length; a++)
+			{
+				log.info(a+ " : "+ackn[a]);
+			}
+			return ackn[1];
+    }
+    
 	public void loadObjects() throws FileNotFoundException, IOException {
 		locator = new Properties();
 		locator.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\locators.properties")));
@@ -242,11 +261,13 @@ public class AppiumController {
 
 	public static boolean waitForElement(MobileElement locator, Integer... timeout)
 	{
+		log.info("Entered Wait");
 		try {
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
 		} catch (org.openqa.selenium.TimeoutException exception) {
 			return false;
 		}
+		log.info("Element found");
 		return true;
 	}
 	
@@ -262,9 +283,15 @@ public class AppiumController {
 	    log.info("Activity appeared :" + driver.currentActivity());
 	}
 	
-	public MobileElement findElement(String loginBox)
+	public boolean isDisplayed(MobileElement element)
 	{
-		MobileElement element = (MobileElement) getDriver().findElementByXPath(loginBox);
+		boolean state = element.isDisplayed();
+		return state;
+	}
+	
+	public MobileElement findElement(String xpath)
+	{
+		MobileElement element = (MobileElement) getDriver().findElementByXPath(xpath);
 		return element;
 	}
 	

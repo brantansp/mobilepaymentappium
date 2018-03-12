@@ -62,7 +62,7 @@ public class HomePage extends AppiumController {
 	public static MobileElement okBtn;
 
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Home']")
-	public static MobileElement homeBtn;
+	public MobileElement homeBtn;
 
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Exit']")
 	public static MobileElement exitBtn;
@@ -117,29 +117,30 @@ public class HomePage extends AppiumController {
 	public void help()
 	{
 	  waitForElement(helpBtn, 3000);
-	  helpBtn.click();
+	  click(helpBtn);
       log.info(helpTextView.getAttribute("text"));
+      click(homeBtn);
 	}
 	
 	public void changePin(String oldmpin, String newmpin, String reentermpin)
 	{
-		changemPINBtn.click();
-		oldmPIN.click();
-		oldmPIN.sendKeys(oldmpin);
-		newmPIN.sendKeys(newmpin);
-		reEntermPIN.sendKeys(reentermpin);
-		okBtn.click();
+		click(changemPINBtn);
+		click(oldmPIN);
+		sendText(oldmPIN, oldmpin);
+		sendText(newmPIN, newmpin);
+		sendText(reEntermPIN,reentermpin);
+		click(okBtn);
 	}
 	
 	public void logoutApp()
 	{
 		waitForElement (logoutBtn, 3000);
-		logoutBtn.click();
+		click(logoutBtn);
 		log.info("Clicked on Exit button");
-		exitYesBtn.click();
+		click(exitYesBtn);
 		log.info("Clicked on Yes button");
 	}
-	
+
 	
 }
 

@@ -6,9 +6,9 @@
       <class name="mBankingTestPages.BalanceEnquiryTest">
         <methods>
           <include name="extentReportSetUp"/>
+          <include name="miniStatement"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="balanceEnq"/>
           <include name="extentGetResult"/>
         </methods>
       </class> <!-- mBankingTestPages.BalanceEnquiryTest -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "Positive Transaction flow" >
-    <test name = "Test">
+    <test name = "Test1">
       <classes>
           <class name = "mBankingTestPages.LoginPageTest"/>
       </classes>        
@@ -9,6 +9,11 @@
      <test name = "Test2">
       <classes>
           <class name = "mBankingTestPages.HomePageTest"/>
+      </classes>        
+    </test>
+         <test name = "Test3">
+      <classes>
+          <class name = "mBankingTestPages.BalanceEnquiryTest"/>
       </classes>        
     </test>
 </suite>

@@ -33,56 +33,56 @@ import mBankingBaseFactory.Driver;
 
 public class LoginPage extends AppiumController {
 	
-	protected static AppiumDriver <MobileElement> driver ;
+	public static AppiumDriver <MobileElement> driver ;
 	
-	protected static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
+	public static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
 	@AndroidFindBy(id = "com.fss.united:id/header")
-	protected MobileElement logoHeader;
+	public MobileElement logoHeader;
 	
 	@AndroidFindBy(className= "android.widget.ImageView")
-	protected MobileElement logoView;
+	public MobileElement logoView;
 	
 	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
-	protected static MobileElement loginBox;
+	public static MobileElement loginBox;
 	
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][2]")
-	protected static MobileElement okBtn;
+	public static MobileElement okBtn;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
-	protected MobileElement aboutUsLink;
+	public MobileElement aboutUsLink;
 
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Forgot Password']")
-	protected MobileElement forgotPasswordLink;
+	public MobileElement forgotPasswordLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Products']")
-	protected MobileElement productsLink;
+	public MobileElement productsLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Refer']")
-	protected MobileElement referLink;
+	public MobileElement referLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='ePassbook']")
-	protected MobileElement ePassbookLink;
+	public MobileElement ePassbookLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Feedback']")
-	protected MobileElement feedbackLink;
+	public MobileElement feedbackLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Locator']")
-	protected MobileElement locatorLink;
+	public MobileElement locatorLink;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Wallet']")
-	protected MobileElement walletLink;
+	public MobileElement walletLink;
 	
 	//@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.Button[3]")
 	@AndroidFindBy(xpath="//*[@text='Logout']")
-	protected MobileElement logoutBtn;
+	public MobileElement logoutBtn;
 
 	@AndroidFindBy(id="android:id/button1")
 	//@AndroidFindBy(id="xpath=//*[@text='Yes']")
-	protected MobileElement exitYesBtn;
+	public MobileElement exitYesBtn;
 	
 	@AndroidFindBy(id="xpath=//*[@text='No']")
-	protected MobileElement exitNoBtn;
+	public MobileElement exitNoBtn;
 	
 	@AndroidFindBy (xpath="//android.widget.TextView[@index='0']")
 	public MobileElement acList;

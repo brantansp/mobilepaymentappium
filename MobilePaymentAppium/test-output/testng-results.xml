@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="85097" started-at="2018-03-11T18:12:39Z" finished-at="2018-03-11T18:14:04Z">
+  <suite name="Default suite" duration-ms="273737" started-at="2018-03-12T19:21:41Z" finished-at="2018-03-12T19:26:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="85097" started-at="2018-03-11T18:12:39Z" finished-at="2018-03-11T18:14:04Z">
+    <test name="Default test" duration-ms="273737" started-at="2018-03-12T19:21:41Z" finished-at="2018-03-12T19:26:15Z">
       <class name="mBankingTestPages.BalanceEnquiryTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentReportSetUp" is-config="true" duration-ms="18782" started-at="2018-03-11T23:42:20Z" finished-at="2018-03-11T23:42:39Z">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentReportSetUp" is-config="true" duration-ms="17407" started-at="2018-03-13T00:51:24Z" finished-at="2018-03-13T00:51:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentbeforeMethod" is-config="true" duration-ms="7" started-at="2018-03-11T23:42:39Z" finished-at="2018-03-11T23:42:39Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentbeforeMethod" is-config="true" duration-ms="6" started-at="2018-03-13T00:51:41Z" finished-at="2018-03-13T00:51:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void mBankingTestPages.BalanceEnquiryTest.balanceEnq() throws java.lang.InterruptedException]]>
+                <![CDATA[public void mBankingTestPages.BalanceEnquiryTest.miniStatement() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="balanceEnq" duration-ms="85070" started-at="2018-03-11T23:42:39Z" finished-at="2018-03-11T23:44:04Z">
+        <test-method status="PASS" signature="miniStatement()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="miniStatement" duration-ms="273698" started-at="2018-03-13T00:51:41Z" finished-at="2018-03-13T00:56:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- balanceEnq -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentGetResult" is-config="true" duration-ms="3" started-at="2018-03-11T23:44:04Z" finished-at="2018-03-11T23:44:04Z">
+        </test-method> <!-- miniStatement -->
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="extentGetResult" is-config="true" duration-ms="11" started-at="2018-03-13T00:56:15Z" finished-at="2018-03-13T00:56:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=balanceEnq status=SUCCESS method=BalanceEnquiryTest.balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c] output={null}]]]>
+                <![CDATA[[TestResult name=miniStatement status=SUCCESS method=BalanceEnquiryTest.miniStatement()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="447" started-at="2018-03-11T23:44:04Z" finished-at="2018-03-11T23:44:05Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="459" started-at="2018-03-13T00:56:15Z" finished-at="2018-03-13T00:56:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
