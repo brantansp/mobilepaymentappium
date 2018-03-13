@@ -1,276 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Positive Transaction flow" duration-ms="369592" started-at="2018-03-13T14:07:09Z" finished-at="2018-03-13T14:13:19Z">
+  <suite name="Default suite" duration-ms="17971" started-at="2018-03-13T19:19:37Z" finished-at="2018-03-13T19:19:55Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="77599" started-at="2018-03-13T14:07:09Z" finished-at="2018-03-13T14:08:27Z">
-      <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentbeforeMethod" is-config="true" duration-ms="8" started-at="2018-03-13T19:37:09Z" finished-at="2018-03-13T19:37:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.appLogin() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="appLogin" duration-ms="12012" started-at="2018-03-13T19:37:09Z" finished-at="2018-03-13T19:37:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appLogin -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentGetResult" is-config="true" duration-ms="3" started-at="2018-03-13T19:37:21Z" finished-at="2018-03-13T19:37:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=appLogin status=SUCCESS method=LoginPageTest.appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@31330c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentbeforeMethod" is-config="true" duration-ms="0" started-at="2018-03-13T19:37:21Z" finished-at="2018-03-13T19:37:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.appExit() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="appExit()[pri:10, instance:mBankingTestPages.LoginPageTest@31330c]" name="appExit" duration-ms="5283" started-at="2018-03-13T19:37:21Z" finished-at="2018-03-13T19:37:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appExit -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentGetResult" is-config="true" duration-ms="1" started-at="2018-03-13T19:37:26Z" finished-at="2018-03-13T19:37:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=appExit status=SUCCESS method=LoginPageTest.appExit()[pri:10, instance:mBankingTestPages.LoginPageTest@31330c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-03-13T19:37:26Z" finished-at="2018-03-13T19:37:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.feedback() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="feedback()[pri:20, instance:mBankingTestPages.LoginPageTest@31330c]" name="feedback" duration-ms="33587" started-at="2018-03-13T19:37:26Z" finished-at="2018-03-13T19:38:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feedback -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentGetResult" is-config="true" duration-ms="2" started-at="2018-03-13T19:38:00Z" finished-at="2018-03-13T19:38:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=feedback status=SUCCESS method=LoginPageTest.feedback()[pri:20, instance:mBankingTestPages.LoginPageTest@31330c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentbeforeMethod" is-config="true" duration-ms="2" started-at="2018-03-13T19:38:00Z" finished-at="2018-03-13T19:38:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.LoginPageTest.referFriendValid() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="referFriendValid()[pri:20, instance:mBankingTestPages.LoginPageTest@31330c]" name="referFriendValid" duration-ms="26672" started-at="2018-03-13T19:38:00Z" finished-at="2018-03-13T19:38:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- referFriendValid -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@31330c]" name="extentGetResult" is-config="true" duration-ms="1" started-at="2018-03-13T19:38:27Z" finished-at="2018-03-13T19:38:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=referFriendValid status=SUCCESS method=LoginPageTest.referFriendValid()[pri:20, instance:mBankingTestPages.LoginPageTest@31330c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-      </class> <!-- mBankingTestPages.LoginPageTest -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="16053" started-at="2018-03-13T14:08:27Z" finished-at="2018-03-13T14:08:43Z">
-      <class name="mBankingTestPages.HomePageTest">
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.HomePageTest@43cd28]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-03-13T19:38:27Z" finished-at="2018-03-13T19:38:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.HomePageTest.custName() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="custName()[pri:0, instance:mBankingTestPages.HomePageTest@43cd28]" name="custName" duration-ms="9362" started-at="2018-03-13T19:38:27Z" finished-at="2018-03-13T19:38:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- custName -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.HomePageTest@43cd28]" name="extentGetResult" is-config="true" duration-ms="0" started-at="2018-03-13T19:38:37Z" finished-at="2018-03-13T19:38:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=custName status=SUCCESS method=HomePageTest.custName()[pri:0, instance:mBankingTestPages.HomePageTest@43cd28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.HomePageTest@43cd28]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-03-13T19:38:37Z" finished-at="2018-03-13T19:38:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.HomePageTest.checkHelp()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="checkHelp()[pri:1, instance:mBankingTestPages.HomePageTest@43cd28]" name="checkHelp" duration-ms="6682" started-at="2018-03-13T19:38:37Z" finished-at="2018-03-13T19:38:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHelp -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.HomePageTest@43cd28]" name="extentGetResult" is-config="true" duration-ms="2" started-at="2018-03-13T19:38:43Z" finished-at="2018-03-13T19:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkHelp status=SUCCESS method=HomePageTest.checkHelp()[pri:1, instance:mBankingTestPages.HomePageTest@43cd28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-      </class> <!-- mBankingTestPages.HomePageTest -->
-    </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="275103" started-at="2018-03-13T14:08:43Z" finished-at="2018-03-13T14:13:19Z">
-      <class name="mBankingTestPages.BalanceEnquiryTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="extentReportSetUp" is-config="true" duration-ms="33136" started-at="2018-03-13T19:36:36Z" finished-at="2018-03-13T19:37:09Z">
+    <test name="Default test" duration-ms="17971" started-at="2018-03-13T19:19:37Z" finished-at="2018-03-13T19:19:55Z">
+      <class name="mBankingTestPages.FundTransfer">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.FundTransfer@631330c]" name="extentReportSetUp" is-config="true" duration-ms="21605" started-at="2018-03-14T00:49:15Z" finished-at="2018-03-14T00:49:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-03-13T19:38:43Z" finished-at="2018-03-13T19:38:43Z">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.FundTransfer@631330c]" name="extentbeforeMethod" is-config="true" duration-ms="6" started-at="2018-03-14T00:49:37Z" finished-at="2018-03-14T00:49:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void mBankingTestPages.BalanceEnquiryTest.balanceEnq() throws java.lang.InterruptedException]]>
+                <![CDATA[public void mBankingTestPages.FundTransfer.m2mQFtSuccess() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="balanceEnq" duration-ms="27165" started-at="2018-03-13T19:38:43Z" finished-at="2018-03-13T19:39:11Z">
+        <test-method status="PASS" signature="m2mQFtSuccess()[pri:0, instance:mBankingTestPages.FundTransfer@631330c]" name="m2mQFtSuccess" duration-ms="17945" started-at="2018-03-14T00:49:37Z" finished-at="2018-03-14T00:49:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- balanceEnq -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="extentGetResult" is-config="true" duration-ms="0" started-at="2018-03-13T19:39:11Z" finished-at="2018-03-13T19:39:11Z">
+        </test-method> <!-- m2mQFtSuccess -->
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.FundTransfer@631330c]" name="extentGetResult" is-config="true" duration-ms="4" started-at="2018-03-14T00:49:55Z" finished-at="2018-03-14T00:49:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=balanceEnq status=SUCCESS method=BalanceEnquiryTest.balanceEnq()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af] output={null}]]]>
+                <![CDATA[[TestResult name=m2mQFtSuccess status=SUCCESS method=FundTransfer.m2mQFtSuccess()[pri:0, instance:mBankingTestPages.FundTransfer@631330c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="extentbeforeMethod" is-config="true" duration-ms="1" started-at="2018-03-13T19:39:11Z" finished-at="2018-03-13T19:39:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void mBankingTestPages.BalanceEnquiryTest.miniStatement() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentbeforeMethod -->
-        <test-method status="FAIL" signature="miniStatement()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="miniStatement" duration-ms="244138" started-at="2018-03-13T19:39:11Z" finished-at="2018-03-13T19:43:15Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 6, Size: 6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 6, Size: 6
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at mBankingBaseFactory.AppiumController.processAcknowledgment(AppiumController.java:210)
-	at mBankingPageObjectFactory.BankingPage.miniStatement(BankingPage.java:188)
-	at mBankingTestPages.BalanceEnquiryTest.miniStatement(BalanceEnquiryTest.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- miniStatement -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="extentGetResult" is-config="true" duration-ms="3794" started-at="2018-03-13T19:43:15Z" finished-at="2018-03-13T19:43:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=miniStatement status=FAILURE method=BalanceEnquiryTest.miniStatement()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.BalanceEnquiryTest@10b40af]" name="tearDown" is-config="true" duration-ms="208" started-at="2018-03-13T19:43:19Z" finished-at="2018-03-13T19:43:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.FundTransfer@631330c]" name="tearDown" is-config="true" duration-ms="390" started-at="2018-03-14T00:49:55Z" finished-at="2018-03-14T00:49:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
-    </test> <!-- Test3 -->
-  </suite> <!-- Positive Transaction flow -->
+      </class> <!-- mBankingTestPages.FundTransfer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

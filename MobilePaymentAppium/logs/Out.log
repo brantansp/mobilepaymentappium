@@ -5145,3 +5145,206 @@ Change mPIN: To change your mPIN
 2018-03-13 19:43:15 INFO  AppiumController:110 - @AfterMethod
 2018-03-13 19:43:19 INFO  AppiumController:498 - Failed Screenshot captured : Tue_Mar_13_19_43_15_IST_2018.png
 2018-03-13 19:43:19 INFO  AppiumController:125 - @AfterSuite
+2018-03-14 00:12:49 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:12:50 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:12:50 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:12:50 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:13:19 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:13:19 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:13:20 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:13:24 INFO  AppiumController:300 - Element found
+2018-03-14 00:13:24 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:13:30 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:13:30 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:13:31 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:13:33 INFO  AppiumController:300 - Element found
+2018-03-14 00:13:33 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:13:34 INFO  AppiumController:300 - Element found
+2018-03-14 00:13:36 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:13:36 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:14:38 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:14:39 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:14:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:14:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:15:00 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:15:00 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:15:00 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:15:04 INFO  AppiumController:300 - Element found
+2018-03-14 00:15:04 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:15:10 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:15:11 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:15:11 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:15:14 INFO  AppiumController:300 - Element found
+2018-03-14 00:15:14 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:15:15 INFO  AppiumController:300 - Element found
+2018-03-14 00:15:17 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:15:17 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:27:18 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:27:18 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:27:18 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:27:18 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:27:39 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:27:39 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:27:39 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:27:43 INFO  AppiumController:300 - Element found
+2018-03-14 00:27:43 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:27:48 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:27:49 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:27:49 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:27:52 INFO  AppiumController:300 - Element found
+2018-03-14 00:27:53 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:27:53 INFO  AppiumController:300 - Element found
+2018-03-14 00:27:57 INFO  FundTransfer:40 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: test" 
+- html content: "by id or name "test""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+2018-03-14 00:27:57 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:27:57 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:37:10 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:37:10 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:37:10 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:37:10 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:37:32 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:37:32 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:37:32 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:37:36 INFO  AppiumController:300 - Element found
+2018-03-14 00:37:36 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:37:42 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:37:42 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:37:42 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:37:47 INFO  AppiumController:300 - Element found
+2018-03-14 00:37:48 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:37:48 INFO  AppiumController:300 - Element found
+2018-03-14 00:37:52 INFO  FundTransfer:40 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: test2" 
+- html content: "by id or name "test2""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+2018-03-14 00:37:52 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:37:52 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:39:18 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:39:18 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:39:18 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:39:18 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:39:40 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:39:40 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:39:40 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:39:44 INFO  AppiumController:300 - Element found
+2018-03-14 00:39:44 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:39:49 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:39:50 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:39:50 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:39:53 INFO  AppiumController:300 - Element found
+2018-03-14 00:39:53 INFO  FundTransfer:43 - java.lang.NullPointerException
+2018-03-14 00:39:54 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:39:54 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:40:42 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:40:42 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:40:42 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:40:42 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:41:03 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:41:03 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:41:03 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:41:06 INFO  AppiumController:300 - Element found
+2018-03-14 00:41:07 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:41:12 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:41:13 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:41:13 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:41:16 INFO  AppiumController:300 - Element found
+2018-03-14 00:41:17 INFO  FundTransfer:43 - java.lang.NullPointerException
+2018-03-14 00:41:18 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:41:18 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:41:55 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:41:55 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:41:55 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:41:55 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:42:16 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:42:16 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:42:16 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:42:20 INFO  AppiumController:300 - Element found
+2018-03-14 00:42:20 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:42:26 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:42:27 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:42:27 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:42:29 INFO  AppiumController:300 - Element found
+2018-03-14 00:42:30 INFO  FundTransfer:43 - java.lang.NullPointerException
+2018-03-14 00:42:31 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:42:31 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:42:57 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:42:57 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:42:57 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:42:57 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:43:19 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:43:19 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:43:19 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:43:23 INFO  AppiumController:300 - Element found
+2018-03-14 00:43:23 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:43:28 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:43:29 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:43:29 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:43:32 INFO  AppiumController:300 - Element found
+2018-03-14 00:43:32 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:43:33 INFO  AppiumController:300 - Element found
+2018-03-14 00:43:35 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:43:35 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:44:43 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:44:43 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:44:43 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:44:43 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:45:05 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:45:05 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:45:05 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:45:08 INFO  AppiumController:300 - Element found
+2018-03-14 00:45:09 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:45:14 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:45:15 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:45:15 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:45:18 INFO  AppiumController:300 - Element found
+2018-03-14 00:45:18 INFO  FundTransfer:43 - java.lang.NullPointerException
+2018-03-14 00:45:19 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:45:19 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:46:14 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:46:14 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:46:14 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:46:14 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:46:35 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:46:35 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:46:36 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:46:39 INFO  AppiumController:300 - Element found
+2018-03-14 00:46:40 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:46:45 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:46:46 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:46:46 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:46:49 INFO  AppiumController:300 - Element found
+2018-03-14 00:46:49 INFO  FundTransfer:43 - java.lang.NullPointerException
+2018-03-14 00:46:50 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:46:50 INFO  AppiumController:128 - @AfterSuite
+2018-03-14 00:49:15 INFO  AppiumController:85 - @BeforeSuite
+2018-03-14 00:49:16 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 00:49:16 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 00:49:16 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 00:49:37 INFO  AppiumController:100 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 00:49:37 INFO  FundTransfer:28 - **********FT M2M QFT**********
+2018-03-14 00:49:37 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:49:41 INFO  AppiumController:300 - Element found
+2018-03-14 00:49:41 INFO  LoginPage:106 - Clicked on login box
+2018-03-14 00:49:47 INFO  LoginPage:108 - Login Pin send  : 1111
+2018-03-14 00:49:47 INFO  LoginPage:110 - Clicked on ok button
+2018-03-14 00:49:47 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:49:50 INFO  AppiumController:300 - Element found
+2018-03-14 00:49:51 INFO  AppiumController:293 - Entered Wait
+2018-03-14 00:49:51 INFO  AppiumController:300 - Element found
+2018-03-14 00:49:55 INFO  FundTransfer:40 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: test" 
+- html content: "by id or name "test""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+2018-03-14 00:49:55 INFO  AppiumController:113 - @AfterMethod
+2018-03-14 00:49:55 INFO  AppiumController:128 - @AfterSuite
