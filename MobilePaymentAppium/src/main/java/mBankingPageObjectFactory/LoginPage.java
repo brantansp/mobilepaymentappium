@@ -97,7 +97,11 @@ public class LoginPage extends AppiumController {
 	
 	public void loginApp (String pin) throws InterruptedException
 	{
-	    waitForElement (loginBox, 5000);
+	    try {
+			waitForElement (loginBox, 10);
+		} catch (Exception e) {
+			log.info(e);
+		}
 		loginBox.click();
 		log.info("Clicked on login box");
 		loginBox.sendKeys(pin);

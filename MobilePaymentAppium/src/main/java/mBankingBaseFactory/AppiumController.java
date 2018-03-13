@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingUtility.ExtentManager;
 import mBankingUtility.MConstants;
 import static org.testng.Assert.assertTrue;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,6 +30,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -37,6 +39,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -44,6 +47,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -51,6 +56,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -62,19 +68,25 @@ public class AppiumController {
 	private static WebDriverWait driverWait;
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	protected static Properties locator;
-	
+	protected static Properties prop;
+	protected static Wait<WebDriver> wait;
+	//
 //=====================================================================================
 
 	public static ExtentReports extent;
 	public static ExtentTest extentLogger;
 	
     @BeforeSuite
-    public static void extentReportSetUp() throws MalformedURLException, InterruptedException
+    public static void extentReportSetUp() throws InterruptedException, FileNotFoundException, IOException
     {
     	log.info("@BeforeSuite");
 		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
 	    extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 	    setDriver(Driver.instantiateDriver("android"));
+	    prop =loadProp();
+	    wait = new FluentWait<WebDriver>(getDriver())
+				   .withTimeout(30, TimeUnit.SECONDS)
+				   .pollingEvery(2, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 	    getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
@@ -150,6 +162,19 @@ public class AppiumController {
 
 //======================================================================	
 	
+    public static void waitUntil(MobileElement locator)
+    {
+    	log.info("entered wait until");
+    	wait.until(ExpectedConditions.visibilityOf(locator));
+    	log.info("entered wait until exit");
+    }
+    
+	public static Properties loadProp() throws FileNotFoundException, IOException{
+		prop = new Properties();
+		prop.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\conf.properties")));
+		return prop;
+	}
+    
     @SuppressWarnings("unchecked")
     public String[] listOfAc()
 	{
@@ -171,6 +196,7 @@ public class AppiumController {
 		}
 		return accNo;
 	}
+    
     
     @SuppressWarnings("unchecked")
 	public String processAcknowledgment()
@@ -265,6 +291,7 @@ public class AppiumController {
 		try {
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
 		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
 			return false;
 		}
 		log.info("Element found");
@@ -560,7 +587,7 @@ public class AppiumController {
 	//click
 	public void click(String xpathKey) {
 		try {
-		log.info("Click on element"+xpathKey);	
+		log.info("Click on element : "+xpathKey);	
 		getDriver().findElement(By.xpath((xpathKey))).click();
 		}catch(Exception e) {
 			//report an error 

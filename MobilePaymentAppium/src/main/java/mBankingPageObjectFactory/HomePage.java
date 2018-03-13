@@ -32,11 +32,12 @@ public class HomePage extends AppiumController {
 	
 	public static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	@AndroidFindBy(id="android:id/button1")
-	//@AndroidFindBy(id="xpath=//*[@text='Yes']")
+	//@AndroidFindBy(id="android:id/button1")
+	//("//*[@text='Yes']")).click();
+	@AndroidFindBy(xpath="//*[@text='Yes']")
 	public MobileElement exitYesBtn;
 	
-	@AndroidFindBy(id="xpath=//*[@text='No']")
+	@AndroidFindBy(xpath="//*[@text='No']")
 	public MobileElement exitNoBtn;
 	
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Change mPIN']")
@@ -118,7 +119,7 @@ public class HomePage extends AppiumController {
 	{
 	  waitForElement(helpBtn, 3000);
 	  click(helpBtn);
-      log.info(helpTextView.getAttribute("text"));
+      log.info("Text displayed is : \n"+helpTextView.getAttribute("text"));
       click(homeBtn);
 	}
 	

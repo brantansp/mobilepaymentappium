@@ -1,20 +1,27 @@
 package mBankingPageObjectFactory;
 
+import java.io.FileNotFoundException;
 import java.lang.invoke.MethodHandles;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.support.PageFactory;
+
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import mBankingBaseFactory.AppiumController;
+import mBankingUtility.WriteToCSVFile;
+import mBankingUtility.dbTransactionlog;
 
 public class BankingPage extends AppiumController  {
 	
@@ -69,14 +76,15 @@ public class BankingPage extends AppiumController  {
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='Mini Statement']")
 	public MobileElement msAcknPage;
 	
+	@SuppressWarnings("unchecked")
 	public void balanceEnq(String [] accNo)
 	{
-		if (true) //if multiacc txn enable
+		if (prop.getProperty("multiaccflag").equals("Y")) //if multiacc txn enable
 		{
+			log.info("Multi Account transaction");
 			for (int i=0; i< accNo.length;i++)
 			{
 				click("//android.widget.TextView[@text='"+accNo[i]+"']");
-				//waitForElement(mPINBox, 3000);
 				ArrayList<AndroidElement> test;
 		    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
 		    	if(test.size()>=1)   //mpin page exists
@@ -87,31 +95,55 @@ public class BankingPage extends AppiumController  {
 				waitForElement(beAcknPage,30000);
 				//sleep(5000);
 				String txn = processAcknowledgment();
-				back();
-				be.click();
+				if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
+				{
+					try {
+					WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
+					} catch (SQLException e) {
+						log.info(e);
+					}catch (FileNotFoundException e) {
+						 log.info(e);
+						}
+				 }
+				 back();
+				 click(be);
 			}
 			click(homeBtn);
 		} 
 		else
 		{
+			log.info("Single Account transaction");
 			click("//android.widget.TextView[@text='"+accNo[1]+"']");
-			waitForElement(mPINBox, 3000);
-			if(true)   //mpin page exists
+			ArrayList<AndroidElement> test;
+	    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
+	    	if(test.size()>=1)   //mpin page exists
 			{
 				sendText(mPINBox,"2222");
 				click(okBtn);
 			}
-			waitForElement(beAcknPage,5000);
-			//sleep(8000);
+			waitForElement(beAcknPage,30000);
+			//sleep(5000);
 			String txn = processAcknowledgment();
+			if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
+			{
+				try {
+				WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
+				} catch (SQLException e) {
+					log.info(e);
+				}catch (FileNotFoundException e) {
+					 log.info(e);
+					}
+			 }
 			click(homeBtn);
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public void miniStatement(String [] accNo)
 	{
-		if (true) //if multiacc txn enable
+		if (prop.getProperty("multiaccflag").equals("Y")) //if multiacc txn enable
 		{
+			log.info("Multi Account transaction");
 			for (int i=0; i< accNo.length;i++)
 			{
 				click("//android.widget.TextView[@text='"+accNo[i]+"']");
@@ -126,23 +158,44 @@ public class BankingPage extends AppiumController  {
 				waitForElement(logoutBtn,30000);
 				//sleep(5000);
 				String txn = processMsAcknowledgment();
+				if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
+				{
+					try {
+					WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
+					} catch (SQLException e) {
+						log.info(e);
+					}catch (FileNotFoundException e) {
+						 log.info(e);
+						}
+				 }
 				back();
-				ms.click();
+				click(ms);
 			}
 			click(homeBtn);
 		} 
 		else
 		{
+			log.info("Single Account transaction");
 			click("//android.widget.TextView[@text='"+accNo[1]+"']");
-			waitForElement(mPINBox, 3000);
-			if(true)   //mpin page exists
+			ArrayList<AndroidElement> test;
+	    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
+	    	if(test.size()>=1)   //mpin page exists
 			{
 				sendText(mPINBox,"2222");
 				click(okBtn);
 			}
-			waitForElement(beAcknPage,5000);
-			//sleep(8000);
+			waitForElement(logoutBtn,30000);
 			String txn = processAcknowledgment();
+			if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
+			{
+				try {
+				WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
+				} catch (SQLException e) {
+					log.info(e);
+				}catch (FileNotFoundException e) {
+					 log.info(e);
+					}
+			 }
 			click(homeBtn);
 		}
 	}

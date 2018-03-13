@@ -24,6 +24,8 @@ public class HomePageTest extends AppiumController {
 		log.info("**********Help Text**********");
 		homePage = new HomePage(driver);
 		homePage.help();
+		click(homePage.logoutBtn);
+		click(homePage.exitYesBtn);
 	}
 	
 	@Test(priority =0)
