@@ -26,6 +26,7 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -34,6 +35,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
@@ -169,27 +171,41 @@ public class AppiumController {
 //======================================================================	
 	
     
-    public static void processEditBox(String [] editBox)
+    public static void processEditBox(Map<String, List<String>> elems)
     {
-    	if(Arrays.asList(editBox).contains("mPIN"))   //mpin page exists
+    	
+    	if(elems.containsValue("Application PIN"))   //mpin page exists
+		{
+    		log.info("Application PIN");
+			sendText("Application PIN", prop.getProperty("apin"));	
+			getDriver().findElement(By.xpath(("//*[@class='android.widget.Button'][2]"))).click();
+		}
+    	
+    	if(Arrays.asList(elems).contains("Application PIN"))   //mpin page exists
+		{
+    		log.info("Application PIN");
+			sendText("Application PIN", prop.getProperty("apin"));	
+		}
+    	
+    	if(Arrays.asList(elems).contains("mPIN"))   //mpin page exists
 		{
     		log.info("mpin box");
 			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='mPIN']"))), prop.getProperty("mpin"));	
 		}
     	
-    	if(Arrays.asList(editBox).contains("Beneficiary Mobile No.")) 
+    	if(Arrays.asList(elems).contains("Beneficiary Mobile No.")) 
     	{
     		log.info("mobile input box");
 			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Beneficiary Mobile No.']"))),30);
 			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Beneficiary Mobile No.']"))),"8778602561");
     	}
-    	if(Arrays.asList(editBox).contains("Amount (Rs.)")) 
+    	if(Arrays.asList(elems).contains("Amount (Rs.)")) 
     	{
     		log.info("amount input box");
 			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Amount (Rs.)']"))),30);
 			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Amount (Rs.)']"))), "10");
     	}
-    	if(Arrays.asList(editBox).contains("Remarks")) 
+    	if(Arrays.asList(elems).contains("Remarks")) 
     	{
     		log.info("remark input box");
 			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Remarks']"))),30);
@@ -197,19 +213,95 @@ public class AppiumController {
     	}
     }
     
-    public static String[] editTextLocator()
+    public static String[] loadTextView()
     {
-		ArrayList<AndroidElement> test;
-    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
-		String [] editBox = new String [test.size()];
-    	for(int k =0 ; k<test.size(); k++)
+    	ArrayList<AndroidElement> textView;
+    	textView =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+    	String [] textBtn = new String [textView.size()];
+    	for(int k =0 ; k<textView.size(); k++)
     	{
-    		editBox[k]= test.get(k).getText();
-    		log.info("editbox : " +editBox[k]);
+    		textBtn[k]= textView.get(k).getText();
+    		log.info("TextView : " +textBtn[k]);
     	}
-    	return editBox;
+    	return textBtn;
+    }
+    
+    public static String[] loadButton()
+    {
+    	ArrayList<AndroidElement> button;
+    	button =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.Button\")");
+    	String [] btn = new String [button.size()];
+    	for(int k =0 ; k<button.size(); k++)
+    	{
+    		btn[k]= button.get(k).getText();
+    		log.info("button : " +btn[k]);
+    	}   	
+    	return btn;
+    }
+    
+    public static Map<String, List<String>> loadEditText()
+    {
+		ArrayList<AndroidElement> editText;
+    	editText =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
+    	ArrayList<AndroidElement> textView;
+    	textView =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+    	ArrayList<AndroidElement> button;
+    	button =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.Button\")");
+    	
+    	Map<String, List<String>> elems = new HashMap<String, List<String>>(); 
+    	List<String> txt = new ArrayList<String>();
+    	List<String> txt2 = new ArrayList<String>();
+    	List<String> txt3 = new ArrayList<String>();
+    	
+    	String[] editBox = new String [editText.size()];
+    	String [] textBtn = new String [textView.size()];
+    	String [] btn = new String [button.size()];
+    
+    	for(int k =0 ; k<editText.size(); k++)
+    	{
+    		editBox[k]= editText.get(k).getText();
+    		txt.add(editText.get(k).getText());
+    		log.info("EditText : " +editBox[k]);
+    	}
+    	elems.put("editText", txt);
+
+    	for(int k =0 ; k<textView.size(); k++)
+    	{
+    		textBtn[k]= textView.get(k).getText();
+    		txt2.add(textView.get(k).getText());
+    		log.info("TextView : " +textBtn[k]);
+    	}
+    	elems.put("textView", txt2);
+    	
+    	for(int k =0 ; k<button.size(); k++)
+    	{
+    		btn[k]= button.get(k).getText();
+    		txt3.add(button.get(k).getText());
+    		log.info("button : " +btn[k]);
+    	}
+    	elems.put("button", txt3);
+    	
+    	for(int m=0;m<elems.size();m++)
+    	{
+    		log.info(elems.get("editText"));
+    		log.info(elems.get("textView"));
+    		log.info(elems.get("button"));
+    	}
+    	
+    	log.info(elems.containsValue("Help"));
+    	log.info(elems.containsKey("editText"));
+    	log.info(f (editBox, textBtn, btn).toString());
+    	
+    	 return  elems;
     }
 
+	 static String[] f(String[] first, String[] second, String[] third) {
+	    List<String> both = new ArrayList<String>(first.length + second.length);
+	    Collections.addAll(both, first);
+	    Collections.addAll(both, second);
+	    Collections.addAll(both, third);
+	    return both.toArray(new String[both.size()]);
+	}
     public static void waitUntil(MobileElement locator)
     {
     	log.info("entered wait until");
@@ -635,6 +727,28 @@ public class AppiumController {
 		}
 	}
 	
+	//clickText
+	public void clickBtn(String text) {
+		try {
+		log.info("Click on element : "+text);	
+		getDriver().findElement(By.xpath(("//*[@class='android.widget.Button'][@text='"+text+"']"))).click();
+		}catch(Exception e) {
+			//report an error 
+			log.error(e);
+		}
+	}
+	
+	//clickText
+	public void clickView(String text) {
+		try {
+		log.info("Click on element : "+text);	
+		getDriver().findElement(By.xpath(("//*[@class='android.widget.TextView'][@text='"+text+"']"))).click();
+		}catch(Exception e) {
+			//report an error 
+			log.error(e);
+		}
+	}
+	
 	/*
 	 * Click by MobileElement
 	 */
@@ -654,6 +768,11 @@ public class AppiumController {
 		log.info("Send Text : "+text);
 	}
 	
+	public static void sendText(String element,String text)
+	{
+		getDriver().findElement(By.xpath(("//android.widget.EditText[@text='"+element+"']"))).sendKeys(text);;
+		log.info("Send Text : "+text);
+	}
 	
     public void swipeRight()
     {

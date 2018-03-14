@@ -87,10 +87,10 @@ public class FundTransferPage  extends ObjectRepository {
 		{
 			log.info("Single Account transaction");
 			click("//android.widget.TextView[@text='"+accNo[0]+"']");
-			String [] editBox =editTextLocator();
+			String [] editBox =loadEditText();
 			processEditBox(editBox);
 			click(okBtn);
-	    	editBox =editTextLocator();
+	    	editBox =loadEditText();
 	    	processEditBox(editBox);
 			click(okBtn);
 			waitForElement(qFt,30);

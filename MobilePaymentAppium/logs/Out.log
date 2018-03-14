@@ -7746,3 +7746,761 @@ Driver info: driver.version: unknown
 2018-03-14 20:37:37 INFO  AppiumController:644 - clicked element :
 2018-03-14 20:37:37 INFO  AppiumController:116 - @AfterMethod
 2018-03-14 20:37:37 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 22:15:27 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:15:27 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:15:27 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:15:27 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:17:37 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:17:37 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:17:37 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:17:37 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:18:09 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:18:09 INFO  FundTransferTest:54 - **********FT M2M Ben Reg**********
+2018-03-14 22:18:09 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:18:13 INFO  AppiumController:368 - Element found
+2018-03-14 22:18:14 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:19 INFO  AppiumController:654 - Send Text : 2222
+2018-03-14 22:18:20 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:20 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:18:23 INFO  AppiumController:368 - Element found
+2018-03-14 22:18:23 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:23 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:18:24 INFO  AppiumController:368 - Element found
+2018-03-14 22:18:27 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:28 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:29 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:30 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:36 INFO  AppiumController:654 - Send Text : 1234
+2018-03-14 22:18:37 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:43 INFO  AppiumController:654 - Send Text : 8778602561
+2018-03-14 22:18:48 INFO  AppiumController:654 - Send Text : test
+2018-03-14 22:18:50 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:50 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:18:52 INFO  AppiumController:368 - Element found
+2018-03-14 22:18:52 INFO  AppiumController:263 - 2
+2018-03-14 22:18:52 INFO  AppiumController:270 - Page Title is : Beneficiary A/C List
+2018-03-14 22:18:52 INFO  AppiumController:273 - 0 : Beneficiary A/C List
+2018-03-14 22:18:52 INFO  AppiumController:273 - 1 : 8764XXX411111
+2018-03-14 22:18:52 INFO  AppiumController:630 - Click on element : //android.widget.TextView[@text='8764XXX411111']
+2018-03-14 22:18:54 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:18:54 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:01 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:02 INFO  AppiumController:290 - Page Title is : Beneficiary Registration
+2018-03-14 22:19:02 INFO  AppiumController:293 - Acknowledgement : Beneficiary test added successfully
+2018-03-14 22:19:02 INFO  AppiumController:293 - Date and Time : 14/03/2018 22:20
+2018-03-14 22:19:02 INFO  AppiumController:293 - Transaction ID : 807322137794
+2018-03-14 22:19:02 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:02 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:19:02 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:19:02 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-14 22:19:02 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:13 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:14 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:19 INFO  AppiumController:654 - Send Text : 2222
+2018-03-14 22:19:20 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:20 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:23 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:23 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:23 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:24 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:24 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:25 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:26 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:26 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:26 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:27 INFO  AppiumController:248 - Page Title is : Select A/C
+2018-03-14 22:19:27 INFO  AppiumController:249 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-14 22:19:27 INFO  AppiumController:252 - 0 : 2874XXX489349
+2018-03-14 22:19:27 INFO  AppiumController:252 - 1 : 2374XXX984938
+2018-03-14 22:19:27 INFO  AppiumController:252 - 2 : 31U2XXX948U32
+2018-03-14 22:19:27 INFO  AppiumController:252 - 3 : IUY1XXX81U489
+2018-03-14 22:19:27 INFO  AppiumController:252 - 4 : 1846XXX397482
+2018-03-14 22:19:27 INFO  AppiumController:252 - 5 : 324YXXXY49832
+2018-03-14 22:19:27 INFO  FundTransferPage:88 - Single Account transaction
+2018-03-14 22:19:27 INFO  AppiumController:630 - Click on element : //android.widget.TextView[@text='2874XXX489349']
+2018-03-14 22:19:28 INFO  AppiumController:208 - editbox : mPIN
+2018-03-14 22:19:28 INFO  AppiumController:176 - mpin box
+2018-03-14 22:19:33 INFO  AppiumController:654 - Send Text : 1234
+2018-03-14 22:19:34 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:35 INFO  AppiumController:208 - editbox : Beneficiary Mobile No.
+2018-03-14 22:19:35 INFO  AppiumController:208 - editbox : Amount (Rs.)
+2018-03-14 22:19:35 INFO  AppiumController:208 - editbox : Remarks
+2018-03-14 22:19:35 INFO  AppiumController:182 - mobile input box
+2018-03-14 22:19:40 INFO  AppiumController:654 - Send Text : 8778602561
+2018-03-14 22:19:40 INFO  AppiumController:188 - amount input box
+2018-03-14 22:19:45 INFO  AppiumController:654 - Send Text : 10
+2018-03-14 22:19:45 INFO  AppiumController:194 - remark input box
+2018-03-14 22:19:51 INFO  AppiumController:654 - Send Text : testuser
+2018-03-14 22:19:52 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:52 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:53 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:53 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:53 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:19:56 INFO  AppiumController:368 - Element found
+2018-03-14 22:19:56 INFO  AppiumController:290 - Page Title is : Quick Fund Transfer
+2018-03-14 22:19:56 INFO  AppiumController:293 - Acknowledgement : Fund Transfer to 8764XXX5411111 - +918778602561 successful. Rs.10.00 debited from 2874XXX3489349
+2018-03-14 22:19:56 INFO  AppiumController:293 - Date and Time : 14/03/2018 22:21
+2018-03-14 22:19:56 INFO  AppiumController:293 - Transaction ID : 807322137796
+2018-03-14 22:19:57 INFO  AppiumController:644 - clicked element :
+2018-03-14 22:19:57 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:19:57 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 22:36:38 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:36:38 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:36:38 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:36:38 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:36:57 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:36:57 INFO  FundTransferTest:78 - **********chk**********
+2018-03-14 22:36:57 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:37:01 INFO  AppiumController:368 - Element found
+2018-03-14 22:37:02 INFO  AppiumController:655 - clicked element :
+2018-03-14 22:37:07 INFO  AppiumController:665 - Send Text : 2222
+2018-03-14 22:37:08 INFO  AppiumController:655 - clicked element :
+2018-03-14 22:37:08 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:37:11 INFO  AppiumController:368 - Element found
+2018-03-14 22:37:11 INFO  AppiumController:630 - Click on element : Banking
+2018-03-14 22:37:13 ERROR AppiumController:634 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.58 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 6e8525fa-1cf8-4420-8408-c1660d9779e0
+*** Element info: {Using=xpath, value=Banking}
+2018-03-14 22:37:13 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:37:13 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 22:38:12 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:38:12 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:38:12 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:38:12 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:38:31 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:38:31 INFO  FundTransferTest:78 - **********chk**********
+2018-03-14 22:38:31 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:38:35 INFO  AppiumController:368 - Element found
+2018-03-14 22:38:35 INFO  AppiumController:655 - clicked element :
+2018-03-14 22:38:41 INFO  AppiumController:665 - Send Text : 2222
+2018-03-14 22:38:41 INFO  AppiumController:655 - clicked element :
+2018-03-14 22:38:41 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:38:44 INFO  AppiumController:368 - Element found
+2018-03-14 22:38:44 INFO  AppiumController:641 - Click on element : Banking
+2018-03-14 22:38:45 ERROR AppiumController:645 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.58 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'brantansp', ip: '192.168.43.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 1f66aa9d-fb92-4800-83a4-307412c8455d
+*** Element info: {Using=xpath, value=//*[@class='android.widget.Button'][@text='Banking']}
+2018-03-14 22:38:46 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:38:46 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 22:43:15 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:43:15 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:43:15 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:43:15 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:43:33 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:43:33 INFO  FundTransferTest:78 - **********chk**********
+2018-03-14 22:43:33 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:43:37 INFO  AppiumController:368 - Element found
+2018-03-14 22:43:38 INFO  AppiumController:666 - clicked element :
+2018-03-14 22:43:43 INFO  AppiumController:676 - Send Text : 2222
+2018-03-14 22:43:44 INFO  AppiumController:666 - clicked element :
+2018-03-14 22:43:44 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:43:47 INFO  AppiumController:368 - Element found
+2018-03-14 22:43:47 INFO  AppiumController:652 - Click on element : Banking
+2018-03-14 22:43:47 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:43:47 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 22:45:25 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 22:45:25 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 22:45:25 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 22:45:25 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 22:45:43 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 22:45:43 INFO  FundTransferTest:78 - **********chk**********
+2018-03-14 22:45:43 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:45:47 INFO  AppiumController:368 - Element found
+2018-03-14 22:45:47 INFO  AppiumController:666 - clicked element :
+2018-03-14 22:45:53 INFO  AppiumController:676 - Send Text : 2222
+2018-03-14 22:45:54 INFO  AppiumController:666 - clicked element :
+2018-03-14 22:45:54 INFO  AppiumController:361 - Entered Wait
+2018-03-14 22:45:56 INFO  AppiumController:368 - Element found
+2018-03-14 22:45:56 INFO  AppiumController:652 - Click on element : Banking
+2018-03-14 22:45:56 INFO  AppiumController:652 - Click on element : Balance Enquiry
+2018-03-14 22:45:58 INFO  AppiumController:652 - Click on element : Mini Statement
+2018-03-14 22:46:00 INFO  AppiumController:641 - Click on element : Help
+2018-03-14 22:46:01 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 22:46:01 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 23:02:08 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 23:02:09 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 23:02:09 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 23:02:09 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 23:02:28 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 23:02:32 INFO  AppiumController:215 - editbox : Application PIN
+2018-03-14 23:02:32 INFO  AppiumController:177 - mpin box
+2018-03-14 23:02:38 INFO  AppiumController:683 - Send Text : 2222
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:39 INFO  AppiumController:215 - editbox : •••2
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:40 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:41 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:42 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:43 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:44 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:45 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:46 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:47 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:48 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:48 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:48 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:48 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:02:48 INFO  AppiumController:215 - editbox : ••••
+2018-03-14 23:36:30 INFO  AppiumController:88 - @BeforeSuite
+2018-03-14 23:36:30 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 23:36:30 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 23:36:30 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 23:36:50 INFO  AppiumController:103 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 23:37:25 INFO  AppiumController:230 - EditText : Application PIN
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : 
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : 
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : About Us
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Forgot Password
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Products
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Feedback
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Refer
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Locator
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : ePassbook
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Wallet
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Change Language
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Version Update
+2018-03-14 23:37:25 INFO  AppiumController:242 - button : Help
+2018-03-14 23:37:25 INFO  AppiumController:116 - @AfterMethod
+2018-03-14 23:37:29 INFO  AppiumController:573 - Failed Screenshot captured : Wed_Mar_14_23_37_25_IST_2018.png
+2018-03-14 23:37:29 INFO  AppiumController:131 - @AfterSuite
+2018-03-14 23:42:39 INFO  AppiumController:89 - @BeforeSuite
+2018-03-14 23:42:39 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 23:42:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 23:42:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 23:43:00 INFO  AppiumController:104 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 23:43:35 INFO  AppiumController:231 - EditText : Application PIN
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : 
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : 
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : About Us
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Forgot Password
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Products
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Feedback
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Refer
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Locator
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : ePassbook
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Wallet
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Change Language
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Version Update
+2018-03-14 23:43:35 INFO  AppiumController:243 - button : Help
+2018-03-14 23:43:35 INFO  AppiumController:117 - @AfterMethod
+2018-03-14 23:43:39 INFO  AppiumController:574 - Failed Screenshot captured : Wed_Mar_14_23_43_35_IST_2018.png
+2018-03-14 23:43:39 INFO  AppiumController:132 - @AfterSuite
+2018-03-14 23:54:35 INFO  AppiumController:90 - @BeforeSuite
+2018-03-14 23:54:35 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-14 23:54:35 INFO  Driver:176 - App started : com.fss.united
+2018-03-14 23:54:35 INFO  Driver:147 - The platform is : Android platform
+2018-03-14 23:54:54 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-14 23:55:29 INFO  AppiumController:258 - EditText : Application PIN
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : 
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : 
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : About Us
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Forgot Password
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Products
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Feedback
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Refer
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Locator
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : ePassbook
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Wallet
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Change Language
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Version Update
+2018-03-14 23:55:29 INFO  AppiumController:270 - button : Help
+2018-03-14 23:55:29 INFO  AppiumController:179 - Application PIN
+2018-03-14 23:55:34 INFO  AppiumController:751 - Send Text : 2222
+2018-03-14 23:55:34 INFO  AppiumController:185 - Application PIN
+2018-03-14 23:56:05 INFO  AppiumController:118 - @AfterMethod
+2018-03-14 23:56:08 INFO  AppiumController:607 - Failed Screenshot captured : Wed_Mar_14_23_56_05_IST_2018.png
+2018-03-14 23:56:08 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 00:00:51 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:00:51 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:00:51 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:00:51 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:01:11 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:01:48 INFO  AppiumController:259 - EditText : Application PIN
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : 
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : 
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : About Us
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Forgot Password
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Products
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Feedback
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Refer
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Locator
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : ePassbook
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Wallet
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Change Language
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Version Update
+2018-03-15 00:01:48 INFO  AppiumController:271 - button : Help
+2018-03-15 00:01:48 INFO  AppiumController:179 - Application PIN
+2018-03-15 00:01:53 INFO  AppiumController:752 - Send Text : 2222
+2018-03-15 00:01:54 INFO  AppiumController:186 - Application PIN
+2018-03-15 00:02:24 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 00:02:28 INFO  AppiumController:608 - Failed Screenshot captured : Thu_Mar_15_00_02_24_IST_2018.png
+2018-03-15 00:02:28 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 00:02:37 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:02:37 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:02:37 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:02:37 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:02:55 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:03:29 INFO  AppiumController:259 - EditText : Application PIN
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : 
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : 
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : About Us
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Forgot Password
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Products
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Feedback
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Refer
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Locator
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : ePassbook
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Wallet
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Change Language
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Version Update
+2018-03-15 00:03:29 INFO  AppiumController:271 - button : Help
+2018-03-15 00:03:29 INFO  AppiumController:179 - Application PIN
+2018-03-15 00:03:34 INFO  AppiumController:752 - Send Text : 2222
+2018-03-15 00:03:35 INFO  AppiumController:186 - Application PIN
+2018-03-15 00:04:12 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:04:13 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:04:13 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:04:13 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:04:29 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:05:04 INFO  AppiumController:259 - EditText : Application PIN
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : 
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : 
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : About Us
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Forgot Password
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Products
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Feedback
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Refer
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Locator
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : ePassbook
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Wallet
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Change Language
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Version Update
+2018-03-15 00:05:04 INFO  AppiumController:271 - button : Help
+2018-03-15 00:05:04 INFO  AppiumController:179 - Application PIN
+2018-03-15 00:05:09 INFO  AppiumController:752 - Send Text : 2222
+2018-03-15 00:05:10 INFO  AppiumController:186 - Application PIN
+2018-03-15 00:05:39 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:05:39 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:05:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:05:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:05:57 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:06:31 INFO  AppiumController:259 - EditText : Application PIN
+2018-03-15 00:06:31 INFO  AppiumController:271 - button : 
+2018-03-15 00:06:31 INFO  AppiumController:271 - button : 
+2018-03-15 00:06:31 INFO  AppiumController:271 - button : About Us
+2018-03-15 00:06:31 INFO  AppiumController:271 - button : Forgot Password
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Products
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Feedback
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Refer
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Locator
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : ePassbook
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Wallet
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Change Language
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Version Update
+2018-03-15 00:06:32 INFO  AppiumController:271 - button : Help
+2018-03-15 00:06:32 INFO  AppiumController:179 - Application PIN
+2018-03-15 00:06:37 INFO  AppiumController:752 - Send Text : 2222
+2018-03-15 00:06:38 INFO  AppiumController:186 - Application PIN
+2018-03-15 00:14:03 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:14:03 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:14:03 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:14:03 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:14:20 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:14:20 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 00:14:24 INFO  AppiumController:608 - Failed Screenshot captured : Thu_Mar_15_00_14_20_IST_2018.png
+2018-03-15 00:14:24 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 00:29:47 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:29:47 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:29:47 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:29:47 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:30:04 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:30:39 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : 
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : 
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Products
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:30:39 INFO  AppiumController:280 - button : Help
+2018-03-15 00:31:18 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:31:18 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:31:18 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:31:18 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:31:38 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:32:12 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:32:12 INFO  AppiumController:268 - 
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : 
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : 
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Products
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:32:12 INFO  AppiumController:280 - button : Help
+2018-03-15 00:32:40 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:32:40 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:32:40 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:32:40 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:32:57 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:33:32 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:33:32 INFO  AppiumController:268 - [Application PIN]
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : 
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : 
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : About Us
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Forgot Password
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Products
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Feedback
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Refer
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Locator
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : ePassbook
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Wallet
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Change Language
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Version Update
+2018-03-15 00:33:32 INFO  AppiumController:282 - button : Help
+2018-03-15 00:34:03 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:34:03 INFO  AppiumController:268 - [Application PIN]
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : 
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : 
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : About Us
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Forgot Password
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Products
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Feedback
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Refer
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Locator
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : ePassbook
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Wallet
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Change Language
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Version Update
+2018-03-15 00:34:03 INFO  AppiumController:282 - button : Help
+2018-03-15 00:35:28 INFO  AppiumController:313 - b-1 : 0
+2018-03-15 00:35:28 INFO  AppiumController:314 - b : 1
+2018-03-15 00:35:28 INFO  AppiumController:313 - b-1 : 1
+2018-03-15 00:35:28 INFO  AppiumController:314 - b : 2
+2018-03-15 00:35:39 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:35:39 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:35:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:35:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:35:56 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:36:31 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:36:31 INFO  AppiumController:268 - [Application PIN]
+2018-03-15 00:36:31 INFO  AppiumController:271 - false
+2018-03-15 00:36:31 INFO  AppiumController:272 - true
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : 
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : 
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : About Us
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Forgot Password
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Products
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Feedback
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Refer
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Locator
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : ePassbook
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Wallet
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Change Language
+2018-03-15 00:36:31 INFO  AppiumController:283 - button : Version Update
+2018-03-15 00:36:32 INFO  AppiumController:283 - button : Help
+2018-03-15 00:37:02 INFO  AppiumController:262 - EditText : Application PIN
+2018-03-15 00:37:02 INFO  AppiumController:268 - [Application PIN]
+2018-03-15 00:37:02 INFO  AppiumController:271 - false
+2018-03-15 00:37:02 INFO  AppiumController:272 - true
+2018-03-15 00:37:02 INFO  AppiumController:283 - button : 
+2018-03-15 00:37:02 INFO  AppiumController:283 - button : 
+2018-03-15 00:37:02 INFO  AppiumController:283 - button : About Us
+2018-03-15 00:37:02 INFO  AppiumController:283 - button : Forgot Password
+2018-03-15 00:37:02 INFO  AppiumController:283 - button : Products
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Feedback
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Refer
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Locator
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : ePassbook
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Wallet
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Change Language
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Version Update
+2018-03-15 00:37:03 INFO  AppiumController:283 - button : Help
+2018-03-15 00:40:49 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:40:49 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:40:49 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:40:49 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:41:06 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:42:07 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 00:42:10 INFO  AppiumController:628 - Failed Screenshot captured : Thu_Mar_15_00_42_07_IST_2018.png
+2018-03-15 00:42:11 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 00:44:07 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:44:07 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:44:07 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:44:07 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:44:23 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:44:57 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:44:57 INFO  AppiumController:281 - button : 
+2018-03-15 00:44:57 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 00:45:00 INFO  AppiumController:629 - Failed Screenshot captured : Thu_Mar_15_00_44_57_IST_2018.png
+2018-03-15 00:45:00 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 00:46:33 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:46:33 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:46:33 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:46:33 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:46:50 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:47:24 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:47:24 INFO  AppiumController:280 - button : 
+2018-03-15 00:47:24 INFO  AppiumController:280 - button : 
+2018-03-15 00:47:24 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Products
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:47:25 INFO  AppiumController:280 - button : Help
+2018-03-15 00:47:25 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:47:25 INFO  AppiumController:287 - []
+2018-03-15 00:47:25 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:47:25 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:47:25 INFO  AppiumController:287 - []
+2018-03-15 00:47:25 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:47:25 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:47:25 INFO  AppiumController:287 - []
+2018-03-15 00:47:25 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:47:25 INFO  AppiumController:291 - false
+2018-03-15 00:47:25 INFO  AppiumController:292 - true
+2018-03-15 00:50:39 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:50:39 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:50:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:50:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:50:56 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:51:31 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : 
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : 
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : Products
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:51:31 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:51:32 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:51:32 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:51:32 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:51:32 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:51:32 INFO  AppiumController:280 - button : Help
+2018-03-15 00:51:32 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:51:32 INFO  AppiumController:287 - []
+2018-03-15 00:51:32 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:51:32 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:51:32 INFO  AppiumController:287 - []
+2018-03-15 00:51:32 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:51:32 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:51:32 INFO  AppiumController:287 - []
+2018-03-15 00:51:32 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:51:32 INFO  AppiumController:291 - false
+2018-03-15 00:51:32 INFO  AppiumController:292 - true
+2018-03-15 00:51:32 INFO  AppiumController:293 - [Ljava.lang.String;@3b79fd76
+2018-03-15 00:55:09 INFO  AppiumController:323 - b-1 : 0
+2018-03-15 00:55:09 INFO  AppiumController:324 - b : 1
+2018-03-15 00:55:09 INFO  AppiumController:323 - b-1 : 1
+2018-03-15 00:55:09 INFO  AppiumController:324 - b : 2
+2018-03-15 00:55:15 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:55:15 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:55:15 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:55:15 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:55:31 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:56:06 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : 
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : 
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Products
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:56:06 INFO  AppiumController:280 - button : Help
+2018-03-15 00:56:06 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:06 INFO  AppiumController:287 - []
+2018-03-15 00:56:06 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:06 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:06 INFO  AppiumController:287 - []
+2018-03-15 00:56:06 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:06 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:06 INFO  AppiumController:287 - []
+2018-03-15 00:56:06 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:06 INFO  AppiumController:291 - false
+2018-03-15 00:56:06 INFO  AppiumController:292 - true
+2018-03-15 00:56:06 INFO  AppiumController:293 - [Ljava.lang.String;@3b79fd76
+2018-03-15 00:56:37 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 00:56:37 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 00:56:37 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 00:56:37 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 00:56:37 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : 
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : 
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : Products
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:56:37 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:56:38 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:56:38 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:56:38 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:56:38 INFO  AppiumController:280 - button : Help
+2018-03-15 00:56:38 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:38 INFO  AppiumController:287 - []
+2018-03-15 00:56:38 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:38 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:38 INFO  AppiumController:287 - []
+2018-03-15 00:56:38 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:38 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:56:38 INFO  AppiumController:287 - []
+2018-03-15 00:56:38 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:56:38 INFO  AppiumController:291 - false
+2018-03-15 00:56:38 INFO  AppiumController:292 - true
+2018-03-15 00:56:38 INFO  AppiumController:293 - [Ljava.lang.String;@48c76607
+2018-03-15 00:56:53 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 00:57:27 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 00:57:27 INFO  AppiumController:280 - button : 
+2018-03-15 00:57:27 INFO  AppiumController:280 - button : 
+2018-03-15 00:57:27 INFO  AppiumController:280 - button : About Us
+2018-03-15 00:57:27 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Products
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Feedback
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Refer
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Locator
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Wallet
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Change Language
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Version Update
+2018-03-15 00:57:28 INFO  AppiumController:280 - button : Help
+2018-03-15 00:57:28 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:57:28 INFO  AppiumController:287 - []
+2018-03-15 00:57:28 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:57:28 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:57:28 INFO  AppiumController:287 - []
+2018-03-15 00:57:28 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:57:28 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 00:57:28 INFO  AppiumController:287 - []
+2018-03-15 00:57:28 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 00:57:28 INFO  AppiumController:291 - false
+2018-03-15 00:57:28 INFO  AppiumController:292 - false
+2018-03-15 00:57:28 INFO  AppiumController:293 - [Ljava.lang.String;@3b79fd76
+2018-03-15 01:03:19 INFO  AppiumController:323 - b-1 : 0
+2018-03-15 01:03:19 INFO  AppiumController:324 - b : 1
+2018-03-15 01:03:19 INFO  AppiumController:323 - b-1 : 1
+2018-03-15 01:03:19 INFO  AppiumController:324 - b : 2
+2018-03-15 01:03:23 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 01:03:23 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 01:03:23 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 01:03:23 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 01:05:14 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 01:05:14 INFO  PropertyFileReader:28 - file : C:\Users\Brantan sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 01:05:14 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 01:05:14 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 01:05:32 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 01:06:08 INFO  AppiumController:264 - EditText : Application PIN
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : 
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : 
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : About Us
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Forgot Password
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Products
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Feedback
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Refer
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Locator
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : ePassbook
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Wallet
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Change Language
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Version Update
+2018-03-15 01:06:08 INFO  AppiumController:280 - button : Help
+2018-03-15 01:06:08 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 01:06:08 INFO  AppiumController:287 - []
+2018-03-15 01:06:08 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 01:06:08 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 01:06:08 INFO  AppiumController:287 - []
+2018-03-15 01:06:08 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 01:06:08 INFO  AppiumController:286 - [Application PIN]
+2018-03-15 01:06:08 INFO  AppiumController:287 - []
+2018-03-15 01:06:08 INFO  AppiumController:288 - [, , About Us, Forgot Password, Products, Feedback, Refer, Locator, ePassbook, Wallet, Change Language, Version Update, Help]
+2018-03-15 01:06:08 INFO  AppiumController:291 - false
+2018-03-15 01:06:08 INFO  AppiumController:292 - true
+2018-03-15 01:06:08 INFO  AppiumController:293 - [Ljava.lang.String;@3b79fd76

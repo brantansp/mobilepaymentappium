@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mBankingTestPages.FundTransferTest">
+      <class name="mBankingTestPages.AutoRunner">
         <methods>
           <include name="extentReportSetUp"/>
-          <include name="m2mQFtSuccess"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
+          <include name="test"/>
           <include name="extentGetResult"/>
         </methods>
-      </class> <!-- mBankingTestPages.FundTransferTest -->
+      </class> <!-- mBankingTestPages.AutoRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
