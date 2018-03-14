@@ -28,10 +28,6 @@ public class LoginPageTest extends AppiumController{
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	public static void main(String[] args) throws IOException, InterruptedException {
-		
-	}
-	
 	@Test(priority = 0)
 	public void appLogin() throws InterruptedException
 	{

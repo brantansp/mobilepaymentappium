@@ -89,10 +89,10 @@ public class BankingPage extends AppiumController  {
 		    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
 		    	if(test.size()>=1)   //mpin page exists
 				{
-					sendText(mPINBox,"2222");
+					sendText(mPINBox, prop.getProperty("mpin"));
 					click(okBtn);
 				}
-				waitForElement(beAcknPage,30000);
+				waitForElement(beAcknPage,30);
 				//sleep(5000);
 				String txn = processAcknowledgment();
 				if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
@@ -105,23 +105,24 @@ public class BankingPage extends AppiumController  {
 						 log.info(e);
 						}
 				 }
-				 back();
-				 click(be);
+				/* back();
+				 click(be);*/
+				click(homeBtn);
 			}
 			click(homeBtn);
 		} 
 		else
 		{
 			log.info("Single Account transaction");
-			click("//android.widget.TextView[@text='"+accNo[1]+"']");
+			click("//android.widget.TextView[@text='"+accNo[0]+"']");
 			ArrayList<AndroidElement> test;
 	    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
 	    	if(test.size()>=1)   //mpin page exists
 			{
-				sendText(mPINBox,"2222");
+				sendText(mPINBox, prop.getProperty("mpin"));
 				click(okBtn);
 			}
-			waitForElement(beAcknPage,30000);
+			waitForElement(beAcknPage,30);
 			//sleep(5000);
 			String txn = processAcknowledgment();
 			if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
@@ -147,15 +148,14 @@ public class BankingPage extends AppiumController  {
 			for (int i=0; i< accNo.length;i++)
 			{
 				click("//android.widget.TextView[@text='"+accNo[i]+"']");
-				//waitForElement(mPINBox, 3000);
 				ArrayList<AndroidElement> test;
 		    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
 		    	if(test.size()>=1)   //mpin page exists
 				{
-					sendText(mPINBox,"2222");
+					sendText(mPINBox, prop.getProperty("mpin"));
 					click(okBtn);
 				}
-				waitForElement(logoutBtn,30000);
+				waitForElement(logoutBtn,30);
 				//sleep(5000);
 				String txn = processMsAcknowledgment();
 				if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
@@ -168,23 +168,24 @@ public class BankingPage extends AppiumController  {
 						 log.info(e);
 						}
 				 }
-				back();
-				click(ms);
+			/*	back();
+				click(ms);*/
+				click(homeBtn);
 			}
 			click(homeBtn);
 		} 
 		else
 		{
 			log.info("Single Account transaction");
-			click("//android.widget.TextView[@text='"+accNo[1]+"']");
+			click("//android.widget.TextView[@text='"+accNo[0]+"']");
 			ArrayList<AndroidElement> test;
 	    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
 	    	if(test.size()>=1)   //mpin page exists
 			{
-				sendText(mPINBox,"2222");
+				sendText(mPINBox, prop.getProperty("mpin"));
 				click(okBtn);
 			}
-			waitForElement(logoutBtn,30000);
+			waitForElement(logoutBtn,30);
 			String txn = processAcknowledgment();
 			if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
 			{

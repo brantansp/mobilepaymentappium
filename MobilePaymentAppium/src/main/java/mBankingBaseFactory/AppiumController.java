@@ -25,6 +25,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -61,6 +62,8 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import java.lang.reflect.Field;
 
 public class AppiumController {
 
@@ -165,6 +168,48 @@ public class AppiumController {
 
 //======================================================================	
 	
+    
+    public static void processEditBox(String [] editBox)
+    {
+    	if(Arrays.asList(editBox).contains("mPIN"))   //mpin page exists
+		{
+    		log.info("mpin box");
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='mPIN']"))), prop.getProperty("mpin"));	
+		}
+    	
+    	if(Arrays.asList(editBox).contains("Beneficiary Mobile No.")) 
+    	{
+    		log.info("mobile input box");
+			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Beneficiary Mobile No.']"))),30);
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Beneficiary Mobile No.']"))),"8778602561");
+    	}
+    	if(Arrays.asList(editBox).contains("Amount (Rs.)")) 
+    	{
+    		log.info("amount input box");
+			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Amount (Rs.)']"))),30);
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Amount (Rs.)']"))), "10");
+    	}
+    	if(Arrays.asList(editBox).contains("Remarks")) 
+    	{
+    		log.info("remark input box");
+			//waitForElement(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Remarks']"))),30);
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Remarks']"))), "testuser");
+    	}
+    }
+    
+    public static String[] editTextLocator()
+    {
+		ArrayList<AndroidElement> test;
+    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
+		String [] editBox = new String [test.size()];
+    	for(int k =0 ; k<test.size(); k++)
+    	{
+    		editBox[k]= test.get(k).getText();
+    		log.info("editbox : " +editBox[k]);
+    	}
+    	return editBox;
+    }
+
     public static void waitUntil(MobileElement locator)
     {
     	log.info("entered wait until");
@@ -178,13 +223,22 @@ public class AppiumController {
 		return prop;
 	}
     
+	public static void main(String[] args) 
+	{
+		int n = 2;
+		for ( int b = 1 ; b <= n ; b++)
+		{
+             log.info("b-1 : "+ (b-1));
+             log.info("b : "+b);
+		}
+	}
+	
     @SuppressWarnings("unchecked")
     public String[] listOfAc()
 	{
 		ArrayList<AndroidElement> test;
     	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) driver).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
 		int n = test.size(); //8
-
 		String [] accNo = new String [test.size()-2]; //test included header and footer textview, so -2.
 		for ( int b = 1 ; b < n-1 ; b++)
 		{
@@ -200,6 +254,26 @@ public class AppiumController {
 		return accNo;
 	}
     
+    @SuppressWarnings("unchecked")
+    public String[] benListOfAc()
+	{
+		ArrayList<AndroidElement> test;
+    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) driver).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+		int n = test.size(); //8
+        log.info(n);
+		String [] accNo = new String [test.size()] ;//= new String []; //test included header and footer textview, so -2.
+		for ( int b = 0 ; b < n ; b++)
+		{
+			//map.put(Integer.toString(b) , test.get(b).getAttribute("text"));
+			accNo [b]= test.get(b).getAttribute("text");
+		}
+		log.info("Page Title is : "+test.get(0).getAttribute("text"));
+		for (int a=0; a < accNo.length; a++)
+		{
+			log.info(a+ " : "+accNo[a]);
+		}
+		return accNo;
+	}
     
     @SuppressWarnings("unchecked")
 	public String processAcknowledgment()
@@ -253,12 +327,6 @@ public class AppiumController {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-	}
-	
-	public static void main(String args []) throws IOException, InterruptedException
-	{
-		//log.info("ID : "+getDeviceUdid());
-		//getDeviceUdid();
 	}
 	
 /*	public static List<String> getDeviceUdid() throws IOException, InterruptedException
@@ -331,35 +399,6 @@ public class AppiumController {
         wait.until(ExpectedConditions.visibilityOf(element));
 }
 	
-/*	*//** Run before each test **//*	
-	public void setUp() throws Exception {
-		// Initialize CONFIG
-		CONFIG = new Properties();
-		FileInputStream fs = new FileInputStream(
-				"src/test/java/com/tesco/config/env.properties");
-		CONFIG.load(fs);
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("appium-version",
-				CONFIG.getProperty("appiumVersionEnv"));
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("deviceName", "Android");
-		capabilities.setCapability("platformVersion", "4.4");
-
-		String userDir = System.getProperty("user.dir");
-
-		String localApp = "Android_Phone_12th_Nov_7_4.apk";
-
-		String appPath = Paths.get(userDir, localApp).toAbsolutePath()
-				.toString();
-		capabilities.setCapability("app", appPath);
-		serverAddress = new URL("http://127.0.0.1:4723/wd/hub");
-		setDriver(new AndroidDriver<MobileElement>(serverAddress, capabilities));
-		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		init(getDriver(), serverAddress);
-	}*/
-
-	/** Run after each test **/
-
 	public void tearDown2() throws Exception {
 		if (getDriver() != null)
 			getDriver().quit();
@@ -373,8 +412,6 @@ public class AppiumController {
 		setDriver(webDriver);
 		serverAddress = driverServerAddress;
 		int timeoutInSeconds = 60;
-		// must wait at least 60 seconds for running on Sauce.
-		// waiting for 30 seconds works locally however it fails on Sauce.
 		driverWait = new WebDriverWait(webDriver, timeoutInSeconds);
 	}
 
@@ -604,15 +641,17 @@ public class AppiumController {
 	public void click(MobileElement element)
 	{
 		element.click();
+		log.info("clicked element :");
 	}
 	
 	
 	/*
 	 * Send keys via MobileElement
 	 */
-	public void sendText(MobileElement element,String text)
+	public static void sendText(MobileElement element,String text)
 	{
 		element.sendKeys(text);
+		log.info("Send Text : "+text);
 	}
 	
 	
