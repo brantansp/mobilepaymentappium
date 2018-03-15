@@ -12,7 +12,7 @@ import mBankingBaseFactory.*;
 import mBankingPageObjectFactory.*;
 
 
-public class FundTransferTest extends AppiumController {
+public class FundTransferTest extends ObjectRepository {
 
 	protected static LoginPage loginPage;
 	protected static HomePage homePage;
@@ -27,12 +27,10 @@ public class FundTransferTest extends AppiumController {
 	public void m2mQFtSuccess() throws InterruptedException
 	{
 		log.info("**********FT M2M QFT**********");
-		loginPage = new LoginPage(driver);
-		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
-			//waitForElement(homePage.bankingBtn, 10);
-			waitForElement("Banking",30);
+			waitForElement(homePage.Banking, 10);
+			//waitForElement("Banking",30);
 			clickView("Banking");
 			ftObj = new FundTransferPage (driver);
 			try {
@@ -49,20 +47,18 @@ public class FundTransferTest extends AppiumController {
 		}
 	}
 	
-	//@Test
+	@Test
 	public void m2mBenReg() throws InterruptedException
 	{
 		log.info("**********FT M2M Ben Reg**********");
-		loginPage = new LoginPage(driver);
-        loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
-			waitForElement(homePage.bankingBtn, 10);
-			click(homePage.bankingBtn);
+			waitForElement(homePage.Banking, 10);
+			click(homePage.Banking);
 			ftObj = new FundTransferPage (driver);
 			try {
 				waitForElement(ftObj.ftWb, 10);
-				ftObj.BenReg("8778602561","test");
+				ftObj.BenReg("9407556318","AKON");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -79,17 +75,31 @@ public class FundTransferTest extends AppiumController {
 		log.info("**********chk**********");
 		loginPage = new LoginPage(driver);
         loginPage.loginApp(prop.getProperty("apin"));
-		homePage = new HomePage(driver);
+		//homePage = new HomePage(driver);
 		try {
-			//waitForElement(homePage.bankingBtn, 10);
-			waitForTextView("Banking",30);
+			waitForElement(Banking, 50);
+			//waitForTextView("Banking", 50);
+			//sleep(5000);
+			//waitForTextView("Logout1",50);
 			clickView("Banking");
 			clickView("Balance Enquiry");
-			back();
-			clickView("Mini Statement");
-			back();
-			clickBtn("Help");
-			ftObj = new FundTransferPage (driver);
-		} catch (Exception e) {}
+            processEditBox(listOfAc());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
     }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+

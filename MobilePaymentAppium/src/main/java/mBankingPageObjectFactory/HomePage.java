@@ -44,8 +44,8 @@ public class HomePage extends ObjectRepository {
 	
 	public void clickBanking()
 	{
-		waitForElement(bankingBtn,3000);
-		click(bankingBtn);
+		waitForElement(Banking,3000);
+		click(Banking);
 	}
 	
 	public String custName ()
@@ -62,7 +62,6 @@ public class HomePage extends ObjectRepository {
 	  waitForElement(helpBtn, 3000);
 	  click(helpBtn);
       log.info("Text displayed is : \n"+helpTextView.getAttribute("text"));
-      click(homeBtn);
 	}
 	
 	public void changePin(String oldmpin, String newmpin, String reentermpin)

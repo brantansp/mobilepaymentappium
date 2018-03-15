@@ -73,7 +73,7 @@ public class AppiumController {
 	public static URL serverAddress;
 	private static WebDriverWait driverWait;
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
-	protected static Properties locator;
+	protected static Properties loc;
 	protected static Properties prop;
 	protected static Wait<WebDriver> wait;
 	
@@ -115,7 +115,7 @@ public class AppiumController {
     @AfterMethod
     public static void extentGetResult(ITestResult result)
     {
-    	log.info("@AfterMethod");
+    	log.info("@AfterMethod\n");
 		if(result.getStatus() == ITestResult.FAILURE){
 			String screenShotPath = AppiumController.takeScreenShot();
 			extentLogger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
@@ -453,8 +453,8 @@ public class AppiumController {
     }
     
 	public void loadObjects() throws FileNotFoundException, IOException {
-		locator = new Properties();
-		locator.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\locators.properties")));
+		loc = new Properties();
+		loc.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\property\\locators.properties")));
 	}
   
 	public static void sleep(long time)
@@ -495,7 +495,7 @@ public class AppiumController {
 	
 	public static boolean waitForElement(MobileElement locator, Integer... timeout)
 	{
-		log.info("Entered Wait");
+		log.info("Entered Wait for locator");
 		try {
 			//waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
@@ -503,79 +503,37 @@ public class AppiumController {
 			log.info("Element not found");
 			return false;
 		}
-		log.info("Element found");
+		log.info("Element found : "+locator.getAttribute("text"));
 		return true;
 	}
 	
-	public static boolean waitForElement(String text, Integer... timeout)
-	{
-		MobileElement locator= getDriver().findElementByXPath("//*[@class='android.widget.TeztView'][@text='"+text+"']");
-		log.info("Entered Wait");
-		try {
-			//waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
-			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
-		} catch (org.openqa.selenium.TimeoutException exception) {
-			log.info("Element not found");
-			return false;
-		}
-		log.info("Element found");
-		return true;
-	}
-	//getDriver().findElement(By.xpath(("//*[@class='android.widget.TextView'][@text='"+text+"']")))
-	
-	//driver.findElement(By.xpath("//*[@text='Banking']")).click();
-	public static boolean waitFor(String text, Integer... timeout)
-	{
-		log.info("Entered Wait");
-		try {
-        waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath("//*[@text='"+text+"']"))), (timeout.length > 0 ?  timeout[0] : null));
-		} catch (org.openqa.selenium.TimeoutException exception) {
-			log.info("Element not found");
-			return false;
-		}
-		log.info("Element found");
-		return true;
-	
-	}
 	public static boolean waitForTextView(String text, Integer... timeout)
 	{
-		log.info("Entered Wait");
-		try {               
-			//MobileElement elementList = (MobileElement) getDriver().findElements(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + text + "\")"));
-			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.TeztView'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
+		MobileElement locator = getDriver().findElement(By.xpath("//android.widget.TextView[@text='"+text+"']"));
+		log.info("Entered Wait : "+text);
+		try {
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
 		} catch (org.openqa.selenium.TimeoutException exception) {
 			log.info("Element not found");
 			return false;
 		}
-		log.info("Element found");
+		log.info("Element found : "+text);
 		return true;
 	}
 	
 	public static boolean waitForEditText(String text, Integer... timeout)
 	{
-		log.info("Entered Wait");
+		log.info("Entered Wait : "+text);
 		try {
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.EditText'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
 		} catch (org.openqa.selenium.TimeoutException exception) {
 			log.info("Element not found");
 			return false;
 		}
-		log.info("Element found");
+		log.info("Element found : " +text);
 		return true;
 	}
-	
-	public static boolean waitForButton(String text, Integer... timeout)
-	{
-		log.info("Entered Wait");
-		try {
-			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.Button'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
-		} catch (org.openqa.selenium.TimeoutException exception) {
-			log.info("Element not found");
-			return false;
-		}
-		log.info("Element found");
-		return true;
-	}
+
 	
 	public static void waitForActivity(String desiredActivity, int wait) throws InterruptedException
 	{
@@ -881,7 +839,7 @@ public class AppiumController {
 	public void click(MobileElement element)
 	{
 		element.click();
-		log.info("clicked element :");
+		log.info("clicked element");
 	}
 	
 	

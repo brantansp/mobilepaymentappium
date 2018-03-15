@@ -28,45 +28,44 @@ public class LoginPageTest extends AppiumController{
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
-	@Test(priority = 0)
+	@Test(priority = 2)
 	public void appLogin() throws InterruptedException
 	{
 		log.info("**********Login to Application**********");
 		loginPage = new LoginPage(driver);
 		loginPage.loginApp(prop.getProperty("apin"));
-		Assert.assertEquals(true, true);
 		waitForActivity(".Fragment_Activity", 30);
-		log.info("***************End***************\n");
+		log.info("***************End***************");
 	}
 	
-	//@Test(priority = 10)
+	//@Test(priority = 3)
 	public void appExit() throws InterruptedException
 	{
 		log.info("**********Exit Application**********");
 		homePage = new HomePage(driver);
 		homePage.logoutApp();
-		log.info("***************End***************\n");
+		log.info("***************End***************");
 	}
 	
-	//@Test(priority = 20)
+	@Test(priority = 0)
 	public void referFriendValid() throws InterruptedException
 	{
 		log.info("**********Refer Friend**********");
 		loginPage = new LoginPage(driver);
 		ReferPage obj =loginPage.clickReferPage();
-		String transactionid = obj.referFriend("brantan", "brantan@fss.co.in", "9894060407");
+		String transactionid = obj.referFriend("brantan", "brantan@fss.co.in", "1894060407");
         /**
          * implementation for DB 
          */
-		log.info("***************End***************\n");
+		log.info("***************End***************");
 	}
 
-	//@Test(priority = 20)
+	@Test(priority = 1)
 	public void feedback() throws InterruptedException
 	{
 		log.info("**********Feedback**********");
 		obj = new FeedbackPage(driver);
         obj.feedbackTxn("5","4","3","OK");
-        log.info("***************End***************\n");
+        log.info("***************End***************");
 	}
 }

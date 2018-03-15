@@ -50,15 +50,20 @@ public class LoginPage extends ObjectRepository {
 	public void loginApp (String pin) throws InterruptedException
 	{
 	    try {
-			waitForEditText ("Application PIN", 30);
+			waitForEditText("Application PIN", 30);
 		} catch (Exception e) {
-			log.info(e);
+			System.out.println(e);
 		}
 	    clickEditText("Application PIN");
 		sendText("Application PIN", pin);
 		click(loginOkBtn);
 	}
 	
+	public MobileElement place()
+	{
+		MobileElement element=getDriver().findElement(By.xpath("//*[@class='android.widget.Button'][@text='Logout']"));
+		return element;
+	}
 	public ReferPage clickReferPage()
 	{
 		waitForElement (referLink, 30);

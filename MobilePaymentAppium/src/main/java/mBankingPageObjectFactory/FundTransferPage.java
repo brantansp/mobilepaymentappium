@@ -68,9 +68,9 @@ public class FundTransferPage  extends ObjectRepository {
 				sendText(amnt,"10");
 				sendText(remarks,"test");
 				click(okBtn);
-				waitForElement(qFt,30);
+				waitForElement(qFt,60);
 				click(confirmBtn);
-				waitForElement(AcknPage,30);
+				waitForElement(AcknPage,60);
 				String txn = processAcknowledgment();
 				if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
 				{
@@ -118,19 +118,27 @@ public class FundTransferPage  extends ObjectRepository {
 
 	public void BenReg(String mobNumber, String nickName)
 	{
-		click(bankingBtn);
+		prop.setProperty("ftMobNo", mobNumber);
+		prop.setProperty("ftAmnt", nickName);
+		click(Banking);
 		click(ftWb);
 		click(m2mBtn);
 		click(BenReg);
 		ArrayList<AndroidElement> test;
-    	test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
-    	if(test.size()>=1)   //mpin page exists
+		test =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
+    	String [] editBox = new String [test.size()];
+    	for(int k =0 ; k<test.size(); k++)
+    	{
+    		editBox[k]= test.get(k).getText();
+    	}
+    	if(Arrays.asList(editBox).contains("mPIN"))   //mpin page exists
 		{
+    		log.info("mpin box");
 			sendText(mPINBox, prop.getProperty("mpin"));
 			click(okBtn);
 		}
-    	sendText(mobNo, mobNumber);
-    	sendText(nickname, nickName);
+    	sendText(mobNo, prop.getProperty("ftMobNo"));
+    	sendText(nickname, prop.getProperty("ftAmnt"));
     	click(okBtn);
     	waitForElement(benACList,30);
     	String[] accNo = benListOfAc();

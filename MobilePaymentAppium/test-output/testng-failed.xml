@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Positive Transaction flow]">
+  <test name="Test4(failed)">
     <classes>
-      <class name="testPackage.Untitled">
+      <class name="mBankingTestPages.FundTransferTest">
         <methods>
           <include name="extentReportSetUp"/>
+          <include name="m2mQFtSuccess"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="testUntitled"/>
           <include name="extentGetResult"/>
         </methods>
-      </class> <!-- testPackage.Untitled -->
+      </class> <!-- mBankingTestPages.FundTransferTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Positive Transaction flow] -->

@@ -14,6 +14,9 @@ public class ObjectRepository extends AppiumController {
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Help']")
 	public MobileElement helpBtn;
 	
+	@AndroidFindBy (xpath="//android.widget.TextView[@text='Balance Enquiry']")
+	public MobileElement Balance_Enquiry;
+	
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Logout']")
 	public MobileElement logoutBtn;
 	
@@ -99,7 +102,7 @@ public class ObjectRepository extends AppiumController {
 	public MobileElement changemPINBtn;
 	
 	@AndroidFindBy(className= "android.widget.EditText[1]")
-	public MobileElement oldmPIN;
+	public static MobileElement oldmPIN;
 	
 	@AndroidFindBy(className= "android.widget.EditText[2]")
 	public MobileElement newmPIN;
@@ -119,7 +122,10 @@ public class ObjectRepository extends AppiumController {
 	public MobileElement helpTextView;
 	
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='Banking']")
-	public MobileElement bankingBtn;
+	public static MobileElement Banking;
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@index='0']")
+	public MobileElement headerText;
 	
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='24X7Fund Transfer']")
 	public MobileElement impsBtn;

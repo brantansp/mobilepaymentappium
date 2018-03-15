@@ -25,12 +25,13 @@ import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import mBankingBaseFactory.AppiumController;
+import mBankingBaseFactory.ObjectRepository;
 import mBankingPageObjectFactory.BankingPage;
 import mBankingPageObjectFactory.FeedbackPage;
 import mBankingPageObjectFactory.HomePage;
 import mBankingPageObjectFactory.LoginPage;
 
-public class BalanceEnquiryTest extends AppiumController {
+public class BalanceEnquiryTest extends ObjectRepository {
 	protected static LoginPage loginPage;
 	protected static HomePage homePage;
 	protected static BankingPage bankingObj;
@@ -39,55 +40,53 @@ public class BalanceEnquiryTest extends AppiumController {
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	   
-	@Test
+	//@Test(priority = 0)
+	public void checkForLogin() throws InterruptedException
+	{   
+		log.info("**********Check for login**********");
+		loginPage = new LoginPage(driver);
+			log.info("true");
+			loginPage.loginApp(prop.getProperty("apin"));
+			waitForElement(Banking, 10);
+		log.info("***************End***************");
+	}
+	
+	@Test(priority=1)
 	public void balanceEnq() throws InterruptedException
 	{
 		log.info("**********Balance Enquiry**********");
-		loginPage = new LoginPage(driver);
-		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
-			waitForElement(homePage.bankingBtn, 10);
-			click(homePage.bankingBtn);
+			waitForElement(Banking, 30);
+			click(Banking);
 			bankingObj = new BankingPage (driver);
-			try {
-				waitForElement(bankingObj.be, 10);
-				click(bankingObj.be);
-				try {
-					waitForElement(bankingObj.headerText, 10);
-					String[] accNo = listOfAc();
-					bankingObj.balanceEnq(accNo);
-					homePage.logoutApp();
-				} catch (Exception e) {
-					log.info(e);
-				}
-			} catch (Exception e) {
-				log.info(e);
-			}
+			//waitForElement(Balance_Enquiry, 30);
+			clickView("Balance Enquiry");
+			waitForElement(homePage.selectAcPage, 30);
+			String[] accNo = listOfAc();
+			bankingObj.balanceEnq(accNo);
 		} catch (Exception e) {
-			log.info(e);
-			click(homePage.homeBtn);
+			e.printStackTrace();
+			click(homeBtn);
 		}
-		log.info("***************End***************\n");
+		click(homeBtn);
+		log.info("***************End***************");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void miniStatement() throws InterruptedException
 	{
 		log.info("**********Mini Statement**********");
-        loginPage = new LoginPage(driver);
-		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
-		waitForElement(homePage.bankingBtn, 3);
-		click(homePage.bankingBtn);
+		waitForElement(Banking, 3);
+		click(Banking);
 		bankingObj = new BankingPage (driver);
 		waitForElement(bankingObj.ms, 3);
 		click(bankingObj.ms);
 		waitForElement(bankingObj.headerText, 3);
 		String[] accNo = listOfAc();
 		bankingObj.miniStatement(accNo);
-		homePage.logoutApp();
-		log.info("***************End***************\n");
+		log.info("***************End***************");
 	}
 
 }

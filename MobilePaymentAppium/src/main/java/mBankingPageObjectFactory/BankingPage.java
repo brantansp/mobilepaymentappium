@@ -46,8 +46,7 @@ public class BankingPage extends AppiumController  {
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Logout']")
 	public MobileElement logoutBtn;
 	
-	@AndroidFindBy (xpath="//android.widget.TextView[@text='Balance Enquiry']")
-	public MobileElement be;
+
 	
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='Select A/C']")
 	public MobileElement selectAcPage;
@@ -109,7 +108,6 @@ public class BankingPage extends AppiumController  {
 				 click(be);*/
 				click(homeBtn);
 			}
-			click(homeBtn);
 		} 
 		else
 		{
@@ -135,7 +133,7 @@ public class BankingPage extends AppiumController  {
 					 log.info(e);
 					}
 			 }
-			click(homeBtn);
+			
 		}
 	}
 
