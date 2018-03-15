@@ -33,13 +33,13 @@ public class LoginPageTest extends AppiumController{
 	{
 		log.info("**********Login to Application**********");
 		loginPage = new LoginPage(driver);
-		loginPage.loginApp("1111");
+		loginPage.loginApp(prop.getProperty("apin"));
 		Assert.assertEquals(true, true);
-		waitForActivity(".Fragment_Activity", 3000);
+		waitForActivity(".Fragment_Activity", 30);
 		log.info("***************End***************\n");
 	}
 	
-	@Test(priority = 10)
+	//@Test(priority = 10)
 	public void appExit() throws InterruptedException
 	{
 		log.info("**********Exit Application**********");
@@ -48,7 +48,7 @@ public class LoginPageTest extends AppiumController{
 		log.info("***************End***************\n");
 	}
 	
-	@Test(priority = 20)
+	//@Test(priority = 20)
 	public void referFriendValid() throws InterruptedException
 	{
 		log.info("**********Refer Friend**********");
@@ -61,7 +61,7 @@ public class LoginPageTest extends AppiumController{
 		log.info("***************End***************\n");
 	}
 
-	@Test(priority = 20)
+	//@Test(priority = 20)
 	public void feedback() throws InterruptedException
 	{
 		log.info("**********Feedback**********");

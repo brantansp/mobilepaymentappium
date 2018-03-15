@@ -8504,3 +8504,2332 @@ Session ID: 1f66aa9d-fb92-4800-83a4-307412c8455d
 2018-03-15 01:06:08 INFO  AppiumController:291 - false
 2018-03-15 01:06:08 INFO  AppiumController:292 - true
 2018-03-15 01:06:08 INFO  AppiumController:293 - [Ljava.lang.String;@3b79fd76
+2018-03-15 09:31:30 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:31:30 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:31:30 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:31:30 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:33:11 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:33:11 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:33:11 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:33:11 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:33:36 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:33:36 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 09:33:36 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:33:40 INFO  AppiumController:505 - Element found
+2018-03-15 09:33:40 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:33:46 INFO  AppiumController:813 - Send Text : 1111
+2018-03-15 09:33:47 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:34:54 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:34:54 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:34:54 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:34:54 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:35:22 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:35:22 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 09:35:22 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:35:26 INFO  AppiumController:505 - Element found
+2018-03-15 09:35:26 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:35:32 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:35:33 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:35:35 INFO  AppiumController:518 - Activity appeared :.Loading
+2018-03-15 09:35:35 INFO  LoginPageTest:39 - ***************End***************
+
+2018-03-15 09:35:35 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:35:35 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:35:35 INFO  LoginPageTest:45 - **********Exit Application**********
+2018-03-15 09:35:35 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:35:38 INFO  AppiumController:505 - Element found
+2018-03-15 09:35:38 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:35:38 INFO  HomePage:82 - Clicked on Exit button
+2018-03-15 09:35:42 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:35:42 INFO  HomePage:84 - Clicked on Yes button
+2018-03-15 09:35:42 INFO  LoginPageTest:48 - ***************End***************
+
+2018-03-15 09:35:42 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:35:42 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:35:42 INFO  LoginPageTest:67 - **********Feedback**********
+2018-03-15 09:35:42 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:35:45 INFO  AppiumController:505 - Element found
+2018-03-15 09:35:45 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:35:49 INFO  AppiumController:505 - Element found
+2018-03-15 09:36:17 INFO  AppiumController:427 - Page Title is : Feedback
+2018-03-15 09:36:17 INFO  AppiumController:430 - Acknowledgement : Thanks for your feedback
+2018-03-15 09:36:17 INFO  AppiumController:430 - Date and Time : 15/03/2018 09:37
+2018-03-15 09:36:17 INFO  AppiumController:430 - Transaction ID : 807409137808
+2018-03-15 09:36:17 INFO  LoginPageTest:70 - ***************End***************
+
+2018-03-15 09:36:17 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:36:17 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:36:17 INFO  LoginPageTest:54 - **********Refer Friend**********
+2018-03-15 09:36:17 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:36:18 INFO  AppiumController:505 - Element found
+2018-03-15 09:36:18 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:36:18 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:36:19 INFO  AppiumController:505 - Element found
+2018-03-15 09:36:44 INFO  AppiumController:427 - Page Title is : Refer a Friend
+2018-03-15 09:36:44 INFO  AppiumController:430 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 09:36:44 INFO  AppiumController:430 - Date and Time : 15/03/2018 09:37
+2018-03-15 09:36:44 INFO  AppiumController:430 - Transaction ID : 807409137809
+2018-03-15 09:36:45 INFO  LoginPageTest:61 - ***************End***************
+
+2018-03-15 09:36:45 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:36:45 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:36:45 INFO  HomePageTest:34 - **********Welcome page Name**********
+2018-03-15 09:36:45 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:36:45 INFO  AppiumController:505 - Element found
+2018-03-15 09:36:46 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:36:51 INFO  AppiumController:813 - Send Text : 1111
+2018-03-15 09:36:52 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:36:52 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:37:46 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:37:46 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:37:46 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:37:46 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:38:13 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:38:13 INFO  HomePageTest:34 - **********Welcome page Name**********
+2018-03-15 09:38:14 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:38:17 INFO  AppiumController:505 - Element found
+2018-03-15 09:38:18 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:23 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:38:24 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:24 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:38:27 INFO  AppiumController:505 - Element found
+2018-03-15 09:38:27 INFO  HomePage:56 - Name of customer in welcome page : BRANTANSP
+2018-03-15 09:38:27 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:38:27 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:38:27 INFO  HomePageTest:24 - **********Help Text**********
+2018-03-15 09:38:27 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:38:27 INFO  AppiumController:505 - Element found
+2018-03-15 09:38:28 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:28 INFO  HomePage:64 - Text displayed is : 
+Banking: To perform banking services such as Balance Enquiry, Mini Statement, Fund Transfer, and Requests to the bank
+
+Payments: To perform payments for utility bills, Recharge and Donations
+
+24X7 Fund Transfer: To transfer funds to other account(s) using Immediate Payment Service
+
+Settings: To customize your mobile banking application
+
+Inbox: To view acknowledged messages of each transaction
+
+Other services: To perform other banking services such as to stop a cheque, check the cheque status
+
+Change mPIN: To change your mPIN
+
+
+2018-03-15 09:38:29 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:30 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:33 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:38:33 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:38:33 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 09:39:10 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:39:10 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:39:10 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:39:10 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:39:36 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:39:36 INFO  BalanceEnquiryTest:45 - **********Balance Enquiry**********
+2018-03-15 09:39:37 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:39:40 INFO  AppiumController:505 - Element found
+2018-03-15 09:39:41 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:39:47 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:39:47 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:39:47 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:39:50 INFO  AppiumController:505 - Element found
+2018-03-15 09:39:50 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:39:50 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:39:51 INFO  AppiumController:505 - Element found
+2018-03-15 09:39:51 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:39:51 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:39:52 INFO  AppiumController:505 - Element found
+2018-03-15 09:39:52 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 09:39:52 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 09:39:52 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 09:39:52 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 09:39:52 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 09:39:52 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 09:39:52 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 09:39:52 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 09:39:52 INFO  BankingPage:116 - Single Account transaction
+2018-03-15 09:39:52 INFO  AppiumController:767 - Click on element : //android.widget.TextView[@text='2874XXX489349']
+2018-03-15 09:39:55 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:39:59 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:00 INFO  AppiumController:427 - Page Title is : Balance Enquiry
+2018-03-15 09:40:00 INFO  AppiumController:430 - Available Balance : Rs.11,28,32,300.00
+2018-03-15 09:40:00 INFO  AppiumController:430 - A/C No. : 2874XXX489349
+2018-03-15 09:40:00 INFO  AppiumController:430 - Date and Time : 15/03/2018 09:41
+2018-03-15 09:40:00 INFO  AppiumController:430 - Ledger Balance : Rs.11,28,32,300.00
+2018-03-15 09:40:00 INFO  AppiumController:430 - Transaction ID : 807409137812
+2018-03-15 09:40:00 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:00 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:01 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:01 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:01 INFO  HomePage:82 - Clicked on Exit button
+2018-03-15 09:40:05 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:05 INFO  HomePage:84 - Clicked on Yes button
+2018-03-15 09:40:05 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:40:05 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:40:05 INFO  BalanceEnquiryTest:76 - **********Mini Statement**********
+2018-03-15 09:40:05 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:08 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:08 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:13 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:40:14 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:14 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:17 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:17 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:17 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:18 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:18 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:18 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:19 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:19 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 09:40:19 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 09:40:19 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 09:40:19 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 09:40:19 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 09:40:19 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 09:40:19 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 09:40:19 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 09:40:19 INFO  BankingPage:179 - Single Account transaction
+2018-03-15 09:40:19 INFO  AppiumController:767 - Click on element : //android.widget.TextView[@text='2874XXX489349']
+2018-03-15 09:40:26 INFO  AppiumController:813 - Send Text : 1234
+2018-03-15 09:40:27 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:27 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:30 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:30 INFO  AppiumController:427 - Page Title is : Mini Statement
+2018-03-15 09:40:30 INFO  AppiumController:430 - Acknowledgement : Due to technical problem your last transaction was not processed. Please retry after some time
+2018-03-15 09:40:30 INFO  AppiumController:430 - Date and Time : 15/03/2018 09:41
+2018-03-15 09:40:30 INFO  AppiumController:430 - Transaction ID : 807409137814
+2018-03-15 09:40:31 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:31 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:40:32 INFO  AppiumController:505 - Element found
+2018-03-15 09:40:32 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:32 INFO  HomePage:82 - Clicked on Exit button
+2018-03-15 09:40:36 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:40:36 INFO  HomePage:84 - Clicked on Yes button
+2018-03-15 09:40:36 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:40:36 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 09:41:50 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:41:50 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:41:50 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:41:50 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:42:18 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:42:18 INFO  FundTransferTest:54 - **********FT M2M Ben Reg**********
+2018-03-15 09:42:18 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:42:21 INFO  AppiumController:505 - Element found
+2018-03-15 09:42:22 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:27 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:42:28 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:28 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:42:31 INFO  AppiumController:505 - Element found
+2018-03-15 09:42:31 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:31 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:42:32 INFO  AppiumController:505 - Element found
+2018-03-15 09:42:35 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:36 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:36 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:37 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:43 INFO  AppiumController:813 - Send Text : 1234
+2018-03-15 09:42:44 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:50 INFO  AppiumController:813 - Send Text : 8778602561
+2018-03-15 09:42:55 INFO  AppiumController:813 - Send Text : test
+2018-03-15 09:42:56 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:42:56 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:43:28 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:43:28 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:43:28 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 09:43:28 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:43:40 INFO  LoginPage:55 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.xpath: //*[@class='android.widget.EditText']" 
+- html content: "by id or name "loginBox""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+2018-03-15 09:43:41 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:43:45 INFO  AppiumController:675 - Failed Screenshot captured : Thu_Mar_15_09_43_41_IST_2018.png
+2018-03-15 09:43:45 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 09:45:13 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 09:45:13 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 09:45:13 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 09:45:13 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 09:45:40 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:45:40 INFO  FundTransferTest:54 - **********FT M2M Ben Reg**********
+2018-03-15 09:45:40 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:45:44 INFO  AppiumController:505 - Element found
+2018-03-15 09:45:44 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:45:50 INFO  AppiumController:813 - Send Text : 2222
+2018-03-15 09:45:51 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:45:51 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:45:54 INFO  AppiumController:505 - Element found
+2018-03-15 09:45:54 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:45:54 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:45:55 INFO  AppiumController:505 - Element found
+2018-03-15 09:45:58 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:45:58 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:45:59 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:00 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:06 INFO  AppiumController:813 - Send Text : 1234
+2018-03-15 09:46:07 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:12 INFO  AppiumController:813 - Send Text : 8778602561
+2018-03-15 09:46:18 INFO  AppiumController:813 - Send Text : test
+2018-03-15 09:46:19 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:19 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:46:21 INFO  AppiumController:505 - Element found
+2018-03-15 09:46:21 INFO  AppiumController:400 - 2
+2018-03-15 09:46:21 INFO  AppiumController:407 - Page Title is : Beneficiary A/C List
+2018-03-15 09:46:21 INFO  AppiumController:410 - 0 : Beneficiary A/C List
+2018-03-15 09:46:21 INFO  AppiumController:410 - 1 : 8764XXX411111
+2018-03-15 09:46:21 INFO  AppiumController:767 - Click on element : //android.widget.TextView[@text='8764XXX411111']
+2018-03-15 09:46:22 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:22 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:46:25 INFO  AppiumController:505 - Element found
+2018-03-15 09:46:25 INFO  AppiumController:427 - Page Title is : Beneficiary Registration
+2018-03-15 09:46:25 INFO  AppiumController:430 - Acknowledgement : Beneficiary test added successfully
+2018-03-15 09:46:25 INFO  AppiumController:430 - Date and Time : 15/03/2018 09:47
+2018-03-15 09:46:25 INFO  AppiumController:430 - Transaction ID : 807409137822
+2018-03-15 09:46:26 INFO  AppiumController:803 - clicked element :
+2018-03-15 09:46:26 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:46:26 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 09:46:26 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 09:46:26 INFO  AppiumController:498 - Entered Wait
+2018-03-15 09:46:38 INFO  LoginPage:55 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.xpath: //*[@class='android.widget.EditText']" 
+- html content: "by id or name "loginBox""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+2018-03-15 09:46:40 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 09:46:43 INFO  AppiumController:675 - Failed Screenshot captured : Thu_Mar_15_09_46_40_IST_2018.png
+2018-03-15 09:46:43 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 10:20:23 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 10:20:23 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 10:20:23 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 10:20:23 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 10:20:51 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 10:20:51 INFO  FundTransferTest:54 - **********FT M2M Ben Reg**********
+2018-03-15 10:20:51 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:20:55 INFO  AppiumController:506 - Element found
+2018-03-15 10:20:55 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:01 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 10:21:02 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:02 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:21:04 INFO  AppiumController:506 - Element found
+2018-03-15 10:21:04 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:04 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:21:05 INFO  AppiumController:506 - Element found
+2018-03-15 10:21:09 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:09 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:10 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:11 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:17 INFO  AppiumController:855 - Send Text : 1234
+2018-03-15 10:21:18 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:23 INFO  AppiumController:855 - Send Text : 8778602561
+2018-03-15 10:21:29 INFO  AppiumController:855 - Send Text : test
+2018-03-15 10:21:30 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:21:30 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:22:03 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 10:22:03 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 10:22:03 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 10:22:03 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:22:15 INFO  LoginPage:55 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.xpath: //*[@class='android.widget.EditText']" 
+- html content: "by id or name "loginBox""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+2018-03-15 10:22:17 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 10:22:20 INFO  AppiumController:717 - Failed Screenshot captured : Thu_Mar_15_10_22_17_IST_2018.png
+2018-03-15 10:22:20 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 10:22:25 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 10:22:25 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 10:22:25 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 10:22:25 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 10:22:52 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 10:22:52 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 10:22:52 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:22:56 INFO  AppiumController:506 - Element found
+2018-03-15 10:22:57 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:03 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 10:23:03 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:03 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:23:07 INFO  AppiumController:506 - Element found
+2018-03-15 10:23:07 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:07 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:23:08 INFO  AppiumController:506 - Element found
+2018-03-15 10:23:08 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:09 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:10 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:10 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:23:11 INFO  AppiumController:506 - Element found
+2018-03-15 10:23:11 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 10:23:11 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 10:23:11 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 10:23:11 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 10:23:11 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 10:23:11 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 10:23:11 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 10:23:11 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 10:23:11 INFO  FundTransferPage:88 - Single Account transaction
+2018-03-15 10:23:11 INFO  AppiumController:809 - Click on element : //android.widget.TextView[@text='2874XXX489349']
+2018-03-15 10:23:13 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 10:23:13 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 10:23:13 INFO  AppiumController:183 - mpin box
+2018-03-15 10:23:17 INFO  AppiumController:855 - Send Text : 1234
+2018-03-15 10:23:18 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:19 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 10:23:19 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 10:23:19 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 10:23:19 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 10:23:19 INFO  AppiumController:189 - mobile input box
+2018-03-15 10:23:24 INFO  AppiumController:855 - Send Text : 8778602561
+2018-03-15 10:23:24 INFO  AppiumController:195 - amount input box
+2018-03-15 10:23:29 INFO  AppiumController:855 - Send Text : 10
+2018-03-15 10:23:29 INFO  AppiumController:201 - remark input box
+2018-03-15 10:23:36 INFO  AppiumController:855 - Send Text : testuser
+2018-03-15 10:23:37 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:37 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:23:37 INFO  AppiumController:506 - Element found
+2018-03-15 10:23:38 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:38 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:23:41 INFO  AppiumController:506 - Element found
+2018-03-15 10:23:42 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 10:23:42 INFO  AppiumController:430 - Acknowledgement : Fund Transfer to 8764XXX5411111 - +918778602561 successful. Rs.10.00 debited from 2874XXX3489349
+2018-03-15 10:23:42 INFO  AppiumController:430 - Date and Time : 15/03/2018 10:24
+2018-03-15 10:23:42 INFO  AppiumController:430 - Transaction ID : 807410137826
+2018-03-15 10:23:42 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:23:42 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 10:23:42 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 10:36:14 INFO  FundTransferTest:106 - 8778602561
+2018-03-15 10:36:14 INFO  FundTransferTest:107 - 10
+2018-03-15 10:36:14 INFO  FundTransferTest:108 - test
+2018-03-15 10:36:14 INFO  FundTransferTest:110 - IVAN
+2018-03-15 10:37:22 INFO  FundTransferTest:106 - 8778602561
+2018-03-15 10:37:22 INFO  FundTransferTest:107 - 10
+2018-03-15 10:37:22 INFO  FundTransferTest:108 - test
+2018-03-15 10:37:22 INFO  FundTransferTest:111 - IVAN
+2018-03-15 10:37:22 INFO  FundTransferTest:112 - IVAN
+2018-03-15 10:37:44 INFO  FundTransferTest:106 - 8778602561
+2018-03-15 10:37:44 INFO  FundTransferTest:107 - 10
+2018-03-15 10:37:44 INFO  FundTransferTest:108 - test
+2018-03-15 10:37:44 INFO  FundTransferTest:111 - IVAN
+2018-03-15 10:37:44 INFO  FundTransferTest:112 - iconic
+2018-03-15 10:43:08 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 10:43:08 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 10:43:08 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 10:43:08 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 10:43:36 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 10:43:36 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 10:43:36 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:43:40 INFO  AppiumController:506 - Element found
+2018-03-15 10:43:41 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:47 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 10:43:48 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:48 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:43:50 INFO  AppiumController:506 - Element found
+2018-03-15 10:43:51 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:51 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:43:52 INFO  AppiumController:506 - Element found
+2018-03-15 10:43:52 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:53 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:54 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:43:54 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:43:54 INFO  AppiumController:506 - Element found
+2018-03-15 10:43:55 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 10:43:55 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 10:43:55 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 10:43:55 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 10:43:55 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 10:43:55 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 10:43:55 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 10:43:55 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 10:43:55 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 10:43:55 INFO  AppiumController:809 - Click on element : //android.widget.TextView[@text='2874XXX489349']
+2018-03-15 10:43:56 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 10:43:56 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 10:43:56 INFO  AppiumController:183 - mpin box
+2018-03-15 10:44:01 INFO  AppiumController:855 - Send Text : 1234
+2018-03-15 10:44:02 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:44:02 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 10:44:02 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 10:44:02 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 10:44:02 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 10:44:02 INFO  AppiumController:189 - mobile input box
+2018-03-15 10:44:08 INFO  AppiumController:855 - Send Text : 9894060407
+2018-03-15 10:44:08 INFO  AppiumController:195 - amount input box
+2018-03-15 10:44:13 INFO  AppiumController:855 - Send Text : 100
+2018-03-15 10:44:13 INFO  AppiumController:201 - remark input box
+2018-03-15 10:44:19 INFO  AppiumController:855 - Send Text : null
+2018-03-15 10:44:19 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:44:19 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:44:20 INFO  AppiumController:506 - Element found
+2018-03-15 10:44:20 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:44:20 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:44:23 INFO  AppiumController:506 - Element found
+2018-03-15 10:44:23 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 10:44:23 INFO  AppiumController:430 - Acknowledgement : Beneficiary and Initiator mobile number cannot be same
+2018-03-15 10:44:23 INFO  AppiumController:430 - Date and Time : 15/03/2018 10:45
+2018-03-15 10:44:23 INFO  AppiumController:430 - Transaction ID : 807410137832
+2018-03-15 10:44:23 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:44:23 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 10:44:24 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 10:56:41 INFO  FundTransferTest:106 - 8778602561
+2018-03-15 10:56:41 INFO  FundTransferTest:107 - 10
+2018-03-15 10:56:41 INFO  FundTransferTest:108 - test
+2018-03-15 10:56:41 INFO  FundTransferTest:111 - IVAN
+2018-03-15 10:56:41 INFO  FundTransferTest:112 - iconic
+2018-03-15 10:57:30 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 10:57:30 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 10:57:30 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 10:57:30 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 10:57:57 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 10:57:57 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 10:57:57 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:58:01 INFO  AppiumController:506 - Element found
+2018-03-15 10:58:01 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:58:07 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 10:58:08 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:58:08 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:58:10 INFO  AppiumController:506 - Element found
+2018-03-15 10:58:10 INFO  AppiumController:845 - clicked element :
+2018-03-15 10:58:10 INFO  AppiumController:498 - Entered Wait
+2018-03-15 10:58:11 INFO  AppiumController:506 - Element found
+2018-03-15 10:58:11 INFO  AppiumController:809 - Click on element : Fund Transfer - Within Bank
+2018-03-15 10:58:11 ERROR AppiumController:813 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 66819534-15a0-4ba6-a3f4-84da0baa2722
+*** Element info: {Using=xpath, value=Fund Transfer - Within Bank}
+2018-03-15 10:58:11 INFO  AppiumController:809 - Click on element : Mobile-to-Mobile
+2018-03-15 10:58:13 ERROR AppiumController:813 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.50 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 66819534-15a0-4ba6-a3f4-84da0baa2722
+*** Element info: {Using=xpath, value=Mobile-to-Mobile}
+2018-03-15 10:58:13 INFO  AppiumController:809 - Click on element : Quick Fund Transfer
+2018-03-15 10:58:13 ERROR AppiumController:813 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 66819534-15a0-4ba6-a3f4-84da0baa2722
+*** Element info: {Using=xpath, value=Quick Fund Transfer}
+2018-03-15 10:58:13 INFO  AppiumController:514 - Entered Wait
+2018-03-15 10:58:14 ERROR FundTransferTest:43 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.32 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 66819534-15a0-4ba6-a3f4-84da0baa2722
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Select A/C']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.32 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 66819534-15a0-4ba6-a3f4-84da0baa2722
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Select A/C']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:516)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:45)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 10:58:14 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 10:58:14 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 11:04:52 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 11:04:52 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 11:04:52 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 11:04:52 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 11:05:19 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 11:05:19 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 11:05:19 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:05:23 INFO  AppiumController:506 - Element found
+2018-03-15 11:05:24 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:05:29 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 11:05:30 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:05:30 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:05:33 INFO  AppiumController:506 - Element found
+2018-03-15 11:05:33 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:05:33 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:05:34 INFO  AppiumController:506 - Element found
+2018-03-15 11:05:34 INFO  AppiumController:809 - Click on element : Fund Transfer - Within Bank
+2018-03-15 11:05:34 ERROR AppiumController:813 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ee8c58b7-78e3-432d-b85e-0346032ed339
+*** Element info: {Using=xpath, value=Fund Transfer - Within Bank}
+2018-03-15 11:05:34 INFO  AppiumController:809 - Click on element : Mobile-to-Mobile
+2018-03-15 11:05:36 ERROR AppiumController:813 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.46 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ee8c58b7-78e3-432d-b85e-0346032ed339
+*** Element info: {Using=xpath, value=Mobile-to-Mobile}
+2018-03-15 11:05:36 INFO  AppiumController:809 - Click on element : Quick Fund Transfer
+2018-03-15 11:05:36 ERROR AppiumController:813 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ee8c58b7-78e3-432d-b85e-0346032ed339
+*** Element info: {Using=xpath, value=Quick Fund Transfer}
+2018-03-15 11:05:36 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:05:37 ERROR FundTransferTest:43 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ee8c58b7-78e3-432d-b85e-0346032ed339
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Select A/C']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ee8c58b7-78e3-432d-b85e-0346032ed339
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Select A/C']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:516)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:45)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 11:05:37 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 11:05:37 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 11:10:58 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 11:10:58 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 11:10:58 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 11:10:58 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 11:11:25 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 11:11:25 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 11:11:25 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:11:29 INFO  AppiumController:506 - Element found
+2018-03-15 11:11:30 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:11:36 INFO  AppiumController:855 - Send Text : 2222
+2018-03-15 11:11:37 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:11:37 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:11:39 INFO  AppiumController:506 - Element found
+2018-03-15 11:11:39 INFO  AppiumController:845 - clicked element :
+2018-03-15 11:11:39 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:11:40 INFO  AppiumController:506 - Element found
+2018-03-15 11:11:40 INFO  AppiumController:831 - Click on element : Fund Transfer - Within Bank
+2018-03-15 11:11:41 INFO  AppiumController:831 - Click on element : Mobile-to-Mobile
+2018-03-15 11:11:41 INFO  AppiumController:831 - Click on element : Quick Fund Transfer
+2018-03-15 11:11:42 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:11:43 INFO  AppiumController:521 - Element found
+2018-03-15 11:11:44 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 11:11:44 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 11:11:44 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 11:11:44 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 11:11:44 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 11:11:44 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 11:11:44 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 11:11:44 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 11:11:44 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 11:11:44 INFO  AppiumController:831 - Click on element : 2874XXX489349
+2018-03-15 11:11:45 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:11:45 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 11:11:45 INFO  AppiumController:183 - mpin box
+2018-03-15 11:11:50 INFO  AppiumController:855 - Send Text : 1234
+2018-03-15 11:11:50 INFO  AppiumController:820 - Click on element : OK
+2018-03-15 11:11:51 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:11:51 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 11:11:51 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 11:11:51 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 11:11:51 INFO  AppiumController:189 - mobile input box
+2018-03-15 11:11:56 INFO  AppiumController:855 - Send Text : 8778602561
+2018-03-15 11:11:56 INFO  AppiumController:195 - amount input box
+2018-03-15 11:12:02 INFO  AppiumController:855 - Send Text : 100
+2018-03-15 11:12:02 INFO  AppiumController:201 - remark input box
+2018-03-15 11:12:07 INFO  AppiumController:855 - Send Text : BRANTAN
+2018-03-15 11:12:07 INFO  AppiumController:820 - Click on element : OK
+2018-03-15 11:12:08 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:12:09 INFO  AppiumController:521 - Element found
+2018-03-15 11:12:09 INFO  AppiumController:820 - Click on element : Confirm
+2018-03-15 11:12:09 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:12:10 ERROR FundTransferTest:43 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: d48a064d-dfc7-478e-afb3-87eeb8804c77
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Transaction ID']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: d48a064d-dfc7-478e-afb3-87eeb8804c77
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Transaction ID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:516)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:101)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 11:12:10 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 11:12:10 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 11:44:16 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 11:44:17 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 11:44:17 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 11:44:17 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 11:44:43 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 11:44:43 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 11:44:43 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:44:47 INFO  AppiumController:506 - Element found
+2018-03-15 11:44:47 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:44:53 INFO  AppiumController:856 - Send Text : 2222
+2018-03-15 11:44:54 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:44:54 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:44:57 INFO  AppiumController:506 - Element found
+2018-03-15 11:44:57 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:44:57 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:44:58 INFO  AppiumController:506 - Element found
+2018-03-15 11:44:58 INFO  AppiumController:832 - Click on element : Fund Transfer - Within Bank
+2018-03-15 11:44:58 INFO  AppiumController:832 - Click on element : Mobile-to-Mobile
+2018-03-15 11:44:59 INFO  AppiumController:832 - Click on element : Quick Fund Transfer
+2018-03-15 11:45:00 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:45:01 INFO  AppiumController:522 - Element found
+2018-03-15 11:45:01 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 11:45:01 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 11:45:01 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 11:45:01 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 11:45:01 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 11:45:01 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 11:45:01 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 11:45:01 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 11:45:01 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 11:45:01 INFO  AppiumController:832 - Click on element : 2874XXX489349
+2018-03-15 11:45:02 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:45:02 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 11:45:02 INFO  AppiumController:183 - mpin box
+2018-03-15 11:45:07 INFO  AppiumController:856 - Send Text : 1234
+2018-03-15 11:45:08 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:45:09 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:45:09 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 11:45:09 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 11:45:09 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 11:45:09 INFO  AppiumController:189 - mobile input box
+2018-03-15 11:45:14 INFO  AppiumController:856 - Send Text : 8778602561
+2018-03-15 11:45:14 INFO  AppiumController:195 - amount input box
+2018-03-15 11:45:20 INFO  AppiumController:856 - Send Text : 100
+2018-03-15 11:45:20 INFO  AppiumController:201 - remark input box
+2018-03-15 11:45:26 INFO  AppiumController:856 - Send Text : BRANTAN
+2018-03-15 11:45:27 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:45:27 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:45:27 INFO  AppiumController:522 - Element found
+2018-03-15 11:45:28 INFO  AppiumController:822 - Click on element : Confirm
+2018-03-15 11:45:28 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:45:29 ERROR FundTransferTest:43 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.31 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 431d7f47-2a32-4057-9b69-c264708f30cc
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.31 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 431d7f47-2a32-4057-9b69-c264708f30cc
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:517)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:101)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 11:45:29 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 11:45:29 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 11:47:30 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 11:47:30 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 11:47:30 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 11:47:30 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 11:47:57 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 11:47:57 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 11:47:57 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:48:01 INFO  AppiumController:506 - Element found
+2018-03-15 11:48:02 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:48:07 INFO  AppiumController:856 - Send Text : 2222
+2018-03-15 11:48:08 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:48:08 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:48:10 INFO  AppiumController:506 - Element found
+2018-03-15 11:48:11 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:48:11 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:48:12 INFO  AppiumController:506 - Element found
+2018-03-15 11:48:12 INFO  AppiumController:832 - Click on element : Fund Transfer - Within Bank
+2018-03-15 11:48:12 INFO  AppiumController:832 - Click on element : Mobile-to-Mobile
+2018-03-15 11:48:13 INFO  AppiumController:832 - Click on element : Quick Fund Transfer
+2018-03-15 11:48:14 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:48:14 INFO  AppiumController:522 - Element found
+2018-03-15 11:48:15 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 11:48:15 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 11:48:15 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 11:48:15 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 11:48:15 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 11:48:15 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 11:48:15 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 11:48:15 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 11:48:15 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 11:48:15 INFO  AppiumController:832 - Click on element : 2874XXX489349
+2018-03-15 11:48:16 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:48:16 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 11:48:16 INFO  AppiumController:183 - mpin box
+2018-03-15 11:48:21 INFO  AppiumController:856 - Send Text : 1234
+2018-03-15 11:48:22 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:48:23 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:48:23 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 11:48:23 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 11:48:23 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 11:48:23 INFO  AppiumController:189 - mobile input box
+2018-03-15 11:48:28 INFO  AppiumController:856 - Send Text : 8778602561
+2018-03-15 11:48:28 INFO  AppiumController:195 - amount input box
+2018-03-15 11:48:33 INFO  AppiumController:856 - Send Text : 100
+2018-03-15 11:48:33 INFO  AppiumController:201 - remark input box
+2018-03-15 11:48:38 INFO  AppiumController:856 - Send Text : BRANTAN
+2018-03-15 11:48:39 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:48:39 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:48:40 INFO  AppiumController:522 - Element found
+2018-03-15 11:48:40 INFO  AppiumController:822 - Click on element : Confirm
+2018-03-15 11:48:40 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:48:44 INFO  AppiumController:506 - Element found
+2018-03-15 11:48:44 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 11:48:44 INFO  AppiumController:430 - Acknowledgement : Fund Transfer to 8764XXX5411111 - +918778602561 successful. Rs.100.00 debited from 2874XXX3489349
+2018-03-15 11:48:44 INFO  AppiumController:430 - Date and Time : 15/03/2018 11:49
+2018-03-15 11:48:44 INFO  AppiumController:430 - Transaction ID : 807411137844
+2018-03-15 11:48:45 ERROR AppiumController:814 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.29 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 69bbfe25-c64e-4f5c-bedd-126c8120e60f
+*** Element info: {Using=xpath, value=Home}
+2018-03-15 11:48:45 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 11:48:45 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 11:57:38 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 11:57:39 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 11:57:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 11:57:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 11:58:04 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 11:58:04 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 11:58:04 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:58:08 INFO  AppiumController:506 - Element found
+2018-03-15 11:58:09 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:58:15 INFO  AppiumController:856 - Send Text : 2222
+2018-03-15 11:58:16 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:58:16 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:58:19 INFO  AppiumController:506 - Element found
+2018-03-15 11:58:19 INFO  AppiumController:846 - clicked element :
+2018-03-15 11:58:19 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:58:20 INFO  AppiumController:506 - Element found
+2018-03-15 11:58:20 INFO  AppiumController:832 - Click on element : Fund Transfer - Within Bank
+2018-03-15 11:58:20 INFO  AppiumController:832 - Click on element : Mobile-to-Mobile
+2018-03-15 11:58:21 INFO  AppiumController:832 - Click on element : Quick Fund Transfer
+2018-03-15 11:58:22 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:58:23 INFO  AppiumController:522 - Element found
+2018-03-15 11:58:23 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 11:58:23 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 11:58:23 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 11:58:23 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 11:58:23 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 11:58:23 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 11:58:23 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 11:58:23 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 11:58:23 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 11:58:23 INFO  AppiumController:832 - Click on element : 2874XXX489349
+2018-03-15 11:58:24 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:58:24 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 11:58:24 INFO  AppiumController:183 - mpin box
+2018-03-15 11:58:30 INFO  AppiumController:856 - Send Text : 1234
+2018-03-15 11:58:30 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:58:31 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 11:58:31 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 11:58:31 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 11:58:31 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 11:58:31 INFO  AppiumController:189 - mobile input box
+2018-03-15 11:58:36 INFO  AppiumController:856 - Send Text : 8778602561
+2018-03-15 11:58:36 INFO  AppiumController:195 - amount input box
+2018-03-15 11:58:41 INFO  AppiumController:856 - Send Text : 100
+2018-03-15 11:58:41 INFO  AppiumController:201 - remark input box
+2018-03-15 11:58:47 INFO  AppiumController:856 - Send Text : BRANTAN
+2018-03-15 11:58:48 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 11:58:48 INFO  AppiumController:514 - Entered Wait
+2018-03-15 11:58:49 INFO  AppiumController:522 - Element found
+2018-03-15 11:58:49 INFO  AppiumController:822 - Click on element : Confirm
+2018-03-15 11:58:49 INFO  AppiumController:498 - Entered Wait
+2018-03-15 11:58:53 INFO  AppiumController:506 - Element found
+2018-03-15 11:58:53 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 11:58:53 INFO  AppiumController:430 - Acknowledgement : Fund Transfer to 8764XXX5411111 - +918778602561 successful. Rs.100.00 debited from 2874XXX3489349
+2018-03-15 11:58:53 INFO  AppiumController:430 - Date and Time : 15/03/2018 11:59
+2018-03-15 11:58:53 INFO  AppiumController:430 - Transaction ID : 807411137846
+2018-03-15 11:58:54 INFO  AppiumController:822 - Click on element : Home
+2018-03-15 11:58:54 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 11:58:54 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 12:44:31 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 12:44:31 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 12:44:31 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 12:44:31 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 12:44:55 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 12:44:55 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 12:44:55 INFO  AppiumController:498 - Entered Wait
+2018-03-15 12:44:59 INFO  AppiumController:506 - Element found
+2018-03-15 12:44:59 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:45:05 INFO  AppiumController:856 - Send Text : 3333
+2018-03-15 12:45:06 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:45:06 INFO  AppiumController:498 - Entered Wait
+2018-03-15 12:45:09 INFO  AppiumController:506 - Element found
+2018-03-15 12:45:09 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:45:09 INFO  AppiumController:498 - Entered Wait
+2018-03-15 12:45:10 INFO  AppiumController:506 - Element found
+2018-03-15 12:45:10 INFO  AppiumController:832 - Click on element : Fund Transfer - Within Bank
+2018-03-15 12:45:10 INFO  AppiumController:832 - Click on element : Mobile-to-Mobile
+2018-03-15 12:45:11 INFO  AppiumController:832 - Click on element : Quick Fund Transfer
+2018-03-15 12:45:12 INFO  AppiumController:514 - Entered Wait
+2018-03-15 12:45:13 INFO  AppiumController:522 - Element found
+2018-03-15 12:45:13 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 12:45:13 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 12:45:13 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 12:45:13 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 12:45:13 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 12:45:13 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 12:45:13 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 12:45:13 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 12:45:13 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 12:45:13 INFO  AppiumController:832 - Click on element : 2874XXX489349
+2018-03-15 12:45:14 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 12:45:14 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 12:45:14 INFO  AppiumController:183 - mpin box
+2018-03-15 12:45:20 INFO  AppiumController:856 - Send Text : 1234
+2018-03-15 12:45:21 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 12:45:21 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 12:45:21 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 12:45:21 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 12:45:21 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 12:45:21 INFO  AppiumController:189 - mobile input box
+2018-03-15 12:45:26 INFO  AppiumController:856 - Send Text : 8778602561
+2018-03-15 12:45:26 INFO  AppiumController:195 - amount input box
+2018-03-15 12:45:32 INFO  AppiumController:856 - Send Text : 100
+2018-03-15 12:45:32 INFO  AppiumController:201 - remark input box
+2018-03-15 12:45:38 INFO  AppiumController:856 - Send Text : BRANTAN
+2018-03-15 12:45:39 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 12:45:39 INFO  AppiumController:514 - Entered Wait
+2018-03-15 12:45:40 INFO  AppiumController:522 - Element found
+2018-03-15 12:45:40 INFO  AppiumController:822 - Click on element : Confirm
+2018-03-15 12:45:40 INFO  AppiumController:514 - Entered Wait
+2018-03-15 12:45:41 ERROR FundTransferTest:43 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.48 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 25b9e6c9-455b-4cb2-894b-74aa5a108ba5
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Transaction ID']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.48 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 25b9e6c9-455b-4cb2-894b-74aa5a108ba5
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView'][@text='Transaction ID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:517)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:103)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 12:45:41 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 12:45:42 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 12:53:49 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 12:53:50 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 12:53:50 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 12:53:50 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 12:54:13 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 12:54:13 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 12:54:14 INFO  AppiumController:528 - Entered Wait
+2018-03-15 12:54:17 INFO  AppiumController:535 - Element found
+2018-03-15 12:54:18 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:54:23 INFO  AppiumController:856 - Send Text : 3333
+2018-03-15 12:54:24 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:54:24 INFO  AppiumController:514 - Entered Wait
+2018-03-15 12:54:27 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 12:54:31 INFO  AppiumController:718 - Failed Screenshot captured : Thu_Mar_15_12_54_27_IST_2018.png
+2018-03-15 12:54:31 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 12:58:24 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 12:58:24 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 12:58:24 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 12:58:24 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 12:58:51 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 12:58:51 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 12:58:51 INFO  AppiumController:528 - Entered Wait
+2018-03-15 12:58:55 INFO  AppiumController:535 - Element found
+2018-03-15 12:58:56 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:59:01 INFO  AppiumController:856 - Send Text : 3333
+2018-03-15 12:59:02 INFO  AppiumController:846 - clicked element :
+2018-03-15 12:59:04 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 12:59:07 INFO  AppiumController:718 - Failed Screenshot captured : Thu_Mar_15_12_59_04_IST_2018.png
+2018-03-15 12:59:07 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:04:06 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:04:07 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:04:07 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:04:07 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:05:03 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:05:03 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:05:03 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:05:03 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:05:28 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:05:28 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:05:28 INFO  AppiumController:528 - Entered Wait
+2018-03-15 14:05:32 INFO  AppiumController:535 - Element found
+2018-03-15 14:05:32 INFO  AppiumController:846 - clicked element :
+2018-03-15 14:05:38 INFO  AppiumController:856 - Send Text : 3333
+2018-03-15 14:05:39 INFO  AppiumController:846 - clicked element :
+2018-03-15 14:05:42 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:05:45 INFO  AppiumController:718 - Failed Screenshot captured : Thu_Mar_15_14_05_42_IST_2018.png
+2018-03-15 14:05:45 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:06:36 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:06:36 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:06:36 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:06:36 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:07:02 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:07:02 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:07:03 INFO  AppiumController:528 - Entered Wait
+2018-03-15 14:07:06 INFO  AppiumController:535 - Element found
+2018-03-15 14:07:07 INFO  AppiumController:846 - clicked element :
+2018-03-15 14:07:12 INFO  AppiumController:856 - Send Text : 3333
+2018-03-15 14:07:13 INFO  AppiumController:846 - clicked element :
+2018-03-15 14:07:17 INFO  AppiumController:811 - Click on element : //android.widget.TextView[@text='Banking']
+2018-03-15 14:07:21 INFO  AppiumController:846 - clicked element :
+2018-03-15 14:07:21 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:07:21 INFO  AppiumController:506 - Element found
+2018-03-15 14:07:21 INFO  AppiumController:832 - Click on element : Fund Transfer - Within Bank
+2018-03-15 14:07:21 INFO  AppiumController:832 - Click on element : Mobile-to-Mobile
+2018-03-15 14:07:22 INFO  AppiumController:832 - Click on element : Quick Fund Transfer
+2018-03-15 14:07:23 INFO  AppiumController:514 - Entered Wait
+2018-03-15 14:07:24 INFO  AppiumController:522 - Element found
+2018-03-15 14:07:24 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 14:07:24 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 14:07:24 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 14:07:24 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 14:07:24 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 14:07:24 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 14:07:24 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 14:07:24 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 14:07:24 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 14:07:24 INFO  AppiumController:832 - Click on element : 2874XXX489349
+2018-03-15 14:07:26 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 14:07:26 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 14:07:26 INFO  AppiumController:183 - mpin box
+2018-03-15 14:07:30 INFO  AppiumController:856 - Send Text : 1234
+2018-03-15 14:07:31 INFO  AppiumController:822 - Click on element : OK
+2018-03-15 14:07:32 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 14:07:32 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 14:07:32 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 14:07:32 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 14:07:32 INFO  AppiumController:189 - mobile input box
+2018-03-15 14:07:37 INFO  AppiumController:856 - Send Text : 8778602561
+2018-03-15 14:07:37 INFO  AppiumController:195 - amount input box
+2018-03-15 14:07:42 INFO  AppiumController:856 - Send Text : 100
+2018-03-15 14:07:42 INFO  AppiumController:201 - remark input box
+2018-03-15 14:13:16 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:13:16 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:13:16 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:13:16 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:14:48 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:14:49 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:14:49 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:14:49 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:15:16 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:15:16 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 14:15:16 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:15:23 INFO  AppiumController:536 - Element found
+2018-03-15 14:15:23 INFO  AppiumController:847 - clicked element :
+2018-03-15 14:15:29 INFO  AppiumController:857 - Send Text : 3333
+2018-03-15 14:15:30 INFO  AppiumController:847 - clicked element :
+2018-03-15 14:15:30 INFO  AppiumController:514 - Entered Wait
+2018-03-15 14:15:32 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:15:36 INFO  AppiumController:719 - Failed Screenshot captured : Thu_Mar_15_14_15_32_IST_2018.png
+2018-03-15 14:15:36 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:16:22 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:16:22 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:16:22 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:16:22 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:16:48 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:16:48 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 14:16:48 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:16:52 INFO  AppiumController:536 - Element found
+2018-03-15 14:16:53 INFO  AppiumController:847 - clicked element :
+2018-03-15 14:16:58 INFO  AppiumController:857 - Send Text : 3333
+2018-03-15 14:16:59 INFO  AppiumController:847 - clicked element :
+2018-03-15 14:16:59 INFO  AppiumController:514 - Entered Wait
+2018-03-15 14:17:02 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:17:05 INFO  AppiumController:719 - Failed Screenshot captured : Thu_Mar_15_14_17_02_IST_2018.png
+2018-03-15 14:17:05 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:23:33 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:23:33 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:23:33 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:23:33 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:23:59 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:23:59 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 14:23:59 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:24:03 INFO  AppiumController:536 - Element found
+2018-03-15 14:24:03 ERROR AppiumController:815 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: e8eea1c2-bfe7-45fd-8b34-35386de19ee8
+*** Element info: {Using=xpath, value=Application PIN}
+2018-03-15 14:24:09 INFO  AppiumController:873 - Send Text : 3333
+2018-03-15 14:24:10 INFO  AppiumController:857 - clicked element :
+2018-03-15 14:24:10 INFO  AppiumController:514 - Entered Wait
+2018-03-15 14:24:13 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:24:16 INFO  AppiumController:719 - Failed Screenshot captured : Thu_Mar_15_14_24_13_IST_2018.png
+2018-03-15 14:24:16 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:25:17 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:25:17 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:25:17 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:25:17 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:25:44 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:25:44 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 14:25:44 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:25:48 INFO  AppiumController:536 - Element found
+2018-03-15 14:25:48 ERROR AppiumController:815 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 37 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 49208349-0ff9-4b13-ae54-d9d0d3e213c9
+*** Element info: {Using=xpath, value=Application PIN}
+2018-03-15 14:25:53 INFO  AppiumController:873 - Send Text : 3333
+2018-03-15 14:25:54 INFO  AppiumController:857 - clicked element :
+2018-03-15 14:25:56 INFO  AppiumController:562 - Activity appeared :.Loading
+2018-03-15 14:25:56 INFO  LoginPageTest:39 - ***************End***************
+
+2018-03-15 14:25:56 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:25:56 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:27:29 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:27:29 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:27:29 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:27:29 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:27:55 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:27:55 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 14:27:56 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:27:59 INFO  AppiumController:536 - Element found
+2018-03-15 14:28:05 INFO  AppiumController:873 - Send Text : 3333
+2018-03-15 14:28:06 INFO  AppiumController:857 - clicked element :
+2018-03-15 14:28:07 INFO  AppiumController:562 - Activity appeared :.Loading
+2018-03-15 14:28:07 INFO  LoginPageTest:39 - ***************End***************
+
+2018-03-15 14:28:07 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:28:07 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:30:13 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:30:14 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:30:14 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:30:14 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:30:40 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:30:40 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 14:30:40 INFO  AppiumController:529 - Entered Wait
+2018-03-15 14:30:44 INFO  AppiumController:536 - Element found
+2018-03-15 14:30:44 INFO  AppiumController:843 - Click on element : Application PIN
+2018-03-15 14:30:50 INFO  AppiumController:873 - Send Text : 3333
+2018-03-15 14:30:50 INFO  AppiumController:857 - clicked element :
+2018-03-15 14:30:52 INFO  AppiumController:562 - Activity appeared :.Loading
+2018-03-15 14:30:52 INFO  LoginPageTest:39 - ***************End***************
+
+2018-03-15 14:30:52 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:30:52 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:35:07 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:35:07 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:35:07 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:35:07 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:35:33 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:35:33 INFO  FundTransferTest:31 - **********FT M2M QFT**********
+2018-03-15 14:35:34 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:35:37 INFO  AppiumController:550 - Element found
+2018-03-15 14:35:37 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:35:43 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:35:44 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:35:44 INFO  AppiumController:515 - Entered Wait
+2018-03-15 14:35:47 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:35:50 INFO  AppiumController:733 - Failed Screenshot captured : Thu_Mar_15_14_35_47_IST_2018.png
+2018-03-15 14:35:50 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:38:10 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:38:11 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:38:11 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:38:11 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:38:37 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:38:37 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:38:37 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:38:41 INFO  AppiumController:550 - Element found
+2018-03-15 14:38:41 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:38:47 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:38:47 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:38:49 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:38:53 INFO  AppiumController:733 - Failed Screenshot captured : Thu_Mar_15_14_38_49_IST_2018.png
+2018-03-15 14:38:53 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:39:23 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:39:23 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:39:23 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:39:23 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:39:49 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:39:49 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:39:50 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:39:53 INFO  AppiumController:550 - Element found
+2018-03-15 14:39:53 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:40:00 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:40:01 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:40:04 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:40:07 INFO  AppiumController:733 - Failed Screenshot captured : Thu_Mar_15_14_40_04_IST_2018.png
+2018-03-15 14:40:07 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:41:13 INFO  Untitled:53 - before closed
+2018-03-15 14:41:14 INFO  Untitled:75 - .SplashScreen
+2018-03-15 14:41:47 INFO  Untitled:106 - Page Title is : Refer a Friend
+2018-03-15 14:41:47 INFO  Untitled:110 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 14:41:47 INFO  Untitled:110 - Date and Time : 15/03/2018 14:42
+2018-03-15 14:41:47 INFO  Untitled:110 - Transaction ID : 807414137870
+2018-03-15 14:41:47 INFO  Untitled:113 - 807414137870
+2018-03-15 14:43:39 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:43:40 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:43:40 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:43:40 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:44:03 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:44:03 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:44:03 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:44:07 INFO  AppiumController:550 - Element found
+2018-03-15 14:44:07 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:44:13 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:44:14 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:44:14 INFO  AppiumController:556 - Entered Wait
+2018-03-15 14:44:16 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:44:20 INFO  AppiumController:733 - Failed Screenshot captured : Thu_Mar_15_14_44_16_IST_2018.png
+2018-03-15 14:44:20 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:47:47 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:47:47 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:47:47 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:47:47 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:48:14 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:48:14 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:48:14 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:48:18 INFO  AppiumController:550 - Element found
+2018-03-15 14:48:18 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:48:24 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:48:25 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:48:25 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:48:27 INFO  AppiumController:506 - Element found
+2018-03-15 14:48:27 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:49:00 ERROR FundTransferTest:44 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.xpath: //android.widget.TextView[@text='Fund Transfer - Within Bank']" 
+- html content: "by id or name "ftWb""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.xpath: //android.widget.TextView[@text='Fund Transfer - Within Bank']" 
+- html content: "by id or name "ftWb""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.toString(<generated>)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at mBankingBaseFactory.AppiumController.waitForCondition(AppiumController.java:493)
+	at mBankingBaseFactory.AppiumController.waitForElement(AppiumController.java:501)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 14:49:00 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:49:00 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:49:08 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:49:08 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:49:08 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:49:08 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:49:35 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:49:35 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:49:35 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:49:39 INFO  AppiumController:550 - Element found
+2018-03-15 14:49:39 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:49:45 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:49:45 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:49:48 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:49:51 INFO  AppiumController:733 - Failed Screenshot captured : Thu_Mar_15_14_49_48_IST_2018.png
+2018-03-15 14:49:51 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 14:51:41 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:51:41 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:51:41 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:51:41 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:52:08 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:52:08 INFO  FundTransferTest:32 - **********FT M2M QFT**********
+2018-03-15 14:52:08 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:52:12 INFO  AppiumController:550 - Element found
+2018-03-15 14:52:12 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:52:18 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:52:18 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:52:18 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:52:21 INFO  AppiumController:506 - Element found
+2018-03-15 14:52:21 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:52:52 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 14:52:53 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 14:52:53 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 14:52:53 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 14:53:19 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 14:53:19 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 14:53:19 INFO  AppiumController:543 - Entered Wait
+2018-03-15 14:53:23 INFO  AppiumController:550 - Element found
+2018-03-15 14:53:23 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 14:53:29 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 14:53:30 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:53:30 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:53:32 INFO  AppiumController:506 - Element found
+2018-03-15 14:53:32 INFO  AppiumController:871 - clicked element :
+2018-03-15 14:53:32 INFO  AppiumController:498 - Entered Wait
+2018-03-15 14:53:33 INFO  AppiumController:506 - Element found
+2018-03-15 14:53:33 INFO  AppiumController:847 - Click on element : Fund Transfer - Within Bank
+2018-03-15 14:53:34 INFO  AppiumController:847 - Click on element : Mobile-to-Mobile
+2018-03-15 14:53:35 INFO  AppiumController:847 - Click on element : Quick Fund Transfer
+2018-03-15 14:53:35 INFO  AppiumController:528 - Entered Wait
+2018-03-15 14:53:36 INFO  AppiumController:537 - Element found
+2018-03-15 14:53:37 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 14:53:37 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 14:53:37 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 14:53:37 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 14:53:37 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 14:53:37 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 14:53:37 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 14:53:37 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 14:53:37 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 14:53:37 INFO  AppiumController:847 - Click on element : 2874XXX489349
+2018-03-15 14:53:38 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 14:53:38 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 14:53:38 INFO  AppiumController:183 - mpin box
+2018-03-15 14:53:43 INFO  AppiumController:881 - Send Text : 1234
+2018-03-15 14:53:44 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 14:53:44 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 14:53:44 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 14:53:44 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 14:53:44 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 14:53:44 INFO  AppiumController:189 - mobile input box
+2018-03-15 14:53:49 INFO  AppiumController:881 - Send Text : 8778602561
+2018-03-15 14:53:49 INFO  AppiumController:195 - amount input box
+2018-03-15 14:53:55 INFO  AppiumController:881 - Send Text : 10
+2018-03-15 14:53:55 INFO  AppiumController:201 - remark input box
+2018-03-15 14:54:00 INFO  AppiumController:881 - Send Text : test
+2018-03-15 14:54:01 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 14:54:01 INFO  AppiumController:528 - Entered Wait
+2018-03-15 14:54:02 INFO  AppiumController:537 - Element found
+2018-03-15 14:54:03 INFO  AppiumController:837 - Click on element : Confirm
+2018-03-15 14:54:03 INFO  AppiumController:528 - Entered Wait
+2018-03-15 14:54:04 ERROR FundTransferTest:41 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 1a69b16d-377d-45d2-8253-e56177ee3b25
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 1a69b16d-377d-45d2-8253-e56177ee3b25
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:532)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:103)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 14:54:04 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 14:54:04 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:10:31 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:10:32 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:10:32 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:10:32 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:10:58 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:10:58 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:10:58 INFO  AppiumController:543 - Entered Wait
+2018-03-15 15:11:02 INFO  AppiumController:550 - Element found
+2018-03-15 15:11:02 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 15:11:08 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 15:11:08 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:11:08 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:11:11 INFO  AppiumController:506 - Element found
+2018-03-15 15:11:12 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:11:12 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:11:13 INFO  AppiumController:506 - Element found
+2018-03-15 15:11:13 INFO  AppiumController:847 - Click on element : Fund Transfer - Within Bank
+2018-03-15 15:11:13 INFO  AppiumController:847 - Click on element : Mobile-to-Mobile
+2018-03-15 15:11:14 INFO  AppiumController:847 - Click on element : Quick Fund Transfer
+2018-03-15 15:11:15 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:11:15 INFO  AppiumController:537 - Element found
+2018-03-15 15:11:16 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 15:11:16 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 15:11:16 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 15:11:16 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 15:11:16 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 15:11:16 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 15:11:16 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 15:11:16 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 15:11:16 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 15:11:16 INFO  AppiumController:847 - Click on element : 2874XXX489349
+2018-03-15 15:11:17 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:11:17 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 15:11:17 INFO  AppiumController:183 - mpin box
+2018-03-15 15:11:22 INFO  AppiumController:881 - Send Text : 1234
+2018-03-15 15:11:23 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:11:23 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:11:24 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 15:11:24 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 15:11:24 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 15:11:24 INFO  AppiumController:189 - mobile input box
+2018-03-15 15:11:28 INFO  AppiumController:881 - Send Text : 8778602561
+2018-03-15 15:11:28 INFO  AppiumController:195 - amount input box
+2018-03-15 15:11:34 INFO  AppiumController:881 - Send Text : 10
+2018-03-15 15:11:34 INFO  AppiumController:201 - remark input box
+2018-03-15 15:11:39 INFO  AppiumController:881 - Send Text : test
+2018-03-15 15:11:41 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:11:41 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:11:41 INFO  AppiumController:537 - Element found
+2018-03-15 15:11:41 INFO  AppiumController:837 - Click on element : Confirm
+2018-03-15 15:11:41 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:11:42 ERROR FundTransferTest:41 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 6baa52b6-effe-4f6f-887e-ba26b4909b3b
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 6baa52b6-effe-4f6f-887e-ba26b4909b3b
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Transaction ID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:532)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:103)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 15:11:43 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:11:43 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:20:54 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:20:54 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:20:54 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:20:54 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:21:21 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:21:21 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:21:21 INFO  AppiumController:543 - Entered Wait
+2018-03-15 15:21:25 INFO  AppiumController:550 - Element found
+2018-03-15 15:21:25 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 15:21:31 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 15:21:32 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:21:32 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:21:34 INFO  AppiumController:506 - Element found
+2018-03-15 15:21:34 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:21:34 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:21:35 INFO  AppiumController:506 - Element found
+2018-03-15 15:21:35 INFO  AppiumController:847 - Click on element : Fund Transfer - Within Bank
+2018-03-15 15:21:35 INFO  AppiumController:847 - Click on element : Mobile-to-Mobile
+2018-03-15 15:21:36 INFO  AppiumController:847 - Click on element : Quick Fund Transfer
+2018-03-15 15:21:37 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:21:38 INFO  AppiumController:537 - Element found
+2018-03-15 15:21:38 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 15:21:38 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 15:21:38 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 15:21:38 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 15:21:38 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 15:21:38 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 15:21:38 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 15:21:38 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 15:21:38 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 15:21:38 INFO  AppiumController:847 - Click on element : 2874XXX489349
+2018-03-15 15:21:40 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:21:40 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 15:21:40 INFO  AppiumController:183 - mpin box
+2018-03-15 15:21:45 INFO  AppiumController:881 - Send Text : 1234
+2018-03-15 15:21:46 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:21:47 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:21:47 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 15:21:47 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 15:21:47 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 15:21:47 INFO  AppiumController:189 - mobile input box
+2018-03-15 15:21:52 INFO  AppiumController:881 - Send Text : 8778602561
+2018-03-15 15:21:52 INFO  AppiumController:195 - amount input box
+2018-03-15 15:21:57 INFO  AppiumController:881 - Send Text : 10
+2018-03-15 15:21:57 INFO  AppiumController:201 - remark input box
+2018-03-15 15:22:03 INFO  AppiumController:881 - Send Text : test
+2018-03-15 15:22:04 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:22:04 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:22:05 INFO  AppiumController:537 - Element found
+2018-03-15 15:22:05 INFO  AppiumController:837 - Click on element : Confirm
+2018-03-15 15:22:05 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:22:09 INFO  AppiumController:506 - Element found
+2018-03-15 15:22:09 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 15:22:09 INFO  AppiumController:430 - Acknowledgement : Fund Transfer to 8764XXX5411111 - +918778602561 successful. Rs.10.00 debited from 2874XXX3489349
+2018-03-15 15:22:09 INFO  AppiumController:430 - Date and Time : 15/03/2018 15:23
+2018-03-15 15:22:09 INFO  AppiumController:430 - Transaction ID : 807415137881
+2018-03-15 15:22:09 INFO  AppiumController:837 - Click on element : Home
+2018-03-15 15:22:09 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:22:09 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:39:54 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:39:54 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:39:54 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:39:54 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:40:24 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:40:24 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:40:24 INFO  AppiumController:543 - Entered Wait
+2018-03-15 15:40:27 INFO  AppiumController:550 - Element found
+2018-03-15 15:40:27 INFO  AppiumController:857 - Click on element : Application PIN
+2018-03-15 15:40:34 INFO  AppiumController:887 - Send Text : 3333
+2018-03-15 15:40:35 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:40:35 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:40:38 INFO  AppiumController:506 - Element found
+2018-03-15 15:40:38 INFO  AppiumController:871 - clicked element :
+2018-03-15 15:40:38 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:40:39 INFO  AppiumController:506 - Element found
+2018-03-15 15:40:39 INFO  AppiumController:847 - Click on element : Fund Transfer - Within Bank
+2018-03-15 15:40:39 INFO  AppiumController:847 - Click on element : Mobile-to-Mobile
+2018-03-15 15:40:40 INFO  AppiumController:847 - Click on element : Quick Fund Transfer
+2018-03-15 15:40:41 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:40:42 INFO  AppiumController:537 - Element found
+2018-03-15 15:40:42 INFO  AppiumController:385 - Page Title is : Select A/C
+2018-03-15 15:40:42 INFO  AppiumController:386 - Note is : Note: Please use My setup --> Account Fetch option to sync new account numbers with mPAY application
+2018-03-15 15:40:42 INFO  AppiumController:389 - 0 : 2874XXX489349
+2018-03-15 15:40:42 INFO  AppiumController:389 - 1 : 2374XXX984938
+2018-03-15 15:40:42 INFO  AppiumController:389 - 2 : 31U2XXX948U32
+2018-03-15 15:40:42 INFO  AppiumController:389 - 3 : IUY1XXX81U489
+2018-03-15 15:40:42 INFO  AppiumController:389 - 4 : 1846XXX397482
+2018-03-15 15:40:42 INFO  AppiumController:389 - 5 : 324YXXXY49832
+2018-03-15 15:40:42 INFO  FundTransferPage:91 - Single Account transaction
+2018-03-15 15:40:42 INFO  AppiumController:847 - Click on element : 2874XXX489349
+2018-03-15 15:40:43 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:40:43 INFO  AppiumController:269 - TextView : mPIN
+2018-03-15 15:40:43 INFO  AppiumController:183 - mpin box
+2018-03-15 15:40:48 INFO  AppiumController:881 - Send Text : 1234
+2018-03-15 15:40:49 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:40:50 INFO  AppiumController:269 - TextView : Quick Fund Transfer
+2018-03-15 15:40:50 INFO  AppiumController:269 - TextView : Beneficiary Mobile No.
+2018-03-15 15:40:50 INFO  AppiumController:269 - TextView : Amount (Rs.)
+2018-03-15 15:40:50 INFO  AppiumController:269 - TextView : Remarks
+2018-03-15 15:40:50 INFO  AppiumController:189 - mobile input box
+2018-03-15 15:40:56 INFO  AppiumController:881 - Send Text : 8778602561
+2018-03-15 15:40:56 INFO  AppiumController:195 - amount input box
+2018-03-15 15:41:01 INFO  AppiumController:881 - Send Text : 10
+2018-03-15 15:41:01 INFO  AppiumController:201 - remark input box
+2018-03-15 15:41:07 INFO  AppiumController:881 - Send Text : test
+2018-03-15 15:41:08 INFO  AppiumController:837 - Click on element : OK
+2018-03-15 15:41:08 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:41:08 INFO  AppiumController:537 - Element found
+2018-03-15 15:41:09 INFO  AppiumController:837 - Click on element : Confirm
+2018-03-15 15:41:09 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:41:12 INFO  AppiumController:506 - Element found
+2018-03-15 15:41:12 INFO  AppiumController:427 - Page Title is : Quick Fund Transfer
+2018-03-15 15:41:12 INFO  AppiumController:430 - Acknowledgement : System is temporarily unavailable.Inconvenience is regretted
+2018-03-15 15:41:12 INFO  AppiumController:430 - Date and Time : 15/03/2018 15:42
+2018-03-15 15:41:12 INFO  AppiumController:430 - Transaction ID : 807415137883
+2018-03-15 15:41:12 INFO  AppiumController:837 - Click on element : Home
+2018-03-15 15:41:12 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:41:12 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:45:03 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:45:03 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:45:03 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:45:03 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:45:29 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:45:29 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:45:29 INFO  AppiumController:541 - Entered Wait
+2018-03-15 15:45:33 INFO  AppiumController:548 - Element found
+2018-03-15 15:45:33 INFO  AppiumController:855 - Click on element : Application PIN
+2018-03-15 15:45:40 INFO  AppiumController:885 - Send Text : 3333
+2018-03-15 15:45:41 INFO  AppiumController:869 - clicked element :
+2018-03-15 15:45:41 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:45:43 INFO  AppiumController:506 - Element found
+2018-03-15 15:45:44 INFO  AppiumController:869 - clicked element :
+2018-03-15 15:45:44 INFO  AppiumController:498 - Entered Wait
+2018-03-15 15:45:45 INFO  AppiumController:506 - Element found
+2018-03-15 15:45:45 INFO  AppiumController:845 - Click on element : Fund Transfer - Within Bank
+2018-03-15 15:45:45 INFO  AppiumController:845 - Click on element : Mobile-to-Mobile
+2018-03-15 15:45:46 INFO  AppiumController:845 - Click on element : Quick Fund Transfer
+2018-03-15 15:45:47 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:45:47 ERROR FundTransferTest:41 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 9314ae57-6227-4d68-84e0-47c01a2c8054
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView[@text='Select A/C']}
+org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 9314ae57-6227-4d68-84e0-47c01a2c8054
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView[@text='Select A/C']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at mBankingBaseFactory.AppiumController.waitForTextView(AppiumController.java:530)
+	at mBankingPageObjectFactory.FundTransferPage.m2mQuick(FundTransferPage.java:45)
+	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-03-15 15:45:47 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:45:47 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:48:43 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:48:43 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:48:43 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:48:43 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:49:09 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:49:09 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:49:09 INFO  AppiumController:541 - Entered Wait
+2018-03-15 15:49:13 INFO  AppiumController:548 - Element found
+2018-03-15 15:49:13 INFO  AppiumController:855 - Click on element : Application PIN
+2018-03-15 15:49:19 INFO  AppiumController:885 - Send Text : 3333
+2018-03-15 15:49:20 INFO  AppiumController:869 - clicked element :
+2018-03-15 15:49:20 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:49:20 INFO  FundTransferTest:46 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: ff866e3a-3b40-4a26-991b-5df535f645d0
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView[@text='Banking']}
+2018-03-15 15:49:21 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:49:25 INFO  AppiumController:731 - Failed Screenshot captured : Thu_Mar_15_15_49_21_IST_2018.png
+2018-03-15 15:49:25 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 15:53:04 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 15:53:04 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 15:53:04 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 15:53:04 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 15:53:30 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 15:53:30 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 15:53:30 INFO  AppiumController:541 - Entered Wait
+2018-03-15 15:53:34 INFO  AppiumController:548 - Element found
+2018-03-15 15:53:34 INFO  AppiumController:855 - Click on element : Application PIN
+2018-03-15 15:53:40 INFO  AppiumController:885 - Send Text : 3333
+2018-03-15 15:53:40 INFO  AppiumController:869 - clicked element :
+2018-03-15 15:53:40 INFO  AppiumController:528 - Entered Wait
+2018-03-15 15:53:40 INFO  FundTransferTest:46 - org.openqa.selenium.InvalidSelectorException: Argument was an invalid selector (e.g. XPath/CSS). (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: 41d0b285-5181-4748-8faa-2e683b8a5d42
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TextView[contains(text(),‘Banking')]}
+2018-03-15 15:53:42 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 15:53:45 INFO  AppiumController:731 - Failed Screenshot captured : Thu_Mar_15_15_53_42_IST_2018.png
+2018-03-15 15:53:45 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 16:02:39 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 16:02:39 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 16:02:39 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 16:02:39 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 16:03:05 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 16:03:05 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 16:03:05 INFO  AppiumController:542 - Entered Wait
+2018-03-15 16:03:09 INFO  AppiumController:549 - Element found
+2018-03-15 16:03:09 INFO  AppiumController:856 - Click on element : Application PIN
+2018-03-15 16:03:15 INFO  AppiumController:886 - Send Text : 3333
+2018-03-15 16:03:16 INFO  AppiumController:870 - clicked element :
+2018-03-15 16:03:16 INFO  AppiumController:528 - Entered Wait
+2018-03-15 16:03:18 INFO  FundTransferTest:46 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to io.appium.java_client.MobileElement
+2018-03-15 16:03:19 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 16:03:22 INFO  AppiumController:732 - Failed Screenshot captured : Thu_Mar_15_16_03_19_IST_2018.png
+2018-03-15 16:03:22 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 16:06:12 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 16:06:12 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 16:06:12 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 16:06:12 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 16:06:38 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 16:06:38 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 16:06:38 INFO  AppiumController:542 - Entered Wait
+2018-03-15 16:06:42 INFO  AppiumController:549 - Element found
+2018-03-15 16:06:42 INFO  AppiumController:856 - Click on element : Application PIN
+2018-03-15 16:06:48 INFO  AppiumController:886 - Send Text : 3333
+2018-03-15 16:06:49 INFO  AppiumController:870 - clicked element :
+2018-03-15 16:06:49 INFO  AppiumController:528 - Entered Wait
+2018-03-15 16:06:50 INFO  FundTransferTest:46 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to io.appium.java_client.MobileElement
+2018-03-15 16:06:51 INFO  AppiumController:870 - clicked element :
+2018-03-15 16:06:51 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 16:06:51 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 16:22:42 INFO  AppiumController:368 - b-1 : 0
+2018-03-15 16:22:42 INFO  AppiumController:369 - b : 1
+2018-03-15 16:22:42 INFO  AppiumController:368 - b-1 : 1
+2018-03-15 16:22:42 INFO  AppiumController:369 - b : 2
+2018-03-15 16:22:50 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 16:22:50 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 16:22:50 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 16:22:50 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 16:23:16 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 16:23:16 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 16:23:16 INFO  AppiumController:542 - Entered Wait
+2018-03-15 16:23:20 INFO  AppiumController:549 - Element found
+2018-03-15 16:23:20 INFO  AppiumController:856 - Click on element : Application PIN
+2018-03-15 16:23:26 INFO  AppiumController:886 - Send Text : 3333
+2018-03-15 16:23:27 INFO  AppiumController:870 - clicked element :
+2018-03-15 16:23:27 INFO  AppiumController:528 - Entered Wait
+2018-03-15 16:23:29 INFO  FundTransferTest:46 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to io.appium.java_client.MobileElement
+2018-03-15 16:23:30 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 16:23:33 INFO  AppiumController:732 - Failed Screenshot captured : Thu_Mar_15_16_23_30_IST_2018.png
+2018-03-15 16:23:33 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 16:36:09 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 16:36:09 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 16:36:09 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 16:36:09 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 16:36:32 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 16:36:32 INFO  FundTransferTest:29 - **********FT M2M QFT**********
+2018-03-15 16:36:32 INFO  AppiumController:556 - Entered Wait
+2018-03-15 16:36:36 INFO  AppiumController:563 - Element found
+2018-03-15 16:36:36 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 16:36:42 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 16:36:43 INFO  AppiumController:884 - clicked element :
+2018-03-15 16:36:44 INFO  FundTransferTest:46 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.49 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSSCHND13937', ip: '10.44.71.115', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.fss.united, deviceScreenSize=1080x1920, networkConnectionEnabled=true, orientation=null, noReset=true, warnings={}, databaseEnabled=false, deviceName=HKE7YGUA, platform=LINUX, deviceUDID=HKE7YGUA, appActivity=SplashScreen, desired={appPackage=com.fss.united, appActivity=SplashScreen, orientation=null, noReset=true, newCommandTimeout=9000, platformVersion=6.0, platformName=Android, udid=HKE7YGUA, deviceName=e3a9c5b6}, newCommandTimeout=9000, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Lenovo K8 Plus, platformName=Android, udid=HKE7YGUA, deviceManufacturer=LENOVO}]
+Session ID: bfebe163-bd5e-41ac-b8e9-d7294f6a6fda
+*** Element info: {Using=xpath, value=//*[@class='android.widget.TeztView'][@text='Banking']}
+2018-03-15 16:36:46 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 16:36:49 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_16_36_46_IST_2018.png
+2018-03-15 16:36:49 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 17:14:30 INFO  Untitled:53 - before closed
+2018-03-15 17:14:31 INFO  Untitled:75 - .SplashScreen
+2018-03-15 17:15:09 INFO  Untitled:106 - Page Title is : Refer a Friend
+2018-03-15 17:15:09 INFO  Untitled:110 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:15:09 INFO  Untitled:110 - Date and Time : 15/03/2018 17:16
+2018-03-15 17:15:09 INFO  Untitled:110 - Transaction ID : 807417137891
+2018-03-15 17:15:09 INFO  Untitled:113 - 807417137891
+2018-03-15 17:16:15 INFO  Untitled:53 - before closed
+2018-03-15 17:16:16 INFO  Untitled:75 - .SplashScreen
+2018-03-15 17:17:14 INFO  Untitled:106 - Page Title is : Refer a Friend
+2018-03-15 17:17:14 INFO  Untitled:110 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:17:14 INFO  Untitled:110 - Date and Time : 15/03/2018 17:17
+2018-03-15 17:17:14 INFO  Untitled:110 - Transaction ID : 807417137893
+2018-03-15 17:17:14 INFO  Untitled:113 - 807417137893
+2018-03-15 17:30:16 INFO  Untitled:53 - before closed
+2018-03-15 17:30:16 INFO  Untitled:75 - .SplashScreen
+2018-03-15 17:30:49 INFO  Untitled:88 - Acknowledgement
+2018-03-15 17:30:50 INFO  Untitled:107 - Page Title is : Refer a Friend
+2018-03-15 17:30:50 INFO  Untitled:111 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:30:50 INFO  Untitled:111 - Date and Time : 15/03/2018 17:31
+2018-03-15 17:30:50 INFO  Untitled:111 - Transaction ID : 807417137897
+2018-03-15 17:30:50 INFO  Untitled:114 - 807417137897
+2018-03-15 17:32:54 INFO  Untitled:53 - before closed
+2018-03-15 17:32:54 INFO  Untitled:75 - .SplashScreen
+2018-03-15 17:33:27 INFO  Untitled:89 - Date and Time
+2018-03-15 17:33:28 INFO  Untitled:108 - Page Title is : Refer a Friend
+2018-03-15 17:33:28 INFO  Untitled:112 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:33:28 INFO  Untitled:112 - Date and Time : 15/03/2018 17:34
+2018-03-15 17:33:28 INFO  Untitled:112 - Transaction ID : 807417137899
+2018-03-15 17:33:28 INFO  Untitled:115 - 807417137899
+2018-03-15 17:36:46 INFO  Untitled:53 - before closed
+2018-03-15 17:36:46 INFO  Untitled:75 - .SplashScreen
+2018-03-15 17:37:16 INFO  Untitled:90 - Date and Time
+2018-03-15 17:37:17 INFO  Untitled:109 - Page Title is : Refer a Friend
+2018-03-15 17:37:17 INFO  Untitled:113 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:37:17 INFO  Untitled:113 - Date and Time : 15/03/2018 17:38
+2018-03-15 17:37:17 INFO  Untitled:113 - Transaction ID : 807417137901
+2018-03-15 17:37:17 INFO  Untitled:116 - 807417137901
+2018-03-15 17:38:30 INFO  Untitled:53 - before closed
+2018-03-15 17:38:30 INFO  Untitled:77 - .SplashScreen
+2018-03-15 17:38:30 INFO  Untitled:65 - entered wait
+2018-03-15 17:38:34 INFO  Untitled:71 - element found
+2018-03-15 17:38:35 INFO  Untitled:65 - entered wait
+2018-03-15 17:38:38 INFO  Untitled:71 - element found
+2018-03-15 17:38:58 INFO  Untitled:65 - entered wait
+2018-03-15 17:39:00 INFO  Untitled:71 - element found
+2018-03-15 17:39:00 INFO  Untitled:92 - Date and Time
+2018-03-15 17:39:01 INFO  Untitled:111 - Page Title is : Refer a Friend
+2018-03-15 17:39:01 INFO  Untitled:115 - Acknowledgement : Your request for refer a friend accepted
+2018-03-15 17:39:01 INFO  Untitled:115 - Date and Time : 15/03/2018 17:40
+2018-03-15 17:39:01 INFO  Untitled:115 - Transaction ID : 807417137903
+2018-03-15 17:39:01 INFO  Untitled:118 - 807417137903
+2018-03-15 18:06:37 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 18:06:37 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 18:06:37 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 18:06:37 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 18:07:01 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 18:07:27 INFO  Untitled:58 - before closed
+2018-03-15 18:07:27 INFO  Untitled:82 - .SplashScreen
+2018-03-15 18:07:27 INFO  AppiumController:556 - Entered Wait
+2018-03-15 18:07:27 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 18:09:47 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 18:09:47 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 18:09:47 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 18:09:47 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 18:10:11 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 18:10:11 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 18:10:15 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_18_10_11_IST_2018.png
+2018-03-15 18:10:15 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 18:11:01 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 18:11:01 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 18:11:01 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 18:11:01 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 18:11:28 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 18:11:28 INFO  AppiumController:556 - Entered Wait
+2018-03-15 18:11:32 INFO  AppiumController:563 - Element found
+2018-03-15 18:11:32 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 18:11:38 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 18:11:38 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 18:11:41 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_18_11_38_IST_2018.png
+2018-03-15 18:11:41 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:49:51 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:49:51 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:49:51 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:49:51 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:50:15 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:50:15 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:50:19 INFO  AppiumController:563 - Element found
+2018-03-15 19:50:19 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:50:25 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:50:25 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:50:28 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_19_50_25_IST_2018.png
+2018-03-15 19:50:28 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:51:33 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:51:33 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:51:33 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:51:33 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:52:01 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:52:01 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:52:05 INFO  AppiumController:563 - Element found
+2018-03-15 19:52:05 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:52:11 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:52:11 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:52:15 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_19_52_11_IST_2018.png
+2018-03-15 19:52:15 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:52:32 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:52:32 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:52:32 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:52:32 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:53:00 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:53:00 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-15 19:53:00 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:53:04 INFO  AppiumController:563 - Element found
+2018-03-15 19:53:04 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:53:10 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:53:11 INFO  AppiumController:884 - clicked element :
+2018-03-15 19:53:12 INFO  AppiumController:589 - Activity appeared :.Loading
+2018-03-15 19:53:12 INFO  LoginPageTest:39 - ***************End***************
+
+2018-03-15 19:53:12 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:53:12 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:54:06 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:54:06 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:54:06 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:54:06 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:54:32 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:54:32 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:54:36 INFO  AppiumController:563 - Element found
+2018-03-15 19:54:36 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:54:41 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:54:44 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:54:48 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_19_54_44_IST_2018.png
+2018-03-15 19:54:48 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:56:21 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:56:21 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:56:21 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:56:21 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:56:49 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:56:49 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:56:53 INFO  AppiumController:563 - Element found
+2018-03-15 19:56:53 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:56:59 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:57:02 INFO  AppiumController:884 - clicked element :
+2018-03-15 19:57:02 INFO  Untitled:70 - entered wait
+2018-03-15 19:57:02 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:57:06 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_19_57_02_IST_2018.png
+2018-03-15 19:57:06 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:57:57 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:57:57 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:57:57 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:57:57 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 19:58:23 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 19:58:23 INFO  AppiumController:556 - Entered Wait
+2018-03-15 19:58:26 INFO  AppiumController:563 - Element found
+2018-03-15 19:58:26 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 19:58:32 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 19:58:36 INFO  AppiumController:884 - clicked element :
+2018-03-15 19:58:36 INFO  Untitled:70 - entered wait
+2018-03-15 19:58:36 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 19:58:40 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_19_58_36_IST_2018.png
+2018-03-15 19:58:40 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 19:59:41 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 19:59:41 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 19:59:41 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 19:59:41 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 20:00:08 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 20:00:08 INFO  AppiumController:556 - Entered Wait
+2018-03-15 20:00:12 INFO  AppiumController:563 - Element found
+2018-03-15 20:00:12 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 20:00:18 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 20:00:21 INFO  AppiumController:884 - clicked element :
+2018-03-15 20:00:21 INFO  Untitled:70 - entered wait
+2018-03-15 20:00:21 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 20:00:25 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_20_00_21_IST_2018.png
+2018-03-15 20:00:25 INFO  AppiumController:133 - @AfterSuite
+2018-03-15 20:01:40 INFO  AppiumController:90 - @BeforeSuite
+2018-03-15 20:01:41 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-15 20:01:41 INFO  Driver:176 - App started : com.fss.united
+2018-03-15 20:01:41 INFO  Driver:147 - The platform is : Android platform
+2018-03-15 20:02:07 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-15 20:02:07 INFO  AppiumController:556 - Entered Wait
+2018-03-15 20:02:11 INFO  AppiumController:563 - Element found
+2018-03-15 20:02:11 INFO  AppiumController:870 - Click on element : Application PIN
+2018-03-15 20:02:17 INFO  AppiumController:900 - Send Text : 3333
+2018-03-15 20:02:18 INFO  AppiumController:884 - clicked element :
+2018-03-15 20:02:18 INFO  Untitled:70 - entered wait
+2018-03-15 20:02:18 INFO  AppiumController:118 - @AfterMethod
+2018-03-15 20:02:22 INFO  AppiumController:746 - Failed Screenshot captured : Thu_Mar_15_20_02_18_IST_2018.png
+2018-03-15 20:02:22 INFO  AppiumController:133 - @AfterSuite

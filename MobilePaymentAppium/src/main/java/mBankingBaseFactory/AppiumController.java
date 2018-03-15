@@ -170,10 +170,42 @@ public class AppiumController {
 
 //======================================================================	
 	
-    
-    public static void processEditBox(Map<String, List<String>> elems)
+    public static void processEditBox(String[] elems)
     {
+    	if(Arrays.asList(elems).contains("Application PIN"))   //mpin page exists
+		{
+    		log.info("Application PIN");
+			sendText("Application PIN", prop.getProperty("apin"));	
+		}
     	
+    	if(Arrays.asList(elems).contains("mPIN"))   //mpin page exists
+		{
+    		log.info("mpin box");
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='mPIN']"))), prop.getProperty("mpin"));	
+		}
+    	
+    	if(Arrays.asList(elems).contains("Beneficiary Mobile No.")) 
+    	{
+    		log.info("mobile input box");
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Beneficiary Mobile No.']"))), prop.getProperty("ftMobNo"));
+    	}
+    	
+    	if(Arrays.asList(elems).contains("Amount (Rs.)")) 
+    	{
+    		log.info("amount input box");
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Amount (Rs.)']"))), prop.getProperty("ftAmnt"));
+    	}
+    	
+    	if(Arrays.asList(elems).contains("Remarks")) 
+    	{
+    		log.info("remark input box");
+			sendText(getDriver().findElement(By.xpath(("//android.widget.EditText[@text='Remarks']"))), prop.getProperty("ftRemark"));
+    	}
+    
+    }
+    
+    public static void processAllElement(Map<String, List<String>> elems)
+    {
     	if(elems.containsValue("Application PIN"))   //mpin page exists
 		{
     		log.info("Application PIN");
@@ -226,6 +258,19 @@ public class AppiumController {
     	return textBtn;
     }
     
+    public static String[] loadEditText()
+    {
+    	ArrayList<AndroidElement> editText;
+    	editText =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\")");
+    	String [] btn = new String [editText.size()];
+    	for(int k =0 ; k<editText.size(); k++)
+    	{
+    		btn[k]= editText.get(k).getText();
+    		log.info("TextView : " +btn[k]);
+    	}
+    	return btn;
+    }
+    
     public static String[] loadButton()
     {
     	ArrayList<AndroidElement> button;
@@ -239,7 +284,7 @@ public class AppiumController {
     	return btn;
     }
     
-    public static Map<String, List<String>> loadEditText()
+    public static Map<String, List<String>> loadAllElements()
     {
 		ArrayList<AndroidElement> editText;
     	editText =(ArrayList<AndroidElement>) ((FindsByAndroidUIAutomator<AndroidElement>) getDriver()).findElementsByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")");
@@ -447,12 +492,83 @@ public class AppiumController {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(expectedCondition);	
 	}
-
+	
 	public static boolean waitForElement(MobileElement locator, Integer... timeout)
 	{
 		log.info("Entered Wait");
 		try {
+			//waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
+			return false;
+		}
+		log.info("Element found");
+		return true;
+	}
+	
+	public static boolean waitForElement(String text, Integer... timeout)
+	{
+		MobileElement locator= getDriver().findElementByXPath("//*[@class='android.widget.TeztView'][@text='"+text+"']");
+		log.info("Entered Wait");
+		try {
+			//waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
+			return false;
+		}
+		log.info("Element found");
+		return true;
+	}
+	//getDriver().findElement(By.xpath(("//*[@class='android.widget.TextView'][@text='"+text+"']")))
+	
+	//driver.findElement(By.xpath("//*[@text='Banking']")).click();
+	public static boolean waitFor(String text, Integer... timeout)
+	{
+		log.info("Entered Wait");
+		try {
+        waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath("//*[@text='"+text+"']"))), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
+			return false;
+		}
+		log.info("Element found");
+		return true;
+	
+	}
+	public static boolean waitForTextView(String text, Integer... timeout)
+	{
+		log.info("Entered Wait");
+		try {               
+			//MobileElement elementList = (MobileElement) getDriver().findElements(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + text + "\")"));
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.TeztView'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
+			return false;
+		}
+		log.info("Element found");
+		return true;
+	}
+	
+	public static boolean waitForEditText(String text, Integer... timeout)
+	{
+		log.info("Entered Wait");
+		try {
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.EditText'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
+		} catch (org.openqa.selenium.TimeoutException exception) {
+			log.info("Element not found");
+			return false;
+		}
+		log.info("Element found");
+		return true;
+	}
+	
+	public static boolean waitForButton(String text, Integer... timeout)
+	{
+		log.info("Entered Wait");
+		try {
+			waitForCondition(ExpectedConditions.visibilityOf((WebElement) getDriver().findElement(By.xpath(("//*[@class='android.widget.Button'][@text='"+text+"']")))), (timeout.length > 0 ?  timeout[0] : null));
 		} catch (org.openqa.selenium.TimeoutException exception) {
 			log.info("Element not found");
 			return false;
@@ -719,22 +835,22 @@ public class AppiumController {
 	//click
 	public void click(String xpathKey) {
 		try {
-		log.info("Click on element : "+xpathKey);	
 		getDriver().findElement(By.xpath((xpathKey))).click();
+		log.info("Click on element : "+xpathKey);	
 		}catch(Exception e) {
 			//report an error 
-			log.error(e);
+			System.out.println(e);
 		}
 	}
 	
 	//clickText
 	public void clickBtn(String text) {
 		try {
-		log.info("Click on element : "+text);	
 		getDriver().findElement(By.xpath(("//*[@class='android.widget.Button'][@text='"+text+"']"))).click();
+		log.info("Click on element : "+text);	
 		}catch(Exception e) {
 			//report an error 
-			log.error(e);
+			System.out.println(e);
 		}
 	}
 	
@@ -745,7 +861,17 @@ public class AppiumController {
 		getDriver().findElement(By.xpath(("//*[@class='android.widget.TextView'][@text='"+text+"']"))).click();
 		}catch(Exception e) {
 			//report an error 
-			log.error(e);
+			System.out.println(e);
+		}
+	}
+	
+	public void clickEditText(String text) {
+		try {
+		log.info("Click on element : "+text);	
+		getDriver().findElement(By.xpath(("//*[@class='android.widget.EditText'][@text='"+text+"']"))).click();
+		}catch(Exception e) {
+			//report an error 
+			System.out.println(e);
 		}
 	}
 	

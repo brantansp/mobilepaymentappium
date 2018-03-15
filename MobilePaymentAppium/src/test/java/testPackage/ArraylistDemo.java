@@ -1,4 +1,4 @@
-package mBankingTestPages;
+package testPackage;
 
 import java.util.ArrayList;
 

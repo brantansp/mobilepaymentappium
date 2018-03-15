@@ -16,4 +16,9 @@
           <class name = "mBankingTestPages.BalanceEnquiryTest"/>
       </classes>        
     </test>
+             <test name = "Test4">
+      <classes>
+          <class name = "mBankingTestPages.FundTransferTest"/>
+      </classes>        
+    </test>
 </suite>

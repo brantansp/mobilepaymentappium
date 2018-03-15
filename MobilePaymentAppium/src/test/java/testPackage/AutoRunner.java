@@ -1,4 +1,4 @@
-package mBankingTestPages;
+package testPackage;
 
 import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.time.*;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
@@ -18,6 +19,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.MobileElement;
@@ -38,8 +40,9 @@ public class AutoRunner extends AppiumController {
 	{
 		
 		while (true) {
-			Map<String, List<String>> elems = loadEditText();
+			String[] elems = loadEditText();
 			processEditBox(elems);
+		/*	processAllElement(elems);*/
 		}
 	}
 }

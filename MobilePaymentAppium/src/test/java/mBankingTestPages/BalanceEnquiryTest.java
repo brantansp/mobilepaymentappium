@@ -44,7 +44,7 @@ public class BalanceEnquiryTest extends AppiumController {
 	{
 		log.info("**********Balance Enquiry**********");
 		loginPage = new LoginPage(driver);
-		loginPage.loginApp("1111");
+		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
 			waitForElement(homePage.bankingBtn, 10);
@@ -68,6 +68,7 @@ public class BalanceEnquiryTest extends AppiumController {
 			log.info(e);
 			click(homePage.homeBtn);
 		}
+		log.info("***************End***************\n");
 	}
 	
 	@Test
@@ -75,7 +76,7 @@ public class BalanceEnquiryTest extends AppiumController {
 	{
 		log.info("**********Mini Statement**********");
         loginPage = new LoginPage(driver);
-		loginPage.loginApp("1111");
+		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		waitForElement(homePage.bankingBtn, 3);
 		click(homePage.bankingBtn);
@@ -86,6 +87,7 @@ public class BalanceEnquiryTest extends AppiumController {
 		String[] accNo = listOfAc();
 		bankingObj.miniStatement(accNo);
 		homePage.logoutApp();
+		log.info("***************End***************\n");
 	}
 
 }

@@ -50,18 +50,18 @@ public class LoginPage extends ObjectRepository {
 	public void loginApp (String pin) throws InterruptedException
 	{
 	    try {
-			waitForElement (loginBox, 10);
+			waitForEditText ("Application PIN", 30);
 		} catch (Exception e) {
 			log.info(e);
 		}
-		click(loginBox);
-		sendText(loginBox, pin);
+	    clickEditText("Application PIN");
+		sendText("Application PIN", pin);
 		click(loginOkBtn);
 	}
 	
 	public ReferPage clickReferPage()
 	{
-		waitForElement (referLink, 3000);
+		waitForElement (referLink, 30);
 		click(referLink);
 		ReferPage referObj= new ReferPage(driver);
 		return referObj;

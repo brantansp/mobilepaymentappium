@@ -2,7 +2,7 @@ package mBankingBaseFactory;
 
 import java.lang.reflect.Field;
 
-import mBankingTestPages.test;
+import testPackage.test;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 

@@ -26,6 +26,7 @@ public class HomePageTest extends AppiumController {
 		homePage.help();
 		click(homePage.logoutBtn);
 		click(homePage.exitYesBtn);
+		log.info("***************End***************\n");
 	}
 	
 	@Test(priority =0)
@@ -33,9 +34,10 @@ public class HomePageTest extends AppiumController {
 	{
 		log.info("**********Welcome page Name**********");
 		loginPage = new LoginPage(driver);
-		loginPage.loginApp("1111");
+		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		homePage.custName();
+		log.info("***************End***************\n");
 	}
 	
 	//@Test
@@ -44,10 +46,10 @@ public class HomePageTest extends AppiumController {
 		log.info("**********Exit Application**********");
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		loginPage.loginApp("1111");
+		loginPage.loginApp(prop.getProperty("apin"));
 		Thread.sleep(5000);
 		homePage.changePin("2222","1234","1234");
-		Thread.sleep(5000);
+		log.info("***************End***************\n");
 		//getDriver().manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 	}
 }

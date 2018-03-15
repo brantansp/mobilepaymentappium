@@ -36,10 +36,13 @@ public class FundTransferPage  extends ObjectRepository {
 	
 	public void m2mQuick(String mobNo, String amount, String remark)
 	{
-		click(ftWb);
-		click(m2mBtn);
-		click(qFt);
-		waitForElement(selectAcPage,30);
+		prop.setProperty("ftMobNo", mobNo);
+		prop.setProperty("ftAmnt", amount);
+		prop.setProperty("ftRemark", remark);
+		clickView("Fund Transfer - Within Bank");
+		clickView("Mobile-to-Mobile");
+		clickView("Quick Fund Transfer");
+		waitForTextView("Select A/C",30);
 		String[] accNo = listOfAc();
 		if (prop.getProperty("multiaccflag").equals("Y")) //if multiacc txn enable
 		{
@@ -74,40 +77,41 @@ public class FundTransferPage  extends ObjectRepository {
 					try {
 					WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
 					} catch (SQLException e) {
-						log.info(e);
+						System.out.println(e);
 					}catch (FileNotFoundException e) {
-						 log.info(e);
+						 System.out.println(e);
 						}
 				 }
-				click(homeBtn);
+				clickBtn("Home");
 			}
-			click(homeBtn);
+			clickBtn("Home");
 		} 
 		else
 		{
 			log.info("Single Account transaction");
-			click("//android.widget.TextView[@text='"+accNo[0]+"']");
+			clickView(accNo[0]);
 			String [] editBox =loadEditText();
 			processEditBox(editBox);
-			click(okBtn);
+			clickBtn("OK");
 	    	editBox =loadEditText();
 	    	processEditBox(editBox);
-			click(okBtn);
-			waitForElement(qFt,30);
-			click(confirmBtn);
+	    	clickBtn("OK");
+			waitForTextView("Quick Fund Transfer",30);
+			clickBtn("Confirm");
 			waitForElement(AcknPage,30);
+			//waitForTextView("Transaction ID",30);
 			String txn = processAcknowledgment();
 			if (prop.getProperty("dbresultflag").equals("Y")) // for DB fetch and write to CSV
 			{
 				try {
 				WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
 				} catch (SQLException e) {
-					log.info(e);
+					System.out.println(e);
 				}catch (FileNotFoundException e) {
-					 log.info(e);
+					 System.out.println(e);
 					}
 			 }
-			click(homeBtn);
+			clickBtn("Home");
 		}
 	
 	}
@@ -139,9 +143,9 @@ public class FundTransferPage  extends ObjectRepository {
 			try {
 			WriteToCSVFile.reportGeneration(dbTransactionlog.fetchRecord(txn));
 			} catch (SQLException e) {
-				log.info(e);
+				System.out.println(e);
 			}catch (FileNotFoundException e) {
-				 log.info(e);
+				 System.out.println(e);
 				}
 		 }
 		click(homeBtn);

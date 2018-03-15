@@ -23,7 +23,7 @@ public class FundTransferTest extends AppiumController {
     
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	   
-    //@Test
+    @Test
 	public void m2mQFtSuccess() throws InterruptedException
 	{
 		log.info("**********FT M2M QFT**********");
@@ -31,8 +31,9 @@ public class FundTransferTest extends AppiumController {
 		loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
-			waitForElement(homePage.bankingBtn, 10);
-			click(homePage.bankingBtn);
+			//waitForElement(homePage.bankingBtn, 10);
+			waitForElement("Banking",30);
+			clickView("Banking");
 			ftObj = new FundTransferPage (driver);
 			try {
 				waitForElement(ftObj.ftWb, 10);
@@ -72,7 +73,7 @@ public class FundTransferTest extends AppiumController {
 		}
 	}
 
-	@Test
+	//@Test
     public void checktxn() throws InterruptedException
     {
 		log.info("**********chk**********");
@@ -80,7 +81,8 @@ public class FundTransferTest extends AppiumController {
         loginPage.loginApp(prop.getProperty("apin"));
 		homePage = new HomePage(driver);
 		try {
-			waitForElement(homePage.bankingBtn, 10);
+			//waitForElement(homePage.bankingBtn, 10);
+			waitForTextView("Banking",30);
 			clickView("Banking");
 			clickView("Balance Enquiry");
 			back();
