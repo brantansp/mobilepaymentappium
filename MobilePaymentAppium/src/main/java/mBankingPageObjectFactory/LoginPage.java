@@ -58,7 +58,7 @@ public class LoginPage extends ObjectRepository {
 		log.info("Clicked on login box");
 		sendText(loginBox,pin);
 		log.info("Login Pin send  : "+pin);
-		click(okBtn);
+		click(okBtnLogin);
 		log.info("Clicked on ok button");
 		//.Fragment_Activity
 	}

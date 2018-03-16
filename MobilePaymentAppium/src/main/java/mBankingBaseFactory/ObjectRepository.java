@@ -14,6 +14,9 @@ public class ObjectRepository extends AppiumController {
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Help']")
 	public MobileElement helpBtn;
 	
+	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][2]")
+	public static MobileElement okBtnLogin;
+	
 	@AndroidFindBy (xpath="//android.widget.TextView[@text='Balance Enquiry']")
 	public MobileElement Balance_Enquiry;
 	

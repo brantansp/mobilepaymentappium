@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Positive Transaction flow]">
+  <test name="Test2(failed)">
     <classes>
-      <class name="mBankingTestPages.LoginPageTest">
+      <class name="mBankingTestPages.HomePageTest">
         <methods>
           <include name="extentReportSetUp"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="appLogin"/>
+          <include name="checkHelp"/>
           <include name="extentGetResult"/>
         </methods>
-      </class> <!-- mBankingTestPages.LoginPageTest -->
+      </class> <!-- mBankingTestPages.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)">
+    <classes>
+      <class name="mBankingTestPages.BalanceEnquiryTest">
+        <methods>
+          <include name="extentReportSetUp"/>
+          <include name="miniStatement"/>
+          <include name="tearDown"/>
+          <include name="extentbeforeMethod"/>
+          <include name="balanceEnq"/>
+          <include name="extentGetResult"/>
+        </methods>
+      </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test name="Test4(failed)">
+    <classes>
+      <class name="mBankingTestPages.FundTransferTest">
+        <methods>
+          <include name="extentReportSetUp"/>
+          <include name="m2mQFtSuccess"/>
+          <include name="tearDown"/>
+          <include name="extentbeforeMethod"/>
+          <include name="extentGetResult"/>
+          <include name="m2mBenReg"/>
+        </methods>
+      </class> <!-- mBankingTestPages.FundTransferTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Positive Transaction flow] -->
