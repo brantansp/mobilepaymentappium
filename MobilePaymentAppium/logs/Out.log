@@ -14348,3 +14348,19 @@ Change mPIN: To change your mPIN
 
 2018-03-16 10:30:58 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_10_30_49_IST_2018.png
 2018-03-16 10:30:58 INFO  AppiumController:133 - @AfterSuite
+2018-03-16 10:37:42 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 10:37:42 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 10:37:42 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 10:37:42 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 10:39:12 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:39:12 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 10:39:12 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:39:22 INFO  AppiumController:506 - Element found : 
+2018-03-16 10:39:26 INFO  AppiumController:842 - clicked element
+2018-03-16 10:39:26 INFO  LoginPage:58 - Clicked on login box
+2018-03-16 10:39:33 INFO  AppiumController:852 - Send Text : 3333
+2018-03-16 10:39:33 INFO  LoginPage:60 - Login Pin send  : 3333
+2018-03-16 10:39:36 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:39:45 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_10_39_36_IST_2018.png
+2018-03-16 10:39:45 INFO  AppiumController:133 - @AfterSuite

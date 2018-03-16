@@ -50,13 +50,17 @@ public class LoginPage extends ObjectRepository {
 	public void loginApp (String pin) throws InterruptedException
 	{
 	    try {
-			waitForElement(Application_PIN, 30);
+			waitForElement (loginBox, 10);
 		} catch (Exception e) {
-			System.out.println(e);
+			log.info(e);
 		}
-	    clickEditText("Application PIN");
-		sendText("Application PIN", pin);
-		click(loginOkBtn);
+		click(loginBox);
+		log.info("Clicked on login box");
+		sendText(loginBox,pin);
+		log.info("Login Pin send  : "+pin);
+		click(okBtn);
+		log.info("Clicked on ok button");
+		//.Fragment_Activity
 	}
 	
 	public MobileElement place()
