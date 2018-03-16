@@ -14206,3 +14206,145 @@ Change mPIN: To change your mPIN
 2018-03-16 02:49:26 INFO  AppiumController:797 - Click on element : //android.widget.TextView[@text='0720XXX303967']
 2018-03-16 02:49:26 INFO  AppiumController:842 - clicked element
 2018-03-16 02:49:26 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:43:46 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 09:43:46 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 09:43:46 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 09:43:46 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 09:44:00 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 09:44:01 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 09:44:01 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 09:44:01 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 09:45:00 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:45:00 INFO  LoginPageTest:53 - **********Refer Friend**********
+2018-03-16 09:45:00 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:45:16 INFO  AppiumController:506 - Element found : Refer
+2018-03-16 09:45:18 INFO  AppiumController:842 - clicked element
+2018-03-16 09:45:18 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:45:23 INFO  AppiumController:506 - Element found : Friend Name
+2018-03-16 09:45:58 INFO  AppiumController:427 - Page Title is : Refer a Friend
+2018-03-16 09:45:58 INFO  AppiumController:430 - Acknowledgement : Your request for refer a friend accepted
+2018-03-16 09:45:58 INFO  AppiumController:430 - Date and Time : 16/03/2018 09:46
+2018-03-16 09:45:58 INFO  AppiumController:430 - Transaction ID : 807509137772
+2018-03-16 09:45:59 INFO  LoginPageTest:60 - ***************End***************
+2018-03-16 09:45:59 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:45:59 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:45:59 INFO  LoginPageTest:66 - **********Feedback**********
+2018-03-16 09:45:59 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:46:01 INFO  AppiumController:506 - Element found : Feedback
+2018-03-16 09:46:04 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:46:09 INFO  AppiumController:506 - Element found : OK
+2018-03-16 09:46:42 INFO  AppiumController:427 - Page Title is : Feedback
+2018-03-16 09:46:42 INFO  AppiumController:430 - Acknowledgement : Thanks for your feedback
+2018-03-16 09:46:42 INFO  AppiumController:430 - Date and Time : 16/03/2018 09:47
+2018-03-16 09:46:42 INFO  AppiumController:430 - Transaction ID : 807509137774
+2018-03-16 09:46:43 INFO  LoginPageTest:69 - ***************End***************
+2018-03-16 09:46:43 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:46:43 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:46:43 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 09:46:43 INFO  AppiumController:526 - Entered Wait : Application PIN
+2018-03-16 09:46:45 INFO  AppiumController:828 - Click on element : Application PIN
+2018-03-16 09:46:47 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:46:56 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_09_46_47_IST_2018.png
+2018-03-16 09:46:56 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:46:56 INFO  HomePageTest:47 - **********Welcome page Name**********
+2018-03-16 09:46:56 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:46:58 INFO  AppiumController:506 - Element found : Help
+2018-03-16 09:46:59 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:47:07 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_09_46_59_IST_2018.png
+2018-03-16 09:47:07 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:47:07 INFO  HomePageTest:37 - **********Help Text**********
+2018-03-16 09:47:07 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:47:08 INFO  AppiumController:506 - Element found : Help
+2018-03-16 09:47:09 INFO  AppiumController:842 - clicked element
+2018-03-16 09:47:11 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:47:19 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_09_47_11_IST_2018.png
+2018-03-16 09:47:19 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:47:19 INFO  BalanceEnquiryTest:57 - **********Balance Enquiry**********
+2018-03-16 09:47:19 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:47:52 INFO  AppiumController:842 - clicked element
+2018-03-16 09:47:54 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:48:02 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_09_47_54_IST_2018.png
+2018-03-16 09:48:02 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:48:02 INFO  BalanceEnquiryTest:79 - **********Mini Statement**********
+2018-03-16 09:48:02 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 09:48:06 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 09:48:14 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_09_48_06_IST_2018.png
+2018-03-16 09:48:14 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 09:48:14 INFO  FundTransferTest:53 - **********FT M2M Ben Reg**********
+2018-03-16 09:48:14 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:11:30 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 10:11:30 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 10:11:30 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 10:11:30 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 10:13:04 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:13:04 INFO  LoginPageTest:53 - **********Refer Friend**********
+2018-03-16 10:13:04 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:13:13 INFO  AppiumController:506 - Element found : Refer
+2018-03-16 10:13:16 INFO  AppiumController:842 - clicked element
+2018-03-16 10:13:16 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:13:23 INFO  AppiumController:506 - Element found : Friend Name
+2018-03-16 10:13:58 INFO  AppiumController:427 - Page Title is : Refer a Friend
+2018-03-16 10:13:58 INFO  AppiumController:430 - Acknowledgement : Your request for refer a friend accepted
+2018-03-16 10:13:58 INFO  AppiumController:430 - Date and Time : 16/03/2018 10:14
+2018-03-16 10:13:58 INFO  AppiumController:430 - Transaction ID : 807510137786
+2018-03-16 10:13:59 INFO  LoginPageTest:60 - ***************End***************
+2018-03-16 10:13:59 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:13:59 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:13:59 INFO  LoginPageTest:66 - **********Feedback**********
+2018-03-16 10:13:59 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:14:02 INFO  AppiumController:506 - Element found : Feedback
+2018-03-16 10:14:04 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:14:09 INFO  AppiumController:506 - Element found : OK
+2018-03-16 10:14:44 INFO  AppiumController:427 - Page Title is : Feedback
+2018-03-16 10:14:44 INFO  AppiumController:430 - Acknowledgement : Thanks for your feedback
+2018-03-16 10:14:44 INFO  AppiumController:430 - Date and Time : 16/03/2018 10:15
+2018-03-16 10:14:44 INFO  AppiumController:430 - Transaction ID : 807510137789
+2018-03-16 10:14:45 INFO  LoginPageTest:69 - ***************End***************
+2018-03-16 10:14:45 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:14:45 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:14:45 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 10:14:45 INFO  AppiumController:526 - Entered Wait : Application PIN
+2018-03-16 10:14:46 INFO  AppiumController:828 - Click on element : Application PIN
+2018-03-16 10:14:48 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:15:15 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 10:15:16 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 10:15:16 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 10:15:16 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 10:16:44 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:16:44 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 10:16:44 INFO  AppiumController:526 - Entered Wait : Application PIN
+2018-03-16 10:17:14 INFO  AppiumController:828 - Click on element : Application PIN
+2018-03-16 10:17:49 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 10:17:49 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 10:17:49 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 10:17:49 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 10:19:17 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:19:17 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 10:19:17 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:19:50 INFO  AppiumController:828 - Click on element : Application PIN
+2018-03-16 10:19:52 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:20:01 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_10_19_52_IST_2018.png
+2018-03-16 10:20:01 INFO  AppiumController:133 - @AfterSuite
+2018-03-16 10:28:43 INFO  AppiumController:90 - @BeforeSuite
+2018-03-16 10:28:43 INFO  PropertyFileReader:28 - file : C:\Users\brantansp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2018-03-16 10:28:43 INFO  Driver:176 - App started : com.fss.united
+2018-03-16 10:28:43 INFO  Driver:147 - The platform is : Android platform
+2018-03-16 10:30:12 INFO  AppiumController:105 - @BeforeMethod : ThreadName: mainmBankingBaseFactory.AppiumController
+2018-03-16 10:30:12 INFO  LoginPageTest:34 - **********Login to Application**********
+2018-03-16 10:30:12 INFO  AppiumController:498 - Entered Wait for locator
+2018-03-16 10:30:46 INFO  AppiumController:828 - Click on element : Application PIN
+2018-03-16 10:30:49 INFO  AppiumController:118 - @AfterMethod
+
+2018-03-16 10:30:58 INFO  AppiumController:704 - Failed Screenshot captured : Fri_Mar_16_10_30_49_IST_2018.png
+2018-03-16 10:30:58 INFO  AppiumController:133 - @AfterSuite

@@ -47,7 +47,7 @@ public class LoginPageTest extends AppiumController{
 		log.info("***************End***************");
 	}
 	
-	@Test(priority = 0)
+	//@Test(priority = 0)
 	public void referFriendValid() throws InterruptedException
 	{
 		log.info("**********Refer Friend**********");
@@ -60,7 +60,7 @@ public class LoginPageTest extends AppiumController{
 		log.info("***************End***************");
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void feedback() throws InterruptedException
 	{
 		log.info("**********Feedback**********");

@@ -50,7 +50,7 @@ public class LoginPage extends ObjectRepository {
 	public void loginApp (String pin) throws InterruptedException
 	{
 	    try {
-			waitForEditText("Application PIN", 30);
+			waitForElement(Application_PIN, 30);
 		} catch (Exception e) {
 			System.out.println(e);
 		}

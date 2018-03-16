@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mBankingTestPages.BalanceEnquiryTest">
+      <class name="mBankingTestPages.LoginPageTest">
         <methods>
           <include name="extentReportSetUp"/>
-          <include name="miniStatement"/>
           <include name="tearDown"/>
           <include name="extentbeforeMethod"/>
-          <include name="balanceEnq"/>
+          <include name="appLogin"/>
           <include name="extentGetResult"/>
         </methods>
-      </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
+      </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

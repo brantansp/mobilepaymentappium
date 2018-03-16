@@ -38,6 +38,9 @@ public class ObjectRepository extends AppiumController {
 	@AndroidFindBy (xpath="//android.widget.EditText[@text='mPIN']")
 	protected static MobileElement mPINBox;
 	
+	@AndroidFindBy (xpath="//android.widget.EditText[@text='Application PIN']")
+	protected static MobileElement Application_PIN;
+	
 	@AndroidFindBy (xpath="//android.widget.Button[@text='OK']")
 	protected MobileElement okBtn;      //bottomband ok
 	
