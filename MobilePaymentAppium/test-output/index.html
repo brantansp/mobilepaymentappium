@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 5 failed,   4 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,16 +108,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.HomePageTest" hash-for-method="checkHelp">checkHelp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.FundTransferTest" hash-for-method="m2mBenReg">m2mBenReg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.FundTransferTest" hash-for-method="m2mQFtSuccess">m2mQFtSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,6 +137,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.LoginPageTest" hash-for-method="feedback">feedback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.FundTransferTest" hash-for-method="m2mBenReg">m2mBenReg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.FundTransferTest" hash-for-method="m2mQFtSuccess">m2mQFtSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -217,7 +217,7 @@ Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
 	at mBankingBaseFactory.AppiumController.click(AppiumController.java:841)
-	at mBankingTestPages.BalanceEnquiryTest.balanceEnq(BalanceEnquiryTest.java:70)
+	at mBankingTestPages.BalanceEnquiryTest.balanceEnq(BalanceEnquiryTest.java:72)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -227,73 +227,10 @@ Driver info: driver.version: unknown
                   <a name="miniStatement">
                   </a> <!-- miniStatement -->
                   <span class="method-name">miniStatement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //android.widget.TextView[@text=&apos;Banking&apos;]&quot; 
-- html content: &quot;by id or name &quot;Banking&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;FSSCHND13937&apos;, ip: &apos;10.44.71.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.toString(&lt;generated&gt;)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.lang.StringBuilder.append(StringBuilder.java:131)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
-	at mBankingBaseFactory.AppiumController.waitForCondition(AppiumController.java:493)
-	at mBankingBaseFactory.AppiumController.waitForElement(AppiumController.java:501)
-	at mBankingTestPages.BalanceEnquiryTest.miniStatement(BalanceEnquiryTest.java:81)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Positive_Transaction_flow-class-failed -->
-          <div class="suite-Positive_Transaction_flow-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">mBankingTestPages.FundTransferTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="m2mBenReg">
-                  </a> <!-- m2mBenReg -->
-                  <span class="method-name">m2mBenReg</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //*[@class=&apos;android.widget.Button&apos;][@text=&apos;Home&apos;]&quot; 
-- html content: &quot;by id or name &quot;homeBtn&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;FSSCHND13937&apos;, ip: &apos;10.44.71.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingBaseFactory.AppiumController.click(AppiumController.java:841)
-	at mBankingTestPages.FundTransferTest.m2mBenReg(FundTransferTest.java:68)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="m2mQFtSuccess">
-                  </a> <!-- m2mQFtSuccess -->
-                  <span class="method-name">m2mQFtSuccess</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //*[@class=&apos;android.widget.Button&apos;][@text=&apos;Home&apos;]&quot; 
-- html content: &quot;by id or name &quot;homeBtn&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;FSSCHND13937&apos;, ip: &apos;10.44.71.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingBaseFactory.AppiumController.click(AppiumController.java:841)
-	at mBankingTestPages.FundTransferTest.m2mQFtSuccess(FundTransferTest.java:46)
+                  <div class="stack-trace">java.lang.NullPointerException
+	at mBankingUtility.WriteToCSVFile.reportGeneration(WriteToCSVFile.java:146)
+	at mBankingPageObjectFactory.BankingPage.miniStatement(BankingPage.java:162)
+	at mBankingTestPages.BalanceEnquiryTest.miniStatement(BalanceEnquiryTest.java:88)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -340,6 +277,28 @@ Driver info: driver.version: unknown
                   <a name="referFriendValid">
                   </a> <!-- referFriendValid -->
                   <span class="method-name">referFriendValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Positive_Transaction_flow-class-passed -->
+          <div class="suite-Positive_Transaction_flow-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mBankingTestPages.FundTransferTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="m2mBenReg">
+                  </a> <!-- m2mBenReg -->
+                  <span class="method-name">m2mBenReg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="m2mQFtSuccess">
+                  </a> <!-- m2mQFtSuccess -->
+                  <span class="method-name">m2mQFtSuccess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -422,46 +381,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'referFriendValid')
+data.setCell(0, 1, 'appLogin')
 data.setCell(0, 2, 'mBankingTestPages.LoginPageTest')
-data.setCell(0, 3, 56525);
+data.setCell(0, 3, 65987);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'balanceEnq')
-data.setCell(1, 2, 'mBankingTestPages.BalanceEnquiryTest')
-data.setCell(1, 3, 55428);
+data.setCell(1, 1, 'referFriendValid')
+data.setCell(1, 2, 'mBankingTestPages.LoginPageTest')
+data.setCell(1, 3, 56064);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'feedback')
-data.setCell(2, 2, 'mBankingTestPages.LoginPageTest')
-data.setCell(2, 3, 42534);
+data.setCell(2, 1, 'm2mQFtSuccess')
+data.setCell(2, 2, 'mBankingTestPages.FundTransferTest')
+data.setCell(2, 3, 49553);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'appLogin')
+data.setCell(3, 1, 'feedback')
 data.setCell(3, 2, 'mBankingTestPages.LoginPageTest')
-data.setCell(3, 3, 18356);
+data.setCell(3, 3, 44736);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'm2mBenReg')
-data.setCell(4, 2, 'mBankingTestPages.FundTransferTest')
-data.setCell(4, 3, 14375);
+data.setCell(4, 1, 'balanceEnq')
+data.setCell(4, 2, 'mBankingTestPages.BalanceEnquiryTest')
+data.setCell(4, 3, 32049);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'm2mQFtSuccess')
-data.setCell(5, 2, 'mBankingTestPages.FundTransferTest')
-data.setCell(5, 3, 13718);
+data.setCell(5, 1, 'miniStatement')
+data.setCell(5, 2, 'mBankingTestPages.BalanceEnquiryTest')
+data.setCell(5, 3, 30649);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'miniStatement')
-data.setCell(6, 2, 'mBankingTestPages.BalanceEnquiryTest')
-data.setCell(6, 3, 5150);
+data.setCell(6, 1, 'm2mBenReg')
+data.setCell(6, 2, 'mBankingTestPages.FundTransferTest')
+data.setCell(6, 3, 14278);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'checkHelp')
 data.setCell(7, 2, 'mBankingTestPages.HomePageTest')
-data.setCell(7, 3, 4811);
+data.setCell(7, 3, 4890);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'custName')
 data.setCell(8, 2, 'mBankingTestPages.HomePageTest')
-data.setCell(8, 3, 4759);
+data.setCell(8, 3, 3298);
 window.suiteTableData['Positive_Transaction_flow']= { tableData: data, tableDiv: 'times-div-Positive_Transaction_flow'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Positive_Transaction_flow">
               </div> <!-- times-div-Positive_Transaction_flow -->
             </div> <!-- times-div -->
@@ -497,134 +456,130 @@ return data;
               <div class="chronological-class-name">mBankingTestPages.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.LoginPageTest.referFriendValid() throws java.lang.InterruptedException)</span>
-                <span class="method-start">53548 ms</span>
+                <span class="method-start">57267 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">referFriendValid</span>
-                <span class="method-start">53553 ms</span>
+                <span class="method-start">57271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=referFriendValid status=SUCCESS method=LoginPageTest.referFriendValid()[pri:0, inst...)</span>
-                <span class="method-start">110078 ms</span>
+                <span class="method-start">113336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.LoginPageTest.feedback() throws java.lang.InterruptedException)</span>
-                <span class="method-start">110081 ms</span>
+                <span class="method-start">113338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">feedback</span>
-                <span class="method-start">110082 ms</span>
+                <span class="method-start">113339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=feedback status=SUCCESS method=LoginPageTest.feedback()[pri:1, instance:mBankingTes...)</span>
-                <span class="method-start">152617 ms</span>
+                <span class="method-start">158076 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.LoginPageTest.appLogin() throws java.lang.InterruptedException)</span>
-                <span class="method-start">152617 ms</span>
+                <span class="method-start">158077 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">appLogin</span>
-                <span class="method-start">152618 ms</span>
+                <span class="method-start">158078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=appLogin status=SUCCESS method=LoginPageTest.appLogin()[pri:2, instance:mBankingTes...)</span>
-                <span class="method-start">170975 ms</span>
+                <span class="method-start">224066 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mBankingTestPages.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">custName</span>
-                <span class="method-start">171033 ms</span>
+                <span class="method-start">224083 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.HomePageTest.custName() throws java.lang.InterruptedException)</span>
-                <span class="method-start">171033 ms</span>
+                <span class="method-start">224083 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=custName status=SUCCESS method=HomePageTest.custName()[pri:11, instance:mBankingTes...)</span>
-                <span class="method-start">175796 ms</span>
+                <span class="method-start">227382 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">extentbeforeMethod(public void mBankingTestPages.HomePageTest.checkHelp())</span>
-                <span class="method-start">175796 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkHelp</span>
-                <span class="method-start">175797 ms</span>
+                <span class="method-start">227383 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">extentbeforeMethod(public void mBankingTestPages.HomePageTest.checkHelp())</span>
+                <span class="method-start">227383 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=checkHelp status=FAILURE method=HomePageTest.checkHelp()[pri:12, instance:mBankingT...)</span>
-                <span class="method-start">180614 ms</span>
+                <span class="method-start">232292 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mBankingTestPages.BalanceEnquiryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">extentbeforeMethod(public void mBankingTestPages.BalanceEnquiryTest.balanceEnq() throws java.lang.InterruptedException)</span>
-                <span class="method-start">188495 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">balanceEnq</span>
-                <span class="method-start">188496 ms</span>
+                <span class="method-start">240089 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">extentbeforeMethod(public void mBankingTestPages.BalanceEnquiryTest.balanceEnq() throws java.lang.InterruptedException)</span>
+                <span class="method-start">240089 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=balanceEnq status=FAILURE method=BalanceEnquiryTest.balanceEnq()[pri:1, instance:mB...)</span>
-                <span class="method-start">243926 ms</span>
+                <span class="method-start">272143 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.BalanceEnquiryTest.miniStatement() throws java.lang.InterruptedExcepti...)</span>
-                <span class="method-start">250289 ms</span>
+                <span class="method-start">280186 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">miniStatement</span>
-                <span class="method-start">250290 ms</span>
+                <span class="method-start">280187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">extentGetResult([TestResult name=miniStatement status=FAILURE method=BalanceEnquiryTest.miniStatement()[pri:2, insta...)</span>
-                <span class="method-start">255443 ms</span>
+                <span class="method-start">310837 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mBankingTestPages.FundTransferTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.FundTransferTest.m2mBenReg() throws java.lang.InterruptedException)</span>
-                <span class="method-start">261754 ms</span>
+                <span class="method-start">319106 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">m2mBenReg</span>
-                <span class="method-start">261754 ms</span>
+                <span class="method-start">319106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">extentGetResult([TestResult name=m2mBenReg status=FAILURE method=FundTransferTest.m2mBenReg()[pri:0, instance:mBanki...)</span>
-                <span class="method-start">276131 ms</span>
+                <span class="method-name">extentGetResult([TestResult name=m2mBenReg status=SUCCESS method=FundTransferTest.m2mBenReg()[pri:0, instance:mBanki...)</span>
+                <span class="method-start">333385 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">extentbeforeMethod(public void mBankingTestPages.FundTransferTest.m2mQFtSuccess() throws java.lang.InterruptedException)</span>
-                <span class="method-start">281963 ms</span>
+                <span class="method-start">333385 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">m2mQFtSuccess</span>
-                <span class="method-start">281964 ms</span>
+                <span class="method-start">333386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">extentGetResult([TestResult name=m2mQFtSuccess status=FAILURE method=FundTransferTest.m2mQFtSuccess()[pri:0, instanc...)</span>
-                <span class="method-start">295684 ms</span>
+                <span class="method-name">extentGetResult([TestResult name=m2mQFtSuccess status=SUCCESS method=FundTransferTest.m2mQFtSuccess()[pri:0, instanc...)</span>
+                <span class="method-start">382939 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">301976 ms</span>
+                <span class="method-start">382947 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -62,8 +62,8 @@ public class HomePage extends ObjectRepository {
 	  waitForElement(helpBtn, 3000);
 	  click(helpBtn);
       log.info("Text displayed is : \n"+helpTextView.getAttribute("text"));
+      click(homeBtn);
 	}
-	
 	public void changePin(String oldmpin, String newmpin, String reentermpin)
 	{
 		click(changemPINBtn);

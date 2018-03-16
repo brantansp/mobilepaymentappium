@@ -37,7 +37,7 @@ public class HomePageTest extends ObjectRepository {
 		log.info("**********Help Text**********");
 		homePage = new HomePage(driver);
 		homePage.help();
-		click(homeBtn);
+		click(homePage.logoutBtn);
 		log.info("***************End***************");
 	}
 	

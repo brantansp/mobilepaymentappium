@@ -28,18 +28,4 @@
       </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
     </classes>
   </test> <!-- Test3(failed) -->
-  <test name="Test4(failed)">
-    <classes>
-      <class name="mBankingTestPages.FundTransferTest">
-        <methods>
-          <include name="extentReportSetUp"/>
-          <include name="m2mQFtSuccess"/>
-          <include name="tearDown"/>
-          <include name="extentbeforeMethod"/>
-          <include name="extentGetResult"/>
-          <include name="m2mBenReg"/>
-        </methods>
-      </class> <!-- mBankingTestPages.FundTransferTest -->
-    </classes>
-  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Positive Transaction flow] -->
