@@ -1,12 +1,9 @@
 package mBankingBaseFactory;
 
-import java.lang.reflect.Field;
-
-import testPackage.test;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class ObjectRepository extends AppiumController {
+public class ObjectRepository extends BasePage {
 	
 	@AndroidFindBy(xpath ="//*[@class='android.widget.Button'][@text='Home']")
 	public static MobileElement homeBtn;

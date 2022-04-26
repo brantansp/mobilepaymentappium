@@ -17,7 +17,7 @@ import mBankingUtility.*;
 
 public class Driver {
 
-	protected static AppiumDriver<MobileElement> driver;
+	protected static ThreadLocal<AppiumDriver<MobileElement>> driver = new ThreadLocal<AppiumDriver<MobileElement>>();
 	
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
@@ -41,21 +41,30 @@ public class Driver {
 
 	private static String orientation;
 	
-/*	public AppiumDriver getDriver() {
-		return driver;
+    private Driver() {
+		
 	}
-	*/
 	
-	/*
-	public void setDriver(AppiumDriver driver) {
-		this.driver = driver;
-	}*/
-
-	public void quit() {
-		if (!"NATIVE_APP".equalsIgnoreCase(driver.getContext())) {
-			driver.close();
+	private static Driver driverInstance;
+	
+	public static Driver getInstance() {
+		if(driverInstance==null) {
+			driverInstance = new Driver();
 		}
-		driver.quit();
+		return driverInstance;
+	}
+
+	public void setDriver(AppiumDriver<MobileElement> threadDriver) {
+		driver.set(threadDriver);
+	}
+	
+	public AppiumDriver<MobileElement> getDriver() {
+		return instantiateDriver("Android");
+	}
+	
+	public void quit() {
+
+		getDriver().quit();
 	}
 
 	public static String getMobileUDID() {
@@ -138,20 +147,19 @@ public class Driver {
 	}
 	
 	public static AppiumDriver<MobileElement> instantiateDriver(String platform) {
-
+		AppiumDriver<MobileElement> driver = null;
+		
 		try {
 			init();
 			String remoteUrl = "http://" + getHost() + ":" + getPort()
 					+ "/wd/hub";
 			if ("Android".equalsIgnoreCase(platform)) {
 				log.info("The platform is : Android platform");
-				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl),
-						Driver.generateDesiredCapabilities());
+				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
                 return driver;
 			} else if ("IOS".equalsIgnoreCase(platform)) {
 				log.info("The platform is : i-OS platform");
-				driver = new IOSDriver<MobileElement>(new URL(remoteUrl),
-						Driver.generateDesiredCapabilities());
+				driver = new IOSDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
 				return driver;
 			} else {
 				log.info("This is an exception");
@@ -186,13 +194,7 @@ public class Driver {
 		//setOrientation(handler.getProperty("orientation"));
 	}
 
-	public static DesiredCapabilities generateDesiredCapabilities() throws Exception {
 
-		DesiredCapabilities capabilities = generateCommonDesiredCapabilities();
-
-		return capabilities;
-
-	}
 
 	protected static DesiredCapabilities generateCommonDesiredCapabilities()
 			throws Exception {

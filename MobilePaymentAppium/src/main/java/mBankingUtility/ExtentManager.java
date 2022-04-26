@@ -18,9 +18,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.appium.java_client.android.AndroidDriver;
-import mBankingBaseFactory.AppiumController;
 import mBankingBaseFactory.BasePage;
-
 
 public class ExtentManager {
 
@@ -40,7 +38,7 @@ public class ExtentManager {
     @BeforeMethod
     public static void extentbeforeMethod(ITestResult result, Method method)
     {
-        String screenShotPath = AppiumController.takeScreenShot();
+        String screenShotPath = BasePage.takeScreenShot();
     	log.info("@BeforeMethod : " +screenShotPath );
     	log.info(result.getName());
 		extentLogger = extent.startTest((MethodHandles.lookup().lookupClass().getSimpleName() +" :: "+ method.getName()), method.getName() );

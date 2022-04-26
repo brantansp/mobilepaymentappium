@@ -1,30 +1,12 @@
 package mBankingPageObjectFactory;
 
-
-import static org.testng.Assert.assertTrue;
-
 import java.lang.invoke.MethodHandles;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.ExtentTest;
-
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import mBankingBaseFactory.AppiumController;
-import mBankingBaseFactory.BasePage;
-import mBankingBaseFactory.Driver;
 import mBankingBaseFactory.ObjectRepository;
 
 public class HomePage extends ObjectRepository {
@@ -85,4 +67,3 @@ public class HomePage extends ObjectRepository {
 
 	
 }
-

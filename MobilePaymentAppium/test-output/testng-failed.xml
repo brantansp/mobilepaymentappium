@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Positive Transaction flow]">
-  <test name="Test2(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mBankingTestPages.HomePageTest">
+      <class name="mBankingTestPages.LoginPageTest">
         <methods>
-          <include name="extentReportSetUp"/>
-          <include name="tearDown"/>
-          <include name="extentbeforeMethod"/>
-          <include name="checkHelp"/>
-          <include name="extentGetResult"/>
+          <include name="appLogin"/>
+          <include name="appExit"/>
         </methods>
-      </class> <!-- mBankingTestPages.HomePageTest -->
+      </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
-  <test name="Test3(failed)">
-    <classes>
-      <class name="mBankingTestPages.BalanceEnquiryTest">
-        <methods>
-          <include name="extentReportSetUp"/>
-          <include name="miniStatement"/>
-          <include name="tearDown"/>
-          <include name="extentbeforeMethod"/>
-          <include name="balanceEnq"/>
-          <include name="extentGetResult"/>
-        </methods>
-      </class> <!-- mBankingTestPages.BalanceEnquiryTest -->
-    </classes>
-  </test> <!-- Test3(failed) -->
-</suite> <!-- Failed suite [Positive Transaction flow] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

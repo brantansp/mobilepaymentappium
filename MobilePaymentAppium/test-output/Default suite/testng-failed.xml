@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="mBankingTestPages.LoginPageTest">
         <methods>
-          <include name="extentReportSetUp"/>
-          <include name="tearDown"/>
-          <include name="extentbeforeMethod"/>
           <include name="appLogin"/>
-          <include name="extentGetResult"/>
+          <include name="appExit"/>
         </methods>
       </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>

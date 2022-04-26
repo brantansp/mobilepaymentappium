@@ -14934,3 +14934,9 @@ java.lang.NullPointerException
 2018-03-16 16:13:08 INFO  AppiumController:118 - @AfterMethod
 
 2018-03-16 16:13:08 INFO  AppiumController:133 - @AfterSuite
+2022-04-27 00:28:40 INFO  LoginPageTest:24 - **********Login to Application**********
+2022-04-27 00:28:40 INFO  LoginPageTest:33 - **********Exit Application**********
+2022-04-27 00:29:01 INFO  LoginPageTest:24 - **********Login to Application**********
+2022-04-27 00:29:01 INFO  LoginPageTest:33 - **********Exit Application**********
+2022-04-27 00:29:13 INFO  LoginPageTest:24 - **********Login to Application**********
+2022-04-27 00:29:56 INFO  LoginPageTest:24 - **********Login to Application**********
