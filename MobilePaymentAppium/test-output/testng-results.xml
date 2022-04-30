@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Positive Transaction flow" duration-ms="11548" started-at="2022-04-30T11:38:31 IST" finished-at="2022-04-30T11:38:42 IST">
+  <suite name="Positive Transaction flow" duration-ms="11254" started-at="2022-04-30T11:47:29 IST" finished-at="2022-04-30T11:47:40 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="11548" started-at="2022-04-30T11:38:31 IST" finished-at="2022-04-30T11:38:42 IST">
+    <test name="Test1" duration-ms="11254" started-at="2022-04-30T11:47:29 IST" finished-at="2022-04-30T11:47:40 IST">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="FAIL" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appLogin" duration-ms="11504" started-at="2022-04-30T11:38:31 IST" finished-at="2022-04-30T11:38:42 IST">
+        <test-method status="FAIL" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appLogin" duration-ms="11209" started-at="2022-04-30T11:47:29 IST" finished-at="2022-04-30T11:47:40 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: Locator map: 
@@ -66,7 +66,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLogin -->
-        <test-method status="FAIL" signature="appExit()[pri:1, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appExit" duration-ms="3" started-at="2022-04-30T11:38:42 IST" finished-at="2022-04-30T11:38:42 IST">
+        <test-method status="FAIL" signature="appExit()[pri:1, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appExit" duration-ms="3" started-at="2022-04-30T11:47:40 IST" finished-at="2022-04-30T11:47:40 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
