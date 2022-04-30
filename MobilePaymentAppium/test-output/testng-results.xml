@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Positive Transaction flow" duration-ms="11402" started-at="2022-04-30T19:22:50 IST" finished-at="2022-04-30T19:23:01 IST">
+  <suite name="Positive Transaction flow" duration-ms="11246" started-at="2022-04-30T19:25:52 IST" finished-at="2022-04-30T19:26:03 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="11402" started-at="2022-04-30T19:22:50 IST" finished-at="2022-04-30T19:23:01 IST">
+    <test name="Test1" duration-ms="11246" started-at="2022-04-30T19:25:52 IST" finished-at="2022-04-30T19:26:03 IST">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentReportSetUp" is-config="true" duration-ms="11446" started-at="2022-04-30T19:22:38 IST" finished-at="2022-04-30T19:22:50 IST">
+        <test-method status="PASS" signature="extentReportSetUp()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentReportSetUp" is-config="true" duration-ms="11201" started-at="2022-04-30T19:25:41 IST" finished-at="2022-04-30T19:25:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentbeforeMethod" is-config="true" duration-ms="13" started-at="2022-04-30T19:22:50 IST" finished-at="2022-04-30T19:22:50 IST">
+        <test-method status="PASS" signature="extentbeforeMethod(java.lang.reflect.Method)[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentbeforeMethod" is-config="true" duration-ms="18" started-at="2022-04-30T19:25:52 IST" finished-at="2022-04-30T19:25:52 IST">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentbeforeMethod -->
-        <test-method status="PASS" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="appLogin" duration-ms="11334" started-at="2022-04-30T19:22:50 IST" finished-at="2022-04-30T19:23:01 IST">
+        <test-method status="PASS" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="appLogin" duration-ms="11182" started-at="2022-04-30T19:25:52 IST" finished-at="2022-04-30T19:26:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLogin -->
-        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentGetResult" is-config="true" duration-ms="3" started-at="2022-04-30T19:23:01 IST" finished-at="2022-04-30T19:23:01 IST">
+        <test-method status="PASS" signature="extentGetResult(org.testng.ITestResult)[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="extentGetResult" is-config="true" duration-ms="3" started-at="2022-04-30T19:26:03 IST" finished-at="2022-04-30T19:26:03 IST">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentGetResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="tearDown" is-config="true" duration-ms="398" started-at="2022-04-30T19:23:01 IST" finished-at="2022-04-30T19:23:02 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mBankingTestPages.LoginPageTest@2ddc8ecb]" name="tearDown" is-config="true" duration-ms="436" started-at="2022-04-30T19:26:03 IST" finished-at="2022-04-30T19:26:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
