@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="161" started-at="2022-04-27T00:29:01 IST" finished-at="2022-04-27T00:29:01 IST">
+  <suite name="Positive Transaction flow" duration-ms="1562" started-at="2022-04-30T10:47:35 IST" finished-at="2022-04-30T10:47:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="161" started-at="2022-04-27T00:29:01 IST" finished-at="2022-04-27T00:29:01 IST">
+    <test name="Test1" duration-ms="1562" started-at="2022-04-30T10:47:35 IST" finished-at="2022-04-30T10:47:36 IST">
       <class name="mBankingTestPages.LoginPageTest">
-        <test-method status="FAIL" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appLogin" duration-ms="78" started-at="2022-04-27T00:29:01 IST" finished-at="2022-04-27T00:29:01 IST">
+        <test-method status="FAIL" signature="appLogin()[pri:0, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appLogin" duration-ms="1497" started-at="2022-04-30T10:47:35 IST" finished-at="2022-04-30T10:47:36 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -20,7 +20,7 @@ at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDe
 at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
 at mBankingPageObjectFactory.LoginPage.<init>(LoginPage.java:21)
-at mBankingTestPages.LoginPageTest.appLogin(LoginPageTest.java:25)
+at mBankingTestPages.LoginPageTest.appLogin(LoginPageTest.java:26)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,7 +55,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLogin -->
-        <test-method status="FAIL" signature="appExit()[pri:1, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appExit" duration-ms="4" started-at="2022-04-27T00:29:01 IST" finished-at="2022-04-27T00:29:01 IST">
+        <test-method status="FAIL" signature="appExit()[pri:1, instance:mBankingTestPages.LoginPageTest@14a2f921]" name="appExit" duration-ms="5" started-at="2022-04-30T10:47:36 IST" finished-at="2022-04-30T10:47:36 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -68,7 +68,7 @@ at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDe
 at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
 at mBankingPageObjectFactory.HomePage.<init>(HomePage.java:24)
-at mBankingTestPages.LoginPageTest.appExit(LoginPageTest.java:34)
+at mBankingTestPages.LoginPageTest.appExit(LoginPageTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,6 +104,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- appExit -->
       </class> <!-- mBankingTestPages.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Positive Transaction flow -->
 </testng-results>

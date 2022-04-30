@@ -58,7 +58,7 @@ public class Driver {
 		driver.set(threadDriver);
 	}
 	
-	public AppiumDriver<MobileElement> getDriver() {
+	public static AppiumDriver<MobileElement> getDriver() {
 		return instantiateDriver("Android");
 	}
 	

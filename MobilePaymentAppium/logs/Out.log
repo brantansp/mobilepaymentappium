@@ -14940,3 +14940,46 @@ java.lang.NullPointerException
 2022-04-27 00:29:01 INFO  LoginPageTest:33 - **********Exit Application**********
 2022-04-27 00:29:13 INFO  LoginPageTest:24 - **********Login to Application**********
 2022-04-27 00:29:56 INFO  LoginPageTest:24 - **********Login to Application**********
+2022-04-27 09:13:31 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-27 09:13:31 INFO  Driver:184 - App started : com.fss.united
+2022-04-27 09:13:31 INFO  Driver:157 - The platform is : Android platform
+2022-04-27 09:13:35 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-27 09:14:30 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-27 09:14:30 INFO  Driver:184 - App started : com.fss.united
+2022-04-27 09:14:30 INFO  Driver:157 - The platform is : Android platform
+2022-04-27 09:14:32 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-27 09:15:02 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-27 09:15:02 INFO  Driver:184 - App started : com.fss.united
+2022-04-27 09:15:10 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:29:28 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:29:28 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:29:28 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:29:31 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:31:52 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:31:52 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:31:52 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:31:57 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:41:29 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:41:29 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:41:29 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:41:31 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:42:37 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:42:37 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:42:37 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:42:39 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:42:54 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:42:54 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:42:54 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:42:56 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:45:00 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:45:00 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:45:00 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:45:02 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:45:50 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:45:50 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:45:50 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:45:52 INFO  LoginPageTest:36 - **********Exit Application**********
+2022-04-30 10:47:35 INFO  PropertyFileReader:28 - file : C:\Users\brantan.sp\git\mobilepaymentappium\MobilePaymentAppium\property\driver.properties
+2022-04-30 10:47:35 INFO  Driver:184 - App started : com.fss.united
+2022-04-30 10:47:35 INFO  Driver:157 - The platform is : Android platform
+2022-04-30 10:47:36 INFO  LoginPageTest:36 - **********Exit Application**********
