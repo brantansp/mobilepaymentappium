@@ -20,9 +20,16 @@ public class LoginPage extends ObjectRepository {
 	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
 	public MobileElement loginBox;
 	
+	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView' and text()='QUEUED']")
+	public MobileElement queued;
+	
 	public LoginPage(AppiumDriver<MobileElement> driver) {
 		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+	}
+	
+	public void clickOnQueued() {
+		click(queued);
 	}
 
 	public void loginApp(String pin) throws InterruptedException {
@@ -39,11 +46,4 @@ public class LoginPage extends ObjectRepository {
 		log.info("Clicked on ok button");
 		// .Fragment_Activity
 	}
-
-	public MobileElement place() {
-		MobileElement element = getDriver()
-				.findElement(By.xpath("//*[@class='android.widget.Button'][@text='Logout']"));
-		return element;
-	}
-
 }

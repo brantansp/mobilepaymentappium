@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Positive Transaction flow</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">11,254</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">61,288</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Positive Transaction flow</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">mBankingTestPages.LoginPageTest</td><td><a href="#m0">appExit</a></td><td rowspan="1">1651299460783</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">appLogin</a></td><td rowspan="1">1651299449555</td><td rowspan="1">11209</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Positive Transaction flow</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">mBankingTestPages.LoginPageTest</td><td><a href="#m0">appLogin</a></td><td rowspan="1">1651300362533</td><td rowspan="1">61259</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">mBankingTestPages.LoginPageTest#appExit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+<h2>Test1</h2><h3 id="m0">mBankingTestPages.LoginPageTest#appLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
 	at io.appium.java_client.pagefactory.AppiumFieldDecorator.getTypeForProxy(AppiumFieldDecorator.java:233)
 	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:248)
 	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:246)
@@ -22,23 +22,8 @@
 	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:172)
 	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at mBankingPageObjectFactory.HomePage.&lt;init&gt;(HomePage.java:24)
-	at mBankingTestPages.LoginPageTest.appExit(LoginPageTest.java:37)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">mBankingTestPages.LoginPageTest#appLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.xpath: //*[@class=&apos;android.widget.EditText&apos;]&quot; 
-- html content: &quot;by id or name &quot;loginBox&quot;&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DESKTOP-2749E4C&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at mBankingBaseFactory.BasePage.click(BasePage.java:447)
-	at mBankingPageObjectFactory.LoginPage.loginApp(LoginPage.java:34)
-	at mBankingTestPages.LoginPageTest.appLogin(LoginPageTest.java:30)
+	at mBankingPageObjectFactory.LoginPage.&lt;init&gt;(LoginPage.java:28)
+	at mBankingTestPages.LoginPageTest.appLogin(LoginPageTest.java:26)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

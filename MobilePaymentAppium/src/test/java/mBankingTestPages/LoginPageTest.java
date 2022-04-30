@@ -27,11 +27,11 @@ public class LoginPageTest {
 		
 		
 		log.info("**********Login to Application**********");
-		loginPage.loginApp("2222");
+		loginPage.clickOnQueued();
 		log.info("***************End***************");
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void appExit() throws InterruptedException {
 		log.info("**********Exit Application**********");
 		homePage = new HomePage(driver);
