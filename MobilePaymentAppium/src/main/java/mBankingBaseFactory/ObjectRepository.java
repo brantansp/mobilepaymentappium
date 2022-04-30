@@ -151,8 +151,7 @@ public class ObjectRepository extends BasePage {
 	@AndroidFindBy(className= "android.widget.ImageView")
 	public MobileElement logoView;
 	
-	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
-	public MobileElement loginBox;
+
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='About Us']")
 	public MobileElement aboutUsLink;

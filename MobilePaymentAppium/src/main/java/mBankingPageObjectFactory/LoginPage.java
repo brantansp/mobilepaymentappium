@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import mBankingBaseFactory.ObjectRepository;
 
@@ -16,6 +17,9 @@ public class LoginPage extends ObjectRepository {
 
 	public static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 
+	@AndroidFindBy(xpath = "//*[@class='android.widget.EditText']")
+	public MobileElement loginBox;
+	
 	public LoginPage(AppiumDriver<MobileElement> driver) {
 		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
