@@ -17,7 +17,7 @@ import mBankingUtility.*;
 
 public class Driver {
 
-	protected static ThreadLocal<AppiumDriver<MobileElement>> driver = new ThreadLocal<AppiumDriver<MobileElement>>();
+	protected AppiumDriver<MobileElement> driver = null;
 	
 	private static Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass().getSimpleName());
 	
@@ -45,17 +45,8 @@ public class Driver {
 		
 	}
 	
-	private static Driver driverInstance;
-	
-	public static Driver getInstance() {
-		if(driverInstance==null) {
-			driverInstance = new Driver();
-		}
-		return driverInstance;
-	}
-
-	public void setDriver(AppiumDriver<MobileElement> threadDriver) {
-		driver.set(threadDriver);
+	public void setDriver(AppiumDriver<MobileElement> driver) {
+		this.driver = driver;
 	}
 	
 	public static AppiumDriver<MobileElement> getDriver() {
@@ -147,20 +138,18 @@ public class Driver {
 	}
 	
 	public static AppiumDriver<MobileElement> instantiateDriver(String platform) {
-		AppiumDriver<MobileElement> driver = null;
-		
+
 		try {
 			init();
 			String remoteUrl = "http://" + getHost() + ":" + getPort()
 					+ "/wd/hub";
 			if ("Android".equalsIgnoreCase(platform)) {
 				log.info("The platform is : Android platform");
-				driver = new AndroidDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
-                return driver;
+				return new AndroidDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
+                //return driver;
 			} else if ("IOS".equalsIgnoreCase(platform)) {
 				log.info("The platform is : i-OS platform");
-				driver = new IOSDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
-				return driver;
+				return new IOSDriver<MobileElement>(new URL(remoteUrl), generateCommonDesiredCapabilities());
 			} else {
 				log.info("This is an exception");
 				throw new Exception("Given platform is not implemented.");
@@ -168,17 +157,11 @@ public class Driver {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return driver;
-	}
-
-	public static void main(String[] args) {
-		log.info("Start");
-		//Driver driver = new Driver ("android");
-
+		
+		return null;
 	}
 	
 	private static void init() {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
 		String path = System.getProperty("user.dir")+"\\property\\driver.properties";
 		PropertyFileReader handler = new PropertyFileReader(path);
 		log.info("App started : "+handler.getProperty("appPackage"));

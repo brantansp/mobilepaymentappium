@@ -128,13 +128,13 @@ public class BasePage {
 		}
 	}
 
-	public static void waitForCondition(ExpectedCondition<WebElement> expectedCondition, Integer timeout) {
+	public void waitForCondition(ExpectedCondition<WebElement> expectedCondition, Integer timeout) {
 		timeout = timeout != null ? timeout : 5;
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(expectedCondition);
 	}
 
-	public static boolean waitForElement(MobileElement locator, Integer... timeout) {
+	public boolean waitForElement(MobileElement locator, Integer... timeout) {
 		log.info("Entered Wait for locator");
 		try {
 			waitForCondition(ExpectedConditions.visibilityOf((WebElement) locator),
@@ -147,7 +147,7 @@ public class BasePage {
 		return true;
 	}
 
-	public static boolean waitForTextView(String text, Integer... timeout) {
+	public boolean waitForTextView(String text, Integer... timeout) {
 		MobileElement locator = getDriver().findElement(By.xpath("//android.widget.TextView[@text='" + text + "']"));
 		log.info("Entered Wait : " + text);
 		try {
@@ -161,7 +161,7 @@ public class BasePage {
 		return true;
 	}
 
-	public static boolean waitForEditText(String text, Integer... timeout) {
+	public boolean waitForEditText(String text, Integer... timeout) {
 		log.info("Entered Wait : " + text);
 		try {
 			waitForCondition(
@@ -451,7 +451,7 @@ public class BasePage {
 	/*
 	 * Send keys via MobileElement
 	 */
-	public static void sendText(MobileElement element, String text) {
+	public void sendText(MobileElement element, String text) {
 		element.sendKeys(text);
 		log.info("Send Text : " + text);
 	}

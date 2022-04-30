@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Positive_Transaction_flow">
-              <span class="suite-name border-failed">Positive Transaction flow</span>
+              <span class="suite-name border-passed">Positive Transaction flow</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Positive_Transaction_flow" class="hide-methods failed suite-Positive_Transaction_flow"> (hide)</a> <!-- hide-methods failed suite-Positive_Transaction_flow -->
-                      <a href="#" panel-name="suite-Positive_Transaction_flow" class="show-methods failed suite-Positive_Transaction_flow"> (show)</a> <!-- show-methods failed suite-Positive_Transaction_flow -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Positive_Transaction_flow" class="hide-methods passed suite-Positive_Transaction_flow"> (hide)</a> <!-- hide-methods passed suite-Positive_Transaction_flow -->
+                      <a href="#" panel-name="suite-Positive_Transaction_flow" class="show-methods passed suite-Positive_Transaction_flow"> (show)</a> <!-- show-methods passed suite-Positive_Transaction_flow -->
                     </span>
-                    <div class="method-list-content failed suite-Positive_Transaction_flow">
+                    <div class="method-list-content passed suite-Positive_Transaction_flow">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Positive_Transaction_flow" title="mBankingTestPages.LoginPageTest" hash-for-method="appLogin">appLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Positive_Transaction_flow -->
+                    </div> <!-- method-list-content passed suite-Positive_Transaction_flow -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Positive_Transaction_flow" class="panel Positive_Transaction_flow">
-          <div class="suite-Positive_Transaction_flow-class-failed">
+          <div class="suite-Positive_Transaction_flow-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">mBankingTestPages.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,24 +130,10 @@
                   <a name="appLogin">
                   </a> <!-- appLogin -->
                   <span class="method-name">appLogin</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.getTypeForProxy(AppiumFieldDecorator.java:233)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:248)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:246)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator$3.proxyForLocator(AppiumFieldDecorator.java:121)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:172)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at mBankingPageObjectFactory.LoginPage.&lt;init&gt;(LoginPage.java:28)
-	at mBankingTestPages.LoginPageTest.appLogin(LoginPageTest.java:26)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Positive_Transaction_flow-class-failed -->
+          </div> <!-- suite-Positive_Transaction_flow-class-passed -->
         </div> <!-- panel Positive_Transaction_flow -->
         <div panel-name="test-xml-Positive_Transaction_flow" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -204,12 +190,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'appLogin')
 data.setCell(0, 2, 'mBankingTestPages.LoginPageTest')
-data.setCell(0, 3, 61259);
+data.setCell(0, 3, 11334);
 window.suiteTableData['Positive_Transaction_flow']= { tableData: data, tableDiv: 'times-div-Positive_Transaction_flow'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Positive_Transaction_flow">
               </div> <!-- times-div-Positive_Transaction_flow -->
             </div> <!-- times-div -->
@@ -236,12 +222,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">mBankingTestPages.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">appLogin</span>
+              <div class="configuration-suite before">
+                <span class="method-name">extentReportSetUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">extentbeforeMethod(public void mBankingTestPages.LoginPageTest.appLogin() throws java.lang.InterruptedException)</span>
+                <span class="method-start">11488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">appLogin</span>
+                <span class="method-start">11506 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">extentGetResult([TestResult name=appLogin status=SUCCESS method=LoginPageTest.appLogin()[pri:0, instance:mBankingTes...)</span>
+                <span class="method-start">22845 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22870 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

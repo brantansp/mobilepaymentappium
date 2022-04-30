@@ -6,7 +6,6 @@
       <class name="mBankingTestPages.LoginPageTest">
         <methods>
           <include name="appLogin"/>
-          <include name="appExit"/>
         </methods>
       </class> <!-- mBankingTestPages.LoginPageTest -->
     </classes>

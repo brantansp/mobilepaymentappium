@@ -10,7 +10,7 @@ import io.appium.java_client.android.AndroidDriver;
 import mBankingBaseFactory.*;
 import mBankingPageObjectFactory.*;
 
-public class LoginPageTest {
+public class LoginPageTest extends BasePage {
 
 	protected LoginPage loginPage;
 	protected HomePage homePage;
